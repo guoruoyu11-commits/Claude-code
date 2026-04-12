@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年4月最新】イニブ機体ランク・Tier表 | EXVSDB - エクバデータベース</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary:   #0d1117;
+      --bg-secondary: #161b22;
+      --bg-card:      #1c2230;
+      --text-primary: #e6edf3;
+      --text-muted:   #8b949e;
+      --accent:       #e84040;
+      --border:       #30363d;
+
+      --cost-3000: #e53935;
+      --cost-2500: #f57c00;
+      --cost-2000: #1976d2;
+      --cost-1500: #388e3c;
+
+      --s-color:     #ff3b3b;
+      --aplus-color: #ff8c00;
+      --a-color:     #d4a017;
+      --bplus-color: #3cb371;
+      --b-color:     #4a90d9;
+      --c-color:     #6c757d;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', 'メイリオ', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      font-size: 14px;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      background: var(--bg-secondary);
+      border-bottom: 2px solid var(--accent);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+    .logo-sub {
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0;
+      margin-left: 6px;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 2px;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      transition: all .15s;
+    }
+    nav a:hover { color: var(--text-primary); background: rgba(255,255,255,.06); }
+    nav a.active { color: #fff; background: var(--accent); }
+
+    /* ─── MAIN ─── */
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 5px; }
+
+    /* Page title */
+    h1 {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+    .update-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .update-meta b { color: var(--text-primary); }
+
+    /* Description box */
+    .desc-box {
+      background: var(--bg-secondary);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .desc-box b { color: var(--text-primary); }
+
+    /* ─── COST TABS ─── */
+    .cost-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .cost-tab {
+      padding: 7px 20px;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      font-family: inherit;
+    }
+    .cost-tab:hover { color: var(--text-primary); border-color: #555; }
+    .cost-tab[data-cost="all"].active  { background: var(--accent);       border-color: var(--accent);       color: #fff; }
+    .cost-tab[data-cost="3000"].active { background: var(--cost-3000);    border-color: var(--cost-3000);    color: #fff; }
+    .cost-tab[data-cost="2500"].active { background: var(--cost-2500);    border-color: var(--cost-2500);    color: #fff; }
+    .cost-tab[data-cost="2000"].active { background: var(--cost-2000);    border-color: var(--cost-2000);    color: #fff; }
+    .cost-tab[data-cost="1500"].active { background: var(--cost-1500);    border-color: var(--cost-1500);    color: #fff; }
+
+    /* Machine count */
+    .machine-count {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    #countDisplay { color: var(--text-primary); font-weight: 700; }
+
+    /* ─── TIER TABLE ─── */
+    .tier-table {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tier-row {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      min-height: 100px;
+    }
+    .tier-row:last-child { border-bottom: none; }
+
+    .tier-label {
+      min-width: 60px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 26px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 1px 6px rgba(0,0,0,.6);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    .tier-label .tier-sub {
+      font-size: 9px;
+      font-weight: 400;
+      margin-top: 2px;
+      letter-spacing: .5px;
+      opacity: .85;
+    }
+    .tier-label.s     { background: linear-gradient(160deg, #ff1a1a 0%, #c00 100%); }
+    .tier-label.aplus { background: linear-gradient(160deg, #ff9900 0%, #c76400 100%); }
+    .tier-label.a     { background: linear-gradient(160deg, #e6b800 0%, #9c7a00 100%); }
+    .tier-label.bplus { background: linear-gradient(160deg, #2ebf6e 0%, #1a8a4a 100%); }
+    .tier-label.b     { background: linear-gradient(160deg, #3a8ee6 0%, #1a5fa8 100%); }
+    .tier-label.c     { background: linear-gradient(160deg, #6c757d 0%, #464d52 100%); }
+
+    .tier-content {
+      flex: 1;
+      padding: 8px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-content: flex-start;
+      background: var(--bg-secondary);
+    }
+    .tier-row:nth-child(even) .tier-content { background: var(--bg-card); }
+
+    /* Empty state */
+    .tier-content:empty::after,
+    .tier-content.is-empty::after {
+      content: '（該当機体なし）';
+      color: var(--text-muted);
+      font-size: 12px;
+      padding: 18px 0;
+      display: block;
+    }
+
+    /* ─── MACHINE CARD ─── */
+    .machine-card {
+      width: 90px;
+      cursor: default;
+      transition: transform .15s;
+      position: relative;
+    }
+    .machine-card:hover { transform: translateY(-3px); }
+    .machine-card.hidden { display: none; }
+
+    .machine-thumb {
+      width: 90px;
+      height: 66px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    /* Cost-based gradients */
+    .thumb-3000 { background: linear-gradient(135deg, #7b0000 0%, #c62828 40%, #ef5350 100%); }
+    .thumb-2500 { background: linear-gradient(135deg, #7c3500 0%, #e65100 40%, #ff9800 100%); }
+    .thumb-2000 { background: linear-gradient(135deg, #003060 0%, #0d47a1 40%, #42a5f5 100%); }
+    .thumb-1500 { background: linear-gradient(135deg, #1a3d1a 0%, #2e7d32 40%, #66bb6a 100%); }
+
+    /* Diagonal gloss overlay */
+    .machine-thumb::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,.18) 0%, transparent 55%, rgba(0,0,0,.2) 100%);
+      pointer-events: none;
+    }
+
+    .thumb-icon {
+      font-size: 17px;
+      font-weight: 900;
+      color: rgba(255,255,255,.92);
+      text-shadow: 0 1px 6px rgba(0,0,0,.8);
+      letter-spacing: .5px;
+      text-align: center;
+      padding: 0 4px;
+      line-height: 1.2;
+      z-index: 1;
+      position: relative;
+    }
+
+    .cost-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 3px;
+      font-size: 8px;
+      font-weight: 700;
+      padding: 1px 4px;
+      border-radius: 3px;
+      color: #fff;
+      z-index: 2;
+      letter-spacing: .3px;
+    }
+    .badge-3000 { background: rgba(198,40,40,.92); }
+    .badge-2500 { background: rgba(230,81,0,.92); }
+    .badge-2000 { background: rgba(13,71,161,.92); }
+    .badge-1500 { background: rgba(46,125,50,.92); }
+
+    .machine-name {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 4px;
+      color: var(--text-primary);
+      line-height: 1.3;
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ─── LEGEND ─── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 12px;
+    }
+    .legend-label { color: var(--text-muted); font-weight: 600; }
+    .legend-item { display: flex; align-items: center; gap: 5px; }
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      margin-top: 50px;
+      padding: 24px 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      .tier-label { min-width: 44px; width: 44px; font-size: 20px; }
+      .machine-card { width: 72px; }
+      .machine-thumb { width: 72px; height: 52px; }
+      .thumb-icon { font-size: 13px; }
+      .machine-name { font-size: 9px; }
+      nav a { padding: 5px 8px; font-size: 12px; }
+      h1 { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">EXVSDB<span class="logo-sub">エクバデータベース</span></a>
+    <nav>
+      <a href="#">エクバ2</a>
+      <a href="#">クロブ</a>
+      <a href="#">オバブ</a>
+      <a href="#" class="active">イニブ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════ MAIN ═══════════ -->
+<main>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">EXVSDB</a><span>›</span>
+    <a href="#">イニブ</a><span>›</span>
+    機体ランク・Tier表
+  </div>
+
+  <!-- Title -->
+  <h1>【2026年4月最新】イニブ機体ランク・Tier表</h1>
+  <div class="update-meta">最終更新：<b>2026年4月12日</b>　|　対象バージョン：インフィニットブースト Ver.2.40</div>
+
+  <!-- Description -->
+  <div class="desc-box">
+    ガンダム EXVS.2 インフィニットブースト（イニブ）の<b>機体ランク・Tier表</b>です。<br>
+    対戦勝率・使用率・上位プレイヤー実績をもとに独自ランク付けしています。
+    コストタブでフィルタリングして確認できます。ランクはあくまでも参考情報です。
+  </div>
+
+  <!-- Cost Tabs -->
+  <div class="cost-tabs">
+    <button class="cost-tab active" data-cost="all">全て</button>
+    <button class="cost-tab" data-cost="3000">3000コスト</button>
+    <button class="cost-tab" data-cost="2500">2500コスト</button>
+    <button class="cost-tab" data-cost="2000">2000コスト</button>
+    <button class="cost-tab" data-cost="1500">1500コスト</button>
+  </div>
+
+  <!-- Count -->
+  <div class="machine-count">表示中機体数：<span id="countDisplay">0</span> 機</div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <span class="legend-label">コスト色凡例：</span>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cost-3000)"></div>3000</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cost-2500)"></div>2500</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cost-2000)"></div>2000</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cost-1500)"></div>1500</div>
+  </div>
+
+  <!-- Tier Table -->
+  <div class="tier-table">
+
+    <div class="tier-row">
+      <div class="tier-label s">S<span class="tier-sub">最強</span></div>
+      <div class="tier-content" id="tier-S"></div>
+    </div>
+
+    <div class="tier-row">
+      <div class="tier-label aplus">A+</div>
+      <div class="tier-content" id="tier-Aplus"></div>
+    </div>
+
+    <div class="tier-row">
+      <div class="tier-label a">A</div>
+      <div class="tier-content" id="tier-A"></div>
+    </div>
+
+    <div class="tier-row">
+      <div class="tier-label bplus">B+</div>
+      <div class="tier-content" id="tier-Bplus"></div>
+    </div>
+
+    <div class="tier-row">
+      <div class="tier-label b">B</div>
+      <div class="tier-content" id="tier-B"></div>
+    </div>
+
+    <div class="tier-row">
+      <div class="tier-label c">C<span class="tier-sub">要強化</span></div>
+      <div class="tier-content" id="tier-C"></div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <p>EXVSDB - エクバデータベース &nbsp;|&nbsp; ガンダム EXVS.2 インフィニットブースト 非公式データベース</p>
+  <p>※ 本サイトはバンダイナムコエンターテインメント株式会社とは一切関係ありません。</p>
+  <p>© 機動戦士ガンダム EXVS.2 インフィニットブースト ™ &amp; © BANDAI NAMCO Entertainment Inc.</p>
+</footer>
+
+<!-- ═══════════ SCRIPT ═══════════ -->
+<script>
+// ─── Machine data ────────────────────────────────────────────────────────────
+// Each entry: { name, short, cost, tier }
+// tier: 'S' | 'A+' | 'A' | 'B+' | 'B' | 'C'
+const MACHINES = [
+
+  // ══════════ 3000 COST ══════════
+
+  // S
+  { name: 'νガンダム',                        short: 'νG',   cost: 3000, tier: 'S'  },
+  { name: 'ストライクフリーダムガンダム',          short: 'SF',   cost: 3000, tier: 'S'  },
+  { name: 'ユニコーンガンダム',                  short: 'UC',   cost: 3000, tier: 'S'  },
+  { name: 'ダブルオーライザー',                  short: '00R',  cost: 3000, tier: 'S'  },
+  { name: 'マイティストライクフリーダムガンダム',   short: 'MSF',  cost: 3000, tier: 'S'  },
+
+  // A+
+  { name: 'Hi-νガンダム',                     short: 'HiN',  cost: 3000, tier: 'A+' },
+  { name: 'サザビー',                           short: 'Szb',  cost: 3000, tier: 'A+' },
+  { name: 'シナンジュ',                          short: 'Snj',  cost: 3000, tier: 'A+' },
+  { name: '∀ガンダム',                          short: '∀G',   cost: 3000, tier: 'A+' },
+  { name: 'ウイングガンダムゼロ EW版',            short: 'WZ',   cost: 3000, tier: 'A+' },
+  { name: 'ダブルオークアンタ',                  short: '00Q',  cost: 3000, tier: 'A+' },
+  { name: 'ガンダムバルバトスルプスレクス',         short: 'BLR',  cost: 3000, tier: 'A+' },
+  { name: 'ZZガンダム',                         short: 'ZZ',   cost: 3000, tier: 'A+' },
+
+  // A
+  { name: 'フルアーマーZZガンダム',              short: 'FAZZ', cost: 3000, tier: 'A'  },
+  { name: 'ガンダムエピオン',                    short: 'Ep',   cost: 3000, tier: 'A'  },
+  { name: 'ガンダムデスサイズヘル EW版',          short: 'DS',   cost: 3000, tier: 'A'  },
+  { name: 'ガンダムヘビーアームズ改 EW版',         short: 'HA',   cost: 3000, tier: 'A'  },
+  { name: 'アルトロンガンダム EW版',              short: 'Alt',  cost: 3000, tier: 'A'  },
+  { name: 'ガンダムサンドロック改 EW版',           short: 'SR',   cost: 3000, tier: 'A'  },
+  { name: 'セラヴィーガンダム',                  short: 'Ser',  cost: 3000, tier: 'A'  },
+
+  // B+
+  { name: 'ターンX',                            short: 'TX',   cost: 3000, tier: 'B+' },
+  { name: 'キュベレイ',                          short: 'Qub',  cost: 3000, tier: 'B+' },
+  { name: 'クロスボーンガンダムX1フルクロス',       short: 'FCr',  cost: 3000, tier: 'B+' },
+
+  // B
+  { name: 'V2ガンダム',                         short: 'V2',   cost: 3000, tier: 'B'  },
+  { name: 'パーフェクトガンダム',                  short: 'PG',   cost: 3000, tier: 'B'  },
+  { name: 'ΞガンダムXi',                        short: 'Ξ',    cost: 3000, tier: 'B'  },
+
+  // C
+  { name: 'ガンダム試作3号機 デンドロビウム',        short: 'GP03', cost: 3000, tier: 'C'  },
+
+  // ══════════ 2500 COST ══════════
+
+  // S
+  { name: 'デスティニーガンダム',                 short: 'Dst',  cost: 2500, tier: 'S'  },
+  { name: 'フリーダムガンダム',                  short: 'Frd',  cost: 2500, tier: 'S'  },
+
+  // A+
+  { name: 'リボーンズガンダム',                  short: 'Rb',   cost: 2500, tier: 'A+' },
+  { name: 'プロビデンスガンダム',                 short: 'Prv',  cost: 2500, tier: 'A+' },
+  { name: 'Zガンダム',                          short: 'ZG',   cost: 2500, tier: 'A+' },
+  { name: 'アカツキガンダム',                     short: 'Akt',  cost: 2500, tier: 'A+' },
+  { name: 'クロスボーンガンダムX1改',              short: 'X1改', cost: 2500, tier: 'A+' },
+
+  // A
+  { name: 'ジャスティスガンダム',                  short: 'Jst',  cost: 2500, tier: 'A'  },
+  { name: 'アーチェガンダム',                     short: 'Arc',  cost: 2500, tier: 'A'  },
+  { name: 'ガンダムキマリスヴィダール',              short: 'KV',   cost: 2500, tier: 'A'  },
+  { name: 'ガンダムバルバトスルプス',               short: 'BL',   cost: 2500, tier: 'A'  },
+  { name: 'ペーネロペー',                         short: 'Pen',  cost: 2500, tier: 'A'  },
+
+  // B+
+  { name: 'ガンダムF91',                        short: 'F91',  cost: 2500, tier: 'B+' },
+  { name: 'クロスボーンガンダムX2改',              short: 'X2改', cost: 2500, tier: 'B+' },
+
+  // B
+  { name: 'ガンダムフラウロス',                  short: 'Flr',  cost: 2500, tier: 'B'  },
+  { name: '高機動型ゲルググ（シャア機）',           short: 'ShrG', cost: 2500, tier: 'B'  },
+
+  // C
+  { name: 'ガンダム試作2号機 サイサリス',           short: 'GP02', cost: 2500, tier: 'C'  },
+
+  // ══════════ 2000 COST ══════════
+
+  // S
+  { name: 'ガンダムエクシア',                    short: 'Ex',   cost: 2000, tier: 'S'  },
+  { name: 'ストライクガンダム',                  short: 'Str',  cost: 2000, tier: 'S'  },
+
+  // A+
+  { name: 'ウイングガンダム',                    short: 'W',    cost: 2000, tier: 'A+' },
+  { name: 'ガンダムナドレ',                      short: 'Nd',   cost: 2000, tier: 'A+' },
+  { name: 'ガンダムヴァーチェ',                  short: 'Vr',   cost: 2000, tier: 'A+' },
+  { name: 'アリオスガンダム',                    short: 'Ars',  cost: 2000, tier: 'A+' },
+  { name: 'ケルディムガンダム',                  short: 'Chr',  cost: 2000, tier: 'A+' },
+
+  // A
+  { name: 'ブリッツガンダム',                    short: 'Blt',  cost: 2000, tier: 'A'  },
+  { name: 'デュエルガンダム',                    short: 'Dl',   cost: 2000, tier: 'A'  },
+  { name: 'バスターガンダム',                    short: 'Bus',  cost: 2000, tier: 'A'  },
+  { name: 'ガンダムダブルエックス',               short: 'DX',   cost: 2000, tier: 'A'  },
+  { name: 'ガンダムキマリス',                    short: 'Kim',  cost: 2000, tier: 'A'  },
+  { name: 'ガンダムグシオンリベイクフルシティ',     short: 'GRFC', cost: 2000, tier: 'A'  },
+
+  // B+
+  { name: 'ガンダムエックス',                    short: 'GX',   cost: 2000, tier: 'B+' },
+  { name: 'ガンダムMk-Ⅱ',                      short: 'Mk2',  cost: 2000, tier: 'B+' },
+  { name: 'ガンダムAGE-1',                      short: 'AGE1', cost: 2000, tier: 'B+' },
+
+  // B
+  { name: 'Gアーチャー',                        short: 'GA',   cost: 2000, tier: 'B'  },
+  { name: 'ガンダム試作1号機フルバーニアン',        short: 'GP01', cost: 2000, tier: 'B'  },
+
+  // C
+  { name: 'ガンダム（RX-78-2）',                 short: 'RX78', cost: 2000, tier: 'C'  },
+
+  // ══════════ 1500 COST ══════════
+
+  // S
+  { name: 'ゲルググM（シーマ機）',               short: 'GgM',  cost: 1500, tier: 'S'  },
+
+  // A+
+  { name: 'グフ',                              short: 'Gf',   cost: 1500, tier: 'A+' },
+  { name: 'リック・ドム',                        short: 'RD',   cost: 1500, tier: 'A+' },
+  { name: 'ハイゴッグ',                          short: 'HyG',  cost: 1500, tier: 'A+' },
+
+  // A
+  { name: 'ゲルググ',                           short: 'Gg',   cost: 1500, tier: 'A'  },
+  { name: 'ズゴック',                            short: 'Zg',   cost: 1500, tier: 'A'  },
+  { name: 'ジム・スナイパーII',                   short: 'GSn',  cost: 1500, tier: 'A'  },
+  { name: 'ガンキャノン',                         short: 'GC',   cost: 1500, tier: 'A'  },
+
+  // B+
+  { name: 'ザクII改',                           short: 'ZkK',  cost: 1500, tier: 'B+' },
+  { name: 'アッガイ',                            short: 'Agg',  cost: 1500, tier: 'B+' },
+
+  // B
+  { name: 'ジム',                              short: 'Gm',   cost: 1500, tier: 'B'  },
+  { name: 'ザクII（シャア専用）',                 short: 'SZk',  cost: 1500, tier: 'B'  },
+
+  // C
+  { name: 'ガンタンク',                          short: 'GT',   cost: 1500, tier: 'C'  },
+];
+
+// ─── Tier → DOM id map ───────────────────────────────────────────────────────
+const TIER_IDS = {
+  'S':  'tier-S',
+  'A+': 'tier-Aplus',
+  'A':  'tier-A',
+  'B+': 'tier-Bplus',
+  'B':  'tier-B',
+  'C':  'tier-C',
+};
+
+// ─── Build cards ─────────────────────────────────────────────────────────────
+function buildCard(m) {
+  const card = document.createElement('div');
+  card.className = 'machine-card';
+  card.dataset.cost = m.cost;
+
+  const thumb = document.createElement('div');
+  thumb.className = `machine-thumb thumb-${m.cost}`;
+
+  const icon = document.createElement('span');
+  icon.className = 'thumb-icon';
+  icon.textContent = m.short;
+
+  const badge = document.createElement('span');
+  badge.className = `cost-badge badge-${m.cost}`;
+  badge.textContent = m.cost;
+
+  thumb.appendChild(icon);
+  thumb.appendChild(badge);
+
+  const nameEl = document.createElement('div');
+  nameEl.className = 'machine-name';
+  nameEl.title = m.name;
+  nameEl.textContent = m.name;
+
+  card.appendChild(thumb);
+  card.appendChild(nameEl);
+  return card;
+}
+
+// ─── Populate table ───────────────────────────────────────────────────────────
+MACHINES.forEach(m => {
+  const containerId = TIER_IDS[m.tier];
+  if (!containerId) return;
+  const container = document.getElementById(containerId);
+  if (container) container.appendChild(buildCard(m));
+});
+
+// ─── Empty-row indicator ─────────────────────────────────────────────────────
+function refreshEmptyRows() {
+  Object.values(TIER_IDS).forEach(id => {
+    const el = document.getElementById(id);
+    const visible = el.querySelectorAll('.machine-card:not(.hidden)').length;
+    el.classList.toggle('is-empty', visible === 0);
+  });
+}
+
+// ─── Count display ────────────────────────────────────────────────────────────
+function refreshCount() {
+  const n = document.querySelectorAll('.machine-card:not(.hidden)').length;
+  document.getElementById('countDisplay').textContent = n;
+}
+
+// ─── Cost filter ──────────────────────────────────────────────────────────────
+document.querySelectorAll('.cost-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.cost-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const sel = tab.dataset.cost;
+    document.querySelectorAll('.machine-card').forEach(card => {
+      const show = sel === 'all' || card.dataset.cost === sel;
+      card.classList.toggle('hidden', !show);
+    });
+    refreshEmptyRows();
+    refreshCount();
+  });
+});
+
+// Init
+refreshEmptyRows();
+refreshCount();
+</script>
+
+</body>
+</html>
