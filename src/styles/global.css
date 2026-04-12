@@ -1,34 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
+
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg-primary:   #0d1117;
-  --bg-secondary: #161b22;
-  --bg-card:      #1c2230;
-  --text-primary: #e6edf3;
-  --text-muted:   #8b949e;
-  --accent:       #e84040;
-  --border:       #30363d;
+  --bg-primary:   #080c12;
+  --bg-secondary: #0f1520;
+  --bg-card:      #141c2a;
+  --text-primary: #dce8f5;
+  --text-muted:   #7a8fa8;
+  --accent:       #e8332a;
+  --accent-glow:  rgba(232, 51, 42, 0.35);
+  --border:       #1e2d40;
+  --border-bright:#2a3f58;
 
   --cost-3000: #e53935;
   --cost-2500: #f57c00;
   --cost-2000: #1976d2;
   --cost-1500: #388e3c;
 
-  --s-color:     #ff3b3b;
-  --aplus-color: #ff8c00;
-  --a-color:     #d4a017;
-  --bplus-color: #3cb371;
-  --b-color:     #4a90d9;
-  --c-color:     #6c757d;
+  /* tier glow colors */
+  --glow-s:      rgba(255, 45, 45, 0.55);
+  --glow-aplus:  rgba(255, 140, 0, 0.45);
+  --glow-a:      rgba(220, 185, 0, 0.4);
+  --glow-aminus: rgba(190, 155, 0, 0.35);
+  --glow-bplus:  rgba(50, 190, 100, 0.4);
+  --glow-b:      rgba(60, 140, 230, 0.4);
+  --glow-bminus: rgba(50, 110, 200, 0.35);
+  --glow-c:      rgba(100, 120, 140, 0.3);
+
+  --font-ui: 'Rajdhani', 'Hiragino Kaku Gothic ProN', sans-serif;
 }
 
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', 'メイリオ', sans-serif;
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.028) 1px, transparent 1px);
+  background-size: 28px 28px;
   color: var(--text-primary);
   min-height: 100vh;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 a { text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a5572; }

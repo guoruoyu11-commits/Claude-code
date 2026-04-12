@@ -1,16 +1,16 @@
 <template>
   <div>
-    <!-- Machine count -->
-    <div class="machine-count">
-      表示中機体数：<b>{{ machines.length }}</b> 機
-    </div>
-
-    <!-- Legend -->
-    <div class="legend">
-      <span class="legend-label">コスト色凡例：</span>
-      <span v-for="c in COSTS" :key="c" class="legend-item">
-        <i class="legend-dot" :style="{ background: `var(--cost-${c})` }"></i>{{ c }}
+    <!-- Machine count + Legend bar -->
+    <div class="info-bar">
+      <span class="machine-count">
+        <b>{{ machines.length }}</b> 機体
       </span>
+      <div class="legend">
+        <span v-for="c in COSTS" :key="c" class="legend-item">
+          <i class="legend-dot" :style="{ background: `var(--cost-${c})` }"></i>
+          <span class="legend-label">{{ c }}</span>
+        </span>
+      </div>
     </div>
 
     <!-- Tier rows -->
@@ -48,32 +48,62 @@ const byTier = computed(() => {
 </script>
 
 <style scoped>
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 0 2px;
+}
+
 .machine-count {
   font-size: 12px;
   color: var(--text-muted);
-  margin-bottom: 14px;
+  letter-spacing: .3px;
 }
-.machine-count b { color: var(--text-primary); font-weight: 700; }
+.machine-count b {
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-right: 2px;
+}
 
 .legend {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
-  padding: 10px 14px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  margin-bottom: 16px;
-  font-size: 12px;
+  gap: 14px;
 }
-.legend-label { color: var(--text-muted); font-weight: 600; }
-.legend-item  { display: flex; align-items: center; gap: 5px; }
-.legend-dot   { width: 12px; height: 12px; border-radius: 3px; display: inline-block; flex-shrink: 0; }
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.legend-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: .5px;
+}
 
 .tier-table {
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03);
 }
 </style>

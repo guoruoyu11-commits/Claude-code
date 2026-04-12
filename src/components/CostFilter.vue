@@ -55,7 +55,7 @@ function imgUrl(cost, active) {
 
 .cost-img {
   display: block;
-  width: 140px;
+  width: 240px;
   height: auto;
 }
 </style>

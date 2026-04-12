@@ -9,11 +9,15 @@
       機体ランク・Tier表
     </nav>
 
-    <!-- Title -->
-    <h1>【2026年4月最新】イニブ機体ランク・Tier表</h1>
-    <p class="update-meta">
-      最終更新：<b>2026年4月12日</b>　|　対象バージョン：インフィニットブースト Ver.2.40
-    </p>
+    <!-- Title block -->
+    <div class="title-block">
+      <h1>【2026年4月最新】イニブ機体ランク・Tier表</h1>
+      <p class="update-meta">
+        最終更新：<b>2026年4月12日</b>
+        <span class="meta-sep">|</span>
+        対象バージョン：インフィニットブースト Ver.2.40
+      </p>
+    </div>
 
     <!-- Description -->
     <div class="desc-box">
@@ -54,55 +58,67 @@ const filteredMachines = computed(() =>
 main {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 28px 20px 60px;
+  padding: 24px 24px 80px;
 }
 
 .breadcrumb {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+  letter-spacing: .5px;
 }
-.breadcrumb a { color: var(--accent); }
-.breadcrumb a:hover { text-decoration: underline; }
-.breadcrumb span { margin: 0 5px; }
+.breadcrumb a { color: var(--accent); opacity: .8; transition: opacity .15s; }
+.breadcrumb a:hover { opacity: 1; }
+.breadcrumb span { margin: 0 6px; opacity: .4; }
+
+.title-block {
+  margin-bottom: 16px;
+}
 
 h1 {
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 6px;
+  color: var(--text-primary);
 }
 
 .update-meta {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0;
 }
-.update-meta b { color: var(--text-primary); }
+.update-meta b { color: #a8c4d8; font-weight: 600; }
+.meta-sep { margin: 0 10px; opacity: .35; }
 
 .desc-box {
   background: var(--bg-secondary);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 6px 6px 0;
-  padding: 12px 16px;
-  font-size: 13px;
+  border-left: 2px solid var(--accent);
+  border-radius: 0 5px 5px 0;
+  padding: 11px 16px;
+  font-size: 12.5px;
   color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 28px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  box-shadow: inset 4px 0 14px rgba(232,51,42,0.06);
 }
 .desc-box b { color: var(--text-primary); }
 
 footer {
-  margin-top: 50px;
-  padding: 24px 20px;
+  margin-top: 60px;
+  padding: 28px 24px;
   border-top: 1px solid var(--border);
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
-  line-height: 1.8;
+  line-height: 1.9;
+  opacity: .7;
 }
 
 @media (max-width: 600px) {
-  h1 { font-size: 17px; }
+  h1 { font-size: 16px; }
+  main { padding: 16px 14px 60px; }
 }
 </style>
