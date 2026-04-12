@@ -43,12 +43,10 @@ import AppHeader from './components/AppHeader.vue'
 import CostFilter from './components/CostFilter.vue'
 import TierTable  from './components/TierTable.vue'
 
-const selectedCost = ref('all')
+const selectedCost = ref('3000')
 
 const filteredMachines = computed(() =>
-  selectedCost.value === 'all'
-    ? MACHINES
-    : MACHINES.filter(m => String(m.cost) === selectedCost.value)
+  MACHINES.filter(m => String(m.cost) === selectedCost.value)
 )
 </script>
 

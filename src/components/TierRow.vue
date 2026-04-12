@@ -53,12 +53,14 @@ defineProps({
 }
 
 /* Tier label colours */
-.tier-label.s     { background: linear-gradient(160deg, #ff1a1a 0%, #c00 100%); }
-.tier-label.aplus { background: linear-gradient(160deg, #ff9900 0%, #c76400 100%); }
-.tier-label.a     { background: linear-gradient(160deg, #e6b800 0%, #9c7a00 100%); }
-.tier-label.bplus { background: linear-gradient(160deg, #2ebf6e 0%, #1a8a4a 100%); }
-.tier-label.b     { background: linear-gradient(160deg, #3a8ee6 0%, #1a5fa8 100%); }
-.tier-label.c     { background: linear-gradient(160deg, #6c757d 0%, #464d52 100%); }
+.tier-label.s      { background: linear-gradient(160deg, #ff1a1a 0%, #c00 100%); }
+.tier-label.aplus  { background: linear-gradient(160deg, #ff9900 0%, #c76400 100%); }
+.tier-label.a      { background: linear-gradient(160deg, #e6b800 0%, #9c7a00 100%); }
+.tier-label.aminus { background: linear-gradient(160deg, #c8a000 0%, #8a6e00 100%); }
+.tier-label.bplus  { background: linear-gradient(160deg, #2ebf6e 0%, #1a8a4a 100%); }
+.tier-label.b      { background: linear-gradient(160deg, #3a8ee6 0%, #1a5fa8 100%); }
+.tier-label.bminus { background: linear-gradient(160deg, #2a6ebf 0%, #1a4a80 100%); }
+.tier-label.c      { background: linear-gradient(160deg, #6c757d 0%, #464d52 100%); }
 
 .tier-content {
   flex: 1;

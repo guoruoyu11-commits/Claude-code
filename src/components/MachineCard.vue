@@ -29,15 +29,15 @@ const imgFailed = ref(false)
 
 <style scoped>
 .machine-card {
-  width: 90px;
+  width: 127px;
   transition: transform .15s;
   position: relative;
 }
 .machine-card:hover { transform: translateY(-3px); }
 
 .machine-thumb {
-  width: 90px;
-  height: 66px;
+  width: 127px;
+  height: 55px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -115,8 +115,8 @@ const imgFailed = ref(false)
 }
 
 @media (max-width: 600px) {
-  .machine-card { width: 72px; }
-  .machine-thumb { width: 72px; height: 52px; }
+  .machine-card { width: 90px; }
+  .machine-thumb { width: 90px; height: 39px; }
   .thumb-icon { font-size: 13px; }
   .machine-name { font-size: 9px; }
 }
