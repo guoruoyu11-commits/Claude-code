@@ -2,8 +2,8 @@
   <a
     class="machine-card"
     :class="`tier-${tierCls}`"
-    :href="machine.link || undefined"
-    :target="machine.link ? '_blank' : undefined"
+    :href="`/machine/${machine.id}`"
+    target="_blank"
     rel="noopener noreferrer"
   >
     <div class="machine-thumb" :class="`thumb-${machine.cost}`">
