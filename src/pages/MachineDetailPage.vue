@@ -22,7 +22,10 @@
       <!-- 攻略内容 -->
       <div class="content-section">
         <div v-if="loading" class="status-box">加载中…</div>
-        <div v-else-if="pageData" ref="wikiContent" class="wiki-content" v-html="pageData.content_html"></div>
+        <WikiContent v-else-if="pageData"
+          :nodes="pageData.content_nodes ?? null"
+          :html="pageData.content_nodes ? null : pageData.content_html"
+        />
         <div v-else class="status-box no-data">
           <p>暂无攻略内容</p>
           <a v-if="machine.link" :href="machine.link" target="_blank" rel="noopener noreferrer" class="ext-btn">
@@ -40,6 +43,7 @@
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { MACHINES } from '../data/machines.js'
+import WikiContent from '../components/WikiContent.vue'
 
 const route = useRoute()
 const id = computed(() => route.params.id)
@@ -48,7 +52,6 @@ const machine = computed(() => MACHINES.find(m => m.id === id.value) ?? null)
 
 const loading = ref(false)
 const pageData = ref(null)
-const wikiContent = ref(null)
 const lang = ref('zh')   // 当前语言
 const hasZh = ref(false) // 是否存在中文版
 
@@ -77,30 +80,6 @@ async function setLang(newLang) {
   lang.value = newLang
   await loadPageData(id.value)
 }
-
-// pageData 变化且 DOM 更新后（flush: 'post'）绑定折叠交互
-watch(pageData, (val) => {
-  if (!val) return
-  const root = wikiContent.value
-  if (!root) return
-
-  root.querySelectorAll('.plugin-openclose').forEach(block => {
-    const link = block.querySelector('.plugin-openclose-link a')
-    const content = block.querySelector('.plugin-openclose-contents')
-    if (!link || !content) return
-
-    content.style.display = 'none'
-    link.textContent = '▶' + link.textContent.replace(/^[▼▶]/, '')
-    link.style.cursor = 'pointer'
-
-    link.addEventListener('click', (e) => {
-      e.preventDefault()
-      const open = content.style.display !== 'none'
-      content.style.display = open ? 'none' : 'block'
-      link.textContent = (open ? '▶' : '▼') + link.textContent.slice(1)
-    })
-  })
-}, { flush: 'post' })
 
 onMounted(() => loadPageData(id.value))
 watch(id, (newId) => loadPageData(newId))
@@ -161,45 +140,6 @@ watch(id, (newId) => loadPageData(newId))
   margin-bottom: 32px;
 }
 
-/* atwiki 折叠目次块 */
-:deep(.plugin-openclose) {
-  margin: 12px 0;
-}
-:deep(.plugin-openclose-link) {
-  display: inline-block;
-  padding: 4px 12px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  font-size: 13px;
-  color: var(--accent);
-  user-select: none;
-  transition: background .15s;
-}
-:deep(.plugin-openclose-link:hover) {
-  background: rgba(255,255,255,0.06);
-}
-:deep(.plugin-openclose-contents) {
-  margin-top: 6px;
-  border: 1px solid var(--border) !important;
-  border-radius: 4px;
-  padding: 12px 16px !important;
-  background: var(--bg-secondary);
-}
-
-:deep(td[style*="background-color"]),
-:deep(th[style*="background-color"]),
-:deep(span[style*="background-color"]) {
-  color: #111 !important;
-}
-
-/* 隐藏 atwiki 广告占位容器（有 min-height 但无内容，会留空白） */
-:deep(.atwiki-ads-margin),
-:deep([class*="atwiki_autoads"]),
-:deep([id^="gpt-"]) {
-  display: none !important;
-}
-
 .status-box {
   padding: 40px 24px;
   text-align: center;
@@ -235,49 +175,6 @@ watch(id, (newId) => loadPageData(newId))
 }
 .ext-btn:hover { opacity: .85; }
 
-/* wiki 内容样式 */
-.wiki-content {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 28px 32px;
-  line-height: 1.8;
-  font-size: 14px;
-  color: var(--text-primary);
-}
-:deep(.wiki-content h1),
-:deep(.wiki-content h2),
-:deep(.wiki-content h3) {
-  color: var(--text-primary);
-  margin: 1.2em 0 0.5em;
-  font-weight: 700;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
-}
-:deep(.wiki-content table) {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 12px 0;
-  font-size: 13px;
-}
-:deep(.wiki-content th),
-:deep(.wiki-content td) {
-  border: 1px solid var(--border);
-  padding: 6px 10px;
-  text-align: left;
-}
-:deep(.wiki-content th) {
-  background: rgba(255,255,255,0.05);
-  color: var(--text-primary);
-  font-weight: 600;
-}
-:deep(.wiki-content a) {
-  color: var(--accent);
-  text-decoration: none;
-}
-:deep(.wiki-content a:hover) { text-decoration: underline; }
-:deep(.wiki-content img) { max-width: 100%; border-radius: 4px; }
-
 /* 返回按钮 */
 .back-btn {
   display: inline-block;
@@ -305,6 +202,5 @@ watch(id, (newId) => loadPageData(newId))
     height: 72px;
   }
   .machine-name { font-size: 20px; }
-  .wiki-content { padding: 16px; }
 }
 </style>
