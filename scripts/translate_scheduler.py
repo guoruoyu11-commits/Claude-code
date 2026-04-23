@@ -4,7 +4,7 @@
 #   py translate_scheduler.py                        # 全部（跳过已有 _zh.json）
 #   py translate_scheduler.py --id m12504            # 只翻译指定机体
 #   py translate_scheduler.py --force               # 覆盖所有已有译文
-#   py translate_scheduler.py --delay 2.0           # 放慢段间间隔
+#   py translate_scheduler.py --delay 2.0           # 放慢批间间隔
 
 import sys
 import json
@@ -16,7 +16,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 from scrape_one import load_machines, OUTPUT_DIR
-from translate_one import translate_one, DEFAULT_PROMPT_FILE
+from translate_nodes import translate_one_nodes, DEFAULT_PROMPT_FILE
 
 FAILED_LOG = Path(__file__).parent / "public" / "data" / "translate_failed.json"
 
@@ -64,7 +64,7 @@ def run_batch(
         machine = all_machines[machine_id]
         print(f"[{i:3}/{total}] >> {machine_id} {machine['name']}")
 
-        result = translate_one(
+        result = translate_one_nodes(
             machine_id,
             prompt_file=prompt_file,
             model_name=model_name,
@@ -101,9 +101,9 @@ def run_batch(
 def main():
     parser = argparse.ArgumentParser(description="批量翻译机体攻略页面")
     parser.add_argument("--id",     type=str,   action="append", default=None, help="只翻译指定机体 ID（可多次使用）")
-    parser.add_argument("--prompt", type=str,   default=str(DEFAULT_PROMPT_FILE), help="提示词文件路径")
-    parser.add_argument("--model",  type=str,   default="gemini-2.0-flash",       help="Gemini 模型名")
-    parser.add_argument("--delay",  type=float, default=1.0,  help="段间等待秒数（默认 1.0）")
+    parser.add_argument("--prompt", type=str,   default=str(DEFAULT_PROMPT_FILE), help="提示词文件路径（默认 prompt_nodes.txt）")
+    parser.add_argument("--model",  type=str,   default="gemini-2.0-flash",       help="Gemini 模型名（默认 gemini-2.0-flash）")
+    parser.add_argument("--delay",  type=float, default=1.0,  help="批间等待秒数（默认 1.0）")
     parser.add_argument("--force",  action="store_true",      help="覆盖已有译文")
     args = parser.parse_args()
 

@@ -2,9 +2,9 @@
   <AppHeader />
   <RouterView />
   <footer>
-    <p>EXVSDB - エクバデータベース &nbsp;|&nbsp; ガンダム EXVS.2 インフィニットブースト 非公式データベース</p>
-    <p>※ 本サイトはバンダイナムコエンターテインメント株式会社とは一切関係ありません。</p>
-    <p>© 機動戦士ガンダム EXVS.2 インフィニットブースト ™ &amp; © BANDAI NAMCO Entertainment Inc.</p>
+    <p>EXVSDB - 极限爆发数据库 &nbsp;|&nbsp; 高达 EXVS.2 极限爆发 非官方数据库</p>
+    <p>※ 本站与万代南梦宫娱乐株式会社没有任何关联。</p>
+    <p>© 机动战士高达 EXVS.2 极限爆发 ™ &amp; © BANDAI NAMCO Entertainment Inc.</p>
   </footer>
 </template>
 

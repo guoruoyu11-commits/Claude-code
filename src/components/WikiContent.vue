@@ -4,44 +4,43 @@ import { h, ref, computed, watchEffect, defineComponent } from 'vue'
 export default defineComponent({
   name: 'WikiContent',
   props: {
-    nodes: { type: Array,  default: null },
-    html:  { type: String, default: null }
+    nodes:     { type: Array,  default: null },
+    html:      { type: String, default: null },
+    subPages:  { type: Array,  default: () => [] }, // [{file, url}, ...]
+    parentUrl: { type: String, default: '' },        // 主页面 wiki URL，用于子页面中的返回链接
+    machineId: { type: String, default: '' },        // 当前机体 ID，用于生成 SPA 内部链接
   },
-  setup(props) {
+  emits: ['select-sub'],
+  setup(props, { emit }) {
     const collapseStates = ref({})
 
-    // ── HTML 路径：DOMParser（兼容旧数据） ──────────────────────
+    // 兼容旧数据：html prop 通过 DOMParser 渲染
     const parsedBody = computed(() => {
       if (!props.html) return null
-      const doc = new DOMParser().parseFromString(props.html, 'text/html')
-      return doc.body
+      return new DOMParser().parseFromString(props.html, 'text/html').body
     })
+
+    function setDefaultCollapse(key, isOpen) {
+      if (!(key in collapseStates.value)) collapseStates.value[key] = isOpen
+    }
 
     watchEffect(() => {
       if (!parsedBody.value) return
       parsedBody.value.querySelectorAll('.plugin-openclose').forEach((el, i) => {
-        const key = `poc_${i}`
-        if (key in collapseStates.value) return
         const contentsEl = el.querySelector('.plugin-openclose-contents')
-        collapseStates.value[key] = !contentsEl || contentsEl.style.display !== 'none'
+        setDefaultCollapse(`poc_${i}`, !contentsEl || contentsEl.style.display !== 'none')
       })
     })
 
-    // ── Nodes 路径：初始化折叠状态 ─────────────────────────────
     watchEffect(() => {
       if (!props.nodes) return
       let i = 0
       function walk(nodes) {
         for (const n of nodes) {
           if (n.t === 'collapse') {
-            const key = `poc_${i++}`
-            if (!(key in collapseStates.value)) {
-              collapseStates.value[key] = n.open !== false
-            }
-            if (n.c) walk(n.c)
-          } else if (n.c) {
-            walk(n.c)
+            setDefaultCollapse(`poc_${i++}`, n.open !== false)
           }
+          if (n.c) walk(n.c)
         }
       }
       walk(props.nodes)
@@ -51,12 +50,33 @@ export default defineComponent({
       collapseStates.value[key] = !collapseStates.value[key]
     }
 
-    // ── 渲染 JSON 节点 ─────────────────────────────────────────
+    function renderCollapse(key, rawLabel, inner) {
+      const isOpen = collapseStates.value[key] !== false
+      const label = (isOpen ? '▼' : '▶') + (rawLabel ? ' ' + rawLabel : '')
+      return h('div', { class: 'plugin-openclose' }, [
+        h('div', { class: 'plugin-openclose-link' }, [
+          h('a', { onClick: () => toggle(key) }, label)
+        ]),
+        h('div', { class: 'plugin-openclose-contents', style: isOpen ? '' : 'display:none' }, inner)
+      ])
+    }
 
-    // 将含 \n 的文本展开为 [text, h('br'), text, ...] 数组
+    const EXTERNAL_URL_RE = /^(https?:)?\/\//
+    const VOID_TAGS = ['br', 'hr', 'img', 'source']
+
+    function applyExternalLink(attrs) {
+      attrs.target = '_blank'
+      attrs.rel = 'noopener noreferrer'
+    }
+
+    function addClass(attrs, cls) {
+      attrs.class = attrs.class ? `${attrs.class} ${cls}` : cls
+    }
+
+    // 将含 \n 的文本展开为 [text, <br>, text, ...]
     function expandText(v) {
+      if (!v.includes('\n')) return v
       const parts = v.split('\n')
-      if (parts.length === 1) return v
       const result = []
       parts.forEach((p, i) => {
         if (p) result.push(p)
@@ -65,50 +85,64 @@ export default defineComponent({
       return result
     }
 
+    function resolveAnchorAttrs(attrs) {
+      const href = attrs.href || ''
+      const pageNumMatch = href.match(/\/pages\/(\d+)\.html/)
+
+      if (pageNumMatch) {
+        const pageNum = pageNumMatch[1]
+        const subPage = props.subPages.find(sp => sp.url.includes(`/pages/${pageNum}.html`))
+        if (subPage) {
+          attrs.href = props.machineId ? `/machine/${props.machineId}?sub=${subPage.file}` : subPage.url
+          attrs.onClick = (e) => { e.preventDefault(); emit('select-sub', subPage.file) }
+          addClass(attrs, 'local-link')
+          return
+        }
+        if (props.parentUrl && props.parentUrl.includes(`/pages/${pageNum}.html`)) {
+          attrs.href = props.machineId ? `/machine/${props.machineId}` : props.parentUrl
+          attrs.onClick = (e) => { e.preventDefault(); emit('select-sub', null) }
+          addClass(attrs, 'local-link')
+          return
+        }
+      } else if (href === 'javascript:void(0)') {
+        delete attrs.href
+        return
+      }
+
+      if (EXTERNAL_URL_RE.test(href)) applyExternalLink(attrs)
+    }
+
     function renderJsonNode(n, poc) {
       if (n.t === '#') return n.v ? expandText(n.v) : null
 
       if (n.t === 'collapse') {
         const key = `poc_${poc.n++}`
-        const isOpen = collapseStates.value[key] !== false
         const rawLabel = (n.label || '').replace(/^[▼▶]\s*/, '')
-        const label = (isOpen ? '▼' : '▶') + (rawLabel ? ' ' + rawLabel : '')
-
-        const inner = (n.c || []).map(c => renderJsonNode(c, poc)).flat().filter(Boolean)
-        return h('div', { class: 'plugin-openclose' }, [
-          h('div', { class: 'plugin-openclose-link' }, [
-            h('a', { onClick: () => toggle(key) }, label)
-          ]),
-          h('div', { class: 'plugin-openclose-contents', style: isOpen ? '' : 'display:none' }, inner)
-        ])
+        const inner = (n.c || []).flatMap(c => renderJsonNode(c, poc)).filter(Boolean)
+        return renderCollapse(key, rawLabel, inner)
       }
 
       const tag = n.t
       const attrs = n.a ? { ...n.a } : {}
 
-      // 外链新标签页打开；去掉 js void 链接
-      if (tag === 'a') {
-        if (attrs.href === 'javascript:void(0)') {
-          delete attrs.href
-        } else if (attrs.href && /^(https?:)?\/\//.test(attrs.href)) {
-          attrs.target = '_blank'
-          attrs.rel = 'noopener noreferrer'
-        }
-      }
+      if (tag === 'a') resolveAnchorAttrs(attrs)
 
-      if (['br', 'hr', 'img', 'source'].includes(tag)) return h(tag, attrs)
+      if (VOID_TAGS.includes(tag)) return h(tag, attrs)
 
-      // v 字段：内联文本（可能含 \n）
       if (n.v !== undefined) {
         const textContent = expandText(n.v)
         return h(tag, attrs, Array.isArray(textContent) ? textContent : [textContent])
       }
 
-      const children = (n.c || []).map(c => renderJsonNode(c, poc)).flat().filter(c => c !== null && c !== undefined)
+      const children = (n.c || []).flatMap(c => renderJsonNode(c, poc)).filter(c => c != null)
       return h(tag, attrs, children.length ? children : undefined)
     }
 
-    // ── 渲染 DOM 节点（兼容 html prop） ───────────────────────
+    const DOM_PASSTHROUGH_ATTRS = [
+      'src', 'alt', 'width', 'height', 'srcset', 'type', 'media',
+      'rowspan', 'colspan', 'bgcolor', 'align', 'valign'
+    ]
+
     function renderDomNode(node, poc) {
       if (node.nodeType === 3) return node.textContent || null
       if (node.nodeType !== 1) return null
@@ -118,20 +152,13 @@ export default defineComponent({
 
       if (node.classList.contains('plugin-openclose')) {
         const key = `poc_${poc.n++}`
-        const isOpen = collapseStates.value[key] !== false
         const linkEl = node.querySelector('.plugin-openclose-link a')
-        const rawText = linkEl?.textContent?.trim().replace(/^[▼▶]\s*/, '') ?? ''
-        const label = (isOpen ? '▼' : '▶') + (rawText ? ' ' + rawText : '')
+        const rawLabel = linkEl?.textContent?.trim().replace(/^[▼▶]\s*/, '') ?? ''
         const contentsEl = node.querySelector('.plugin-openclose-contents')
         const inner = contentsEl
           ? Array.from(contentsEl.childNodes).map(c => renderDomNode(c, poc)).filter(Boolean)
           : []
-        return h('div', { class: 'plugin-openclose' }, [
-          h('div', { class: 'plugin-openclose-link' }, [
-            h('a', { onClick: () => toggle(key) }, label)
-          ]),
-          h('div', { class: 'plugin-openclose-contents', style: isOpen ? '' : 'display:none' }, inner)
-        ])
+        return renderCollapse(key, rawLabel, inner)
       }
 
       const attrs = {}
@@ -144,26 +171,20 @@ export default defineComponent({
         const href = node.getAttribute('href')
         if (href && href !== 'javascript:void(0)') {
           attrs.href = href
-          if (/^(https?:)?\/\//.test(href)) {
-            attrs.target = '_blank'
-            attrs.rel = 'noopener noreferrer'
-          }
+          if (EXTERNAL_URL_RE.test(href)) applyExternalLink(attrs)
         }
       }
 
-      for (const attr of [
-        'src', 'alt', 'width', 'height', 'srcset', 'type', 'media',
-        'rowspan', 'colspan', 'bgcolor', 'align', 'valign'
-      ]) {
+      for (const attr of DOM_PASSTHROUGH_ATTRS) {
         const v = node.getAttribute(attr)
         if (v !== null) attrs[attr] = v
       }
 
-      if (['br', 'hr', 'img', 'source'].includes(tag)) return h(tag, attrs)
+      if (VOID_TAGS.includes(tag)) return h(tag, attrs)
 
       const children = Array.from(node.childNodes)
         .map(c => renderDomNode(c, poc))
-        .filter(c => c !== null && c !== undefined)
+        .filter(c => c != null)
       return h(tag, attrs, children.length ? children : undefined)
     }
 
@@ -232,6 +253,7 @@ export default defineComponent({
   text-decoration: none;
 }
 .wiki-content a:hover { text-decoration: underline; }
+.wiki-content a.local-link { cursor: pointer; }
 
 .wiki-content img { max-width: 100%; border-radius: 4px; }
 

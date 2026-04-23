@@ -198,6 +198,12 @@ def extract_content(soup: BeautifulSoup) -> tuple[str, str]:
             heading.decompose()
             break
 
+    # 同时清理目次中残留的评论区条目
+    for toc in content_tag.find_all(class_="plugin_contents"):
+        for li in toc.find_all("li"):
+            if COMMENT_PATTERN.search(li.get_text()):
+                li.decompose()
+
     return title, str(content_tag)
 
 
@@ -221,6 +227,62 @@ def debug_print_structure(soup: BeautifulSoup, url: str):
     print("\n[h1~h4 标题]")
     for tag in soup.find_all(["h1", "h2", "h3", "h4"]):
         print(f"  <{tag.name}> {tag.get_text(strip=True)[:80]}")
+
+
+# ─── 子页面检测 ───────────────────────────────────────────────
+
+def extract_sub_pages(soup: BeautifulSoup, current_url: str) -> list[dict]:
+    """
+    检测顶部子页面导航（如 综合解说 / 地球三型 / 木星五型）。
+    返回不含当前页面的子页面列表：[{name, url, page_num}]
+    """
+    content_tag = soup.select_one("#wikibody") or soup.body
+    if not content_tag:
+        return []
+
+    cur_match = re.search(r"/pages/(\d+)\.html", current_url)
+    cur_num = cur_match.group(1) if cur_match else None
+
+    sub_pages = []
+    for span in content_tag.find_all("span", style=re.compile(r"font-size\s*:\s*medium", re.I)):
+        bold = span.find("span", style=re.compile(r"font-weight\s*:\s*bold", re.I))
+        links = span.find_all("a", href=re.compile(r"/pages/\d+\.html"))
+        if not bold or not links:
+            continue
+        for link in links:
+            href = link.get("href", "")
+            m = re.search(r"/pages/(\d+)\.html", href)
+            if not m or m.group(1) == cur_num:
+                continue
+            full_url = "https:" + href if href.startswith("//") else href
+            sub_pages.append({"name": link.get_text(strip=True), "url": full_url, "page_num": m.group(1)})
+        break  # 只处理第一个匹配的导航 span
+    return sub_pages
+
+
+def scrape_sub_page(machine_id: str, page_num: str, name: str, url: str, force: bool = False) -> dict | None:
+    """抓取并保存一个子页面，返回保存结果或 None。"""
+    sub_id = f"{machine_id}_p{page_num}"
+    out_path = OUTPUT_DIR / f"{sub_id}.json"
+    if not force and out_path.exists():
+        return {"status": "skipped", "file": sub_id}
+
+    html = fetch_html(url)
+    if html is None:
+        return None
+    soup = BeautifulSoup(html, "html.parser")
+    _, content_html = extract_content(soup)
+    data = {
+        "status": "ok",
+        "id": sub_id,
+        "name": name,
+        "parent_id": machine_id,
+        "url": url,
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "content_html": content_html,
+    }
+    out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    return data
 
 
 # ─── 核心函数 ─────────────────────────────────────────────────
@@ -261,6 +323,21 @@ def scrape_one(machine_id: str, force: bool = False, debug: bool = False) -> dic
 
     title, content_html = extract_content(soup)
 
+    # 检测子页面导航并抓取
+    sub_pages_info = extract_sub_pages(soup, machine["link"])
+    sub_pages_saved = []
+    for sp in sub_pages_info:
+        print(f"  >> 子页面: {sp['name']} ({sp['url']})")
+        result = scrape_sub_page(machine_id, sp["page_num"], sp["name"], sp["url"], force=force)
+        if result is None:
+            print(f"  [WARN] 子页面抓取失败: {sp['url']}")
+        elif result.get("status") == "skipped":
+            print(f"  -- 子页面已存在，跳过: {result['file']}")
+            sub_pages_saved.append({"name": sp["name"], "file": result["file"], "url": sp["url"]})
+        else:
+            print(f"  [OK] 子页面已保存: {result['id']}.json")
+            sub_pages_saved.append({"name": sp["name"], "file": result["id"], "url": sp["url"]})
+
     data = {
         "status": "ok",
         "id": machine_id,
@@ -270,6 +347,8 @@ def scrape_one(machine_id: str, force: bool = False, debug: bool = False) -> dic
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "content_html": content_html,
     }
+    if sub_pages_saved:
+        data["sub_pages"] = sub_pages_saved
 
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     return data
