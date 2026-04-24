@@ -232,9 +232,12 @@ export default defineComponent({
 
 .wiki-content table {
   border-collapse: collapse;
-  width: 100%;
   margin: 12px 0;
   font-size: 13px;
+  display: block;
+  overflow-x: auto;
+  width: max-content;
+  max-width: 100%;
 }
 .wiki-content th,
 .wiki-content td {
@@ -281,6 +284,21 @@ export default defineComponent({
   padding: 12px 16px !important;
   background: var(--bg-secondary);
 }
+.plugin-openclose-contents ul,
+.plugin-openclose-contents ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.plugin-openclose-contents li { padding: 2px 0; }
+
+.wiki-content :deep(ul),
+.wiki-content :deep(ol) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wiki-content :deep(li) { padding: 2px 0; }
 
 /* atwiki 背景色的 td 强制用深色文字 */
 .wiki-content :deep(td[style*="background-color"]),

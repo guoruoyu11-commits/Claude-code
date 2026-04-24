@@ -35,14 +35,19 @@
       <!-- 攻略内容 -->
       <div class="content-section">
         <div v-if="loading" class="status-box">加载中…</div>
-        <WikiContent v-else-if="pageData"
-          :nodes="pageData.content_nodes ?? null"
-          :html="pageData.content_nodes ? null : pageData.content_html"
-          :sub-pages="subPages"
-          :parent-url="machine.link"
-          :machine-id="id"
-          @select-sub="selectSub"
-        />
+        <div v-else-if="pageData" class="detail-layout">
+          <WikiContent
+            :nodes="mainNodes"
+            :html="mainNodes === null ? (pageData.content_html ?? null) : null"
+            :sub-pages="subPages"
+            :parent-url="machine.link"
+            :machine-id="id"
+            @select-sub="selectSub"
+          />
+          <aside v-if="infoboxNode" class="infobox-sidebar">
+            <WikiContent :nodes="[infoboxNode]" :machine-id="id" />
+          </aside>
+        </div>
         <div v-else class="status-box no-data">
           <p>暂无攻略内容</p>
           <a v-if="machine.link" :href="machine.link" target="_blank" rel="noopener noreferrer" class="ext-btn">
@@ -76,12 +81,30 @@ const lang = ref('zh')
 const hasZh = ref(false)
 const subPages = ref([])   // 子页面列表（从主页面数据读取）
 const currentSub = ref(null) // null = 主页面，否则为子页面 file ID
+const infoboxNode = ref(null) // 主页面 infobox，切换子页面时保留
+
+function extractInfobox(nodes) {
+  if (!nodes) return null
+  return nodes.find(n =>
+    n?.t === 'div' &&
+    typeof n?.a?.class === 'string' &&
+    n.a.class.includes('float-right')
+  ) ?? null
+}
+
+const mainNodes = computed(() => {
+  const nodes = pageData.value?.content_nodes
+  if (!nodes) return null
+  const ib = extractInfobox(nodes)
+  return ib ? nodes.filter(n => n !== ib) : nodes
+})
 
 async function loadPageData(machineId) {
   loading.value = true
   pageData.value = null
   currentSub.value = null
   subPages.value = []
+  infoboxNode.value = null
   try {
     const zhRes = await fetch(`/data/machines/${machineId}_zh.json`)
     hasZh.value = zhRes.ok
@@ -97,6 +120,7 @@ async function loadPageData(machineId) {
     if (data) {
       pageData.value = data
       subPages.value = data.sub_pages || []
+      infoboxNode.value = extractInfobox(data.content_nodes)
     }
   } catch {
     // silently show "no data" state
@@ -255,6 +279,21 @@ watch(id, (newId) => loadPageData(newId))
   font-size: 15px;
   line-height: 1.9;
   letter-spacing: 0.02em;
+}
+
+.detail-layout { position: relative; }
+
+.infobox-sidebar {
+  position: absolute;
+  left: calc(100% + 20px);
+  top: 0;
+  width: 260px;
+}
+.infobox-sidebar :deep(.wiki-content) { padding: 12px 16px; }
+
+/* 视口不够宽时隐藏悬浮信息框 */
+@media (max-width: 1280px) {
+  .infobox-sidebar { display: none; }
 }
 
 .status-box {
