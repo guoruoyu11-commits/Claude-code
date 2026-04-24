@@ -87,12 +87,14 @@ async function loadPageData(machineId) {
     hasZh.value = zhRes.ok
     if (!hasZh.value) lang.value = 'ja'
 
-    const url = lang.value === 'zh' && hasZh.value
-      ? `/data/machines/${machineId}_zh.json`
-      : `/data/machines/${machineId}.json`
-    const res = await fetch(url)
-    if (res.ok) {
-      const data = await res.json()
+    let data
+    if (lang.value === 'zh' && hasZh.value) {
+      data = await zhRes.json()
+    } else {
+      const res = await fetch(`/data/machines/${machineId}.json`)
+      if (res.ok) data = await res.json()
+    }
+    if (data) {
       pageData.value = data
       subPages.value = data.sub_pages || []
     }
@@ -330,14 +332,6 @@ watch(id, (newId) => loadPageData(newId))
 .back-to-top:hover { opacity: 1; background: var(--accent); color: #fff; border-color: var(--accent); }
 
 @media (max-width: 600px) {
-  .machine-header {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .machine-thumb {
-    width: 100%;
-    height: 72px;
-  }
-  .machine-name { font-size: 20px; }
+  .detail-page { padding: 16px 14px 60px; }
 }
 </style>

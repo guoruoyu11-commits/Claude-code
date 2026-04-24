@@ -1,10 +1,8 @@
 <template>
-  <a
+  <RouterLink
     class="machine-card"
     :class="`tier-${tierCls}`"
-    :href="`/machine/${machine.id}`"
-    target="_blank"
-    rel="noopener noreferrer"
+    :to="`/machine/${machine.id}`"
   >
     <div class="machine-thumb" :class="`thumb-${machine.cost}`">
       <img
@@ -18,11 +16,12 @@
       <span class="cost-badge" :class="`badge-${machine.cost}`">{{ machine.cost }}</span>
     </div>
     <div class="machine-name" :title="machine.name">{{ machine.name }}</div>
-  </a>
+  </RouterLink>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 
 defineProps({
   machine: { type: Object, required: true },

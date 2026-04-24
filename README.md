@@ -19,22 +19,46 @@ npm run preview  # 本地预览构建产物
 
 ```
 Claude-code/
-├── index.html                  # Vite HTML 入口
+├── index.html                      # Vite HTML 入口
 ├── package.json
 ├── vite.config.js
+├── Dockerfile                      # 多阶段构建：node → nginx
+├── nginx.conf                      # SPA fallback + 缓存头
+├── .dockerignore
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # CI/CD：GitHub Actions → GHCR → ECS
+├── public/
+│   └── data/
+│       └── machines/               # 机体数据 JSON
+│           ├── m12504.json         # 原始日文数据（content_nodes）
+│           └── m12504_zh.json      # 中文翻译数据 + translation_log
+├── scripts/                        # 数据生成脚本（Python，本地运行）
+│   ├── scrape_one.py               # 抓取单机体 wiki 页面
+│   ├── scrape_scheduler.py         # 批量抓取
+│   ├── html_to_nodes.py            # HTML → content_nodes 转换
+│   ├── translate_nodes.py          # 节点树翻译（主脚本）
+│   ├── translate_scheduler.py      # 批量翻译
+│   ├── ja_zh_dict.py               # 固定术语词典
+│   └── translate_one.py            # 旧版 HTML 翻译（已弃用）
 └── src/
-    ├── main.js                 # 创建并挂载 Vue 应用
-    ├── App.vue                 # 根组件
+    ├── main.js                     # 创建并挂载 Vue 应用
+    ├── App.vue                     # 根组件
+    ├── router.js                   # vue-router（history 模式）
     ├── styles/
-    │   └── global.css          # 全局 CSS 变量与基础样式
+    │   └── global.css              # 全局 CSS 变量与基础样式
     ├── data/
-    │   └── machines.js         # 机体数据源
+    │   └── machines.js             # 机体数据源（排名、费用、Tier）
+    ├── pages/
+    │   ├── HomePage.vue            # / — Tier 排名表 + 费用过滤
+    │   └── MachineDetailPage.vue   # /machine/:id — 机体详情 + wiki 内容
     └── components/
-        ├── AppHeader.vue       # 顶部导航栏
-        ├── CostFilter.vue      # 费用过滤 Tab
-        ├── TierTable.vue       # 排名表主体
-        ├── TierRow.vue         # 单行 Tier
-        └── MachineCard.vue     # 单个机体卡片
+        ├── AppHeader.vue           # 顶部导航栏
+        ├── CostFilter.vue          # 费用过滤 Tab
+        ├── TierTable.vue           # 排名表主体
+        ├── TierRow.vue             # 单行 Tier
+        ├── MachineCard.vue         # 单个机体卡片（点击跳转详情页）
+        └── WikiContent.vue         # 渲染 content_nodes 节点树
 ```
 
 ---
@@ -337,6 +361,58 @@ export const TIER_META = {
   'C':  { label: 'C',  sub: '要強化', cls: 'c'    },
 }
 ```
+
+---
+
+## 数据生成流程
+
+机体 JSON 数据通过本地 Python 脚本生成，commit 后随构建打入镜像：
+
+```
+py scripts/scrape_one.py <id>        # 抓取 wiki → public/data/machines/<id>.json
+py scripts/translate_nodes.py <id>   # 翻译 → public/data/machines/<id>_zh.json
+
+# 批量操作
+py scripts/scrape_scheduler.py       # 批量抓取（跳过已有）
+py scripts/translate_scheduler.py    # 批量翻译（跳过已有）
+```
+
+翻译脚本先匹配词典（~95 条固定术语，无 API 消耗），剩余内容分批发给 Gemini。支持断点续传（`{id}_zh_nodes_progress.json`）。翻译结果包含 `translation_log`，记录每个分段的原文、译文和翻译方式（`dict` / `gemini`）。
+
+Python 依赖：`pip install beautifulsoup4 playwright google-genai`，首次运行 `py -m playwright install chromium`。根目录需 `.env` 文件，内含 `GEMINI_API_KEY=<your_key>`。
+
+---
+
+## 部署
+
+生产环境使用 Docker 容器运行在阿里云 ECS，nginx 监听 80 端口。
+
+### CI/CD 流程
+
+push 到 `main` 分支自动触发：
+
+```
+git push origin main
+    ↓
+GitHub Actions:
+  1. npm ci && npm run build
+  2. docker build → push 到 GHCR (ghcr.io/<owner>/<repo>:latest)
+  3. SSH 到 ECS → docker pull → 重启容器
+```
+
+### 一次性配置
+
+1. **ECS 安装 Docker**：`curl -fsSL https://get.docker.com | sh && systemctl enable --now docker`
+2. **开放安全组** TCP 80 端口（入方向）
+3. **创建 GitHub PAT**（Settings → Developer settings → Tokens，勾选 `read:packages`）
+4. **在 GitHub 仓库添加 Secrets**（Settings → Secrets and variables → Actions）：
+
+| Secret | 说明 |
+|--------|------|
+| `GH_PAT` | GitHub PAT（`read:packages`），ECS 拉取镜像用 |
+| `ECS_HOST` | ECS 公网 IP |
+| `ECS_USERNAME` | SSH 用户名（通常 `root`） |
+| `ECS_SSH_KEY` | SSH 私钥内容（`cat ~/.ssh/id_ed25519`） |
 
 ---
 

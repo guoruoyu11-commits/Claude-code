@@ -18,7 +18,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
 from scrape_one import load_machines, OUTPUT_DIR
 from translate_nodes import translate_one_nodes, DEFAULT_PROMPT_FILE
 
-FAILED_LOG = Path(__file__).parent / "public" / "data" / "translate_failed.json"
+FAILED_LOG = Path(__file__).parent.parent / "public" / "data" / "translate_failed.json"
 
 
 def load_failed_ids() -> list[str]:

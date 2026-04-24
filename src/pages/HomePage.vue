@@ -1,9 +1,8 @@
 <template>
   <main>
     <nav class="breadcrumb" aria-label="breadcrumb">
-      <a href="#">EXVSDB</a><span>›</span>
-      <a href="#">イニブ</a><span>›</span>
-      機体ランク・Tier表
+      <a href="/">EXVSDB</a><span>›</span>
+      <span>Tier表</span>
     </nav>
 
     <div class="title-block">

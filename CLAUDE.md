@@ -67,11 +67,41 @@ Vue 3 + Vite + vue-router app. Two routes:
   "name": "...",
   "translated_at": "...",
   "model": "gemini-2.5-pro",
-  "content_nodes": [...]
+  "content_nodes": [...],
+  "translation_log": [
+    { "source": "原文", "target": "译文", "method": "dict", "node_type": "td" },
+    { "source": "原文", "target": "译文", "method": "gemini", "node_type": "p" }
+  ]
 }
 ```
-No `content_html` in translated output — only `content_nodes`.
+No `content_html` in translated output — only `content_nodes`. `translation_log` records every translated segment in document order: dict hits first (in node order), then Gemini results. Each entry has `source` (original Japanese), `target` (translated text), `method` (`"dict"` or `"gemini"`), and `node_type` (tag of the containing node).
 
 **Failed translation tracking:** `public/data/translate_failed.json` stores IDs that failed last run; `translate_scheduler.py` retries these first on the next run.
 
 `scripts/translate_one.py` (legacy HTML-based translation) is retained but no longer part of the standard pipeline.
+
+## Deployment
+
+Production runs as a Docker container on Alibaba Cloud ECS, served by nginx on port 80.
+
+**CI/CD pipeline** (`.github/workflows/deploy.yml`):
+1. Push to `main` → GitHub Actions triggers
+2. `npm ci && npm run build` on GitHub runner
+3. Docker image built and pushed to GHCR (`ghcr.io/<owner>/<repo>:latest`) using built-in `GITHUB_TOKEN`
+4. SSH into ECS → pull new image (using `GH_PAT` secret) → restart container
+
+**Required GitHub Secrets:**
+| Secret | Description |
+|--------|-------------|
+| `GH_PAT` | GitHub PAT with `read:packages` scope (for ECS to pull from GHCR) |
+| `ECS_HOST` | ECS public IP |
+| `ECS_USERNAME` | SSH username (usually `root`) |
+| `ECS_SSH_KEY` | SSH private key content |
+
+**Local Docker build (for testing):**
+```bash
+docker build -t exvsdb .
+docker run -p 80:80 exvsdb
+```
+
+nginx config (`nginx.conf`) includes SPA fallback (`try_files $uri $uri/ /index.html`) required for vue-router history mode, plus cache headers for `/assets/` (1 year immutable) and `/data/` (1 hour).

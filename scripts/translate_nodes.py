@@ -236,11 +236,18 @@ def translate_one_nodes(
 
     # 字典预替换
     dict_hit = 0
+    dict_log: list[dict] = []
     pending_refs: list[dict] = []
     for ref in refs:
         original = ref["node"][ref["key"]]
         translated, hit = apply_dict(original)
         if hit:
+            dict_log.append({
+                "source": original,
+                "target": translated,
+                "method": "dict",
+                "node_type": ref["node"].get("t", "#"),
+            })
             ref["node"][ref["key"]] = translated
             dict_hit += 1
         else:
@@ -252,7 +259,7 @@ def translate_one_nodes(
 
     if not pending_texts:
         # 全部字典命中，直接保存
-        data = _build_output(machine_id, src, nodes_zh, model_name)
+        data = _build_output(machine_id, src, nodes_zh, model_name, translation_log=dict_log)
         out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         return data
 
@@ -297,15 +304,23 @@ def translate_one_nodes(
         if i < total_batches - 1:
             time.sleep(delay)
 
-    # 将翻译结果写回节点引用
+    # 将翻译结果写回节点引用，同时记录翻译日志
+    gemini_log: list[dict] = []
     for i, batch_result in sorted(done_map.items()):
         offset = batch_offsets[i]
         for j, translated_text in enumerate(batch_result):
             ref = pending_refs[offset + j]
+            original = pending_texts[offset + j]
+            gemini_log.append({
+                "source": original,
+                "target": translated_text,
+                "method": "gemini",
+                "node_type": ref["node"].get("t", "#"),
+            })
             ref["node"][ref["key"]] = translated_text
 
     # 保存最终文件
-    data = _build_output(machine_id, src, nodes_zh, model_name)
+    data = _build_output(machine_id, src, nodes_zh, model_name, translation_log=dict_log + gemini_log)
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _delete_progress(machine_id)
 
@@ -393,7 +408,7 @@ def _strip_nav_row(nodes: list, sub_pages_raw: list) -> tuple[list, list]:
     return cleaned, updated if updated else sub_pages_raw
 
 
-def _build_output(machine_id: str, src: dict, nodes_zh: list, model_name: str) -> dict:
+def _build_output(machine_id: str, src: dict, nodes_zh: list, model_name: str, translation_log: list | None = None) -> dict:
     sub_pages_raw = src.get("sub_pages", [])
     nodes_clean, sub_pages_zh = _strip_nav_row(_strip_wiki_h2(nodes_zh), sub_pages_raw)
     result = {
@@ -407,6 +422,8 @@ def _build_output(machine_id: str, src: dict, nodes_zh: list, model_name: str) -
     }
     if sub_pages_zh:
         result["sub_pages"] = sub_pages_zh
+    if translation_log:
+        result["translation_log"] = translation_log
     return result
 
 

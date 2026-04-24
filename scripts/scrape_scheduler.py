@@ -18,7 +18,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
 
 from scrape_one import scrape_one, load_machines, close_browser, OUTPUT_DIR
 
-FAILED_LOG = Path(__file__).parent / "public" / "data" / "failed.json"
+FAILED_LOG = Path(__file__).parent.parent / "public" / "data" / "failed.json"
 
 
 def load_failed_ids() -> list[str]:

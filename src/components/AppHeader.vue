@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-inner">
-      <a href="#" class="logo">
+      <a href="/" class="logo">
         <span class="logo-main">EXVSDB</span>
         <span class="logo-divider">|</span>
         <span class="logo-sub">极限爆发数据库</span>
