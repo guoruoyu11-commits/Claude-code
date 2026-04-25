@@ -195,7 +195,7 @@ export default defineComponent({
       return h(tag, attrs, children.length ? children : undefined)
     }
 
-    const REF_SECTION_RE = /参考|外部[リ链]/
+    const REF_SECTION_RE = /参考|外部[リ链]|参[戦战]PV/
 
     function filterTocUl(n) {
       if (n.t !== 'ul' && n.t !== 'ol') return n
