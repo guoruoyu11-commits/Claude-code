@@ -100,7 +100,7 @@ defineProps({
   gap: 8px;
   align-content: flex-start;
   background: var(--bg-secondary);
-  box-shadow: inset 4px 0 12px var(--row-glow, transparent);
+  box-shadow: var(--tier-content-shadow, inset 4px 0 12px var(--row-glow, transparent));
 }
 
 .tier-row.alt .tier-content { background: var(--bg-card); }

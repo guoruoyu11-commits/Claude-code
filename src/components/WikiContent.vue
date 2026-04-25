@@ -300,7 +300,7 @@ export default defineComponent({
 .wiki-content a:hover { text-decoration: underline; }
 .wiki-content a.local-link { cursor: pointer; }
 
-.wiki-content img { max-width: 100%; border-radius: 4px; }
+.wiki-content img { max-width: 100%; height: auto !important; aspect-ratio: auto !important; border-radius: 4px; }
 
 /* atwiki 折叠目次块 */
 .plugin-openclose { margin: 12px 0; }

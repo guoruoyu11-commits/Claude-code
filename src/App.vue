@@ -11,6 +11,9 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
+import { useTheme } from './composables/useTheme.js'
+
+useTheme()
 </script>
 
 <style scoped>
