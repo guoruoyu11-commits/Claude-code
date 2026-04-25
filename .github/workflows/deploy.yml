@@ -50,4 +50,6 @@ jobs:
               --name exvsdb \
               --restart unless-stopped \
               -p 80:80 \
+              -p 443:443 \
+              -v /etc/ssl/exvsdb:/etc/ssl/exvsdb:ro \
               ghcr.io/${{ env.IMAGE_NAME }}:latest

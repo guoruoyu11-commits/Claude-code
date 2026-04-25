@@ -18,11 +18,14 @@
   py scripts/html_to_nodes.py --all
 """
 
+import re
 import sys
 import json
 import argparse
 from pathlib import Path
 from bs4 import BeautifulSoup, NavigableString, Comment, Tag
+
+_ATWIKI_IMG = re.compile(r'(?:https?:)?//img\.atwiki\.jp/[^\s"\'<>\\]+')
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -170,6 +173,19 @@ def node_from_tag(tag) -> dict | None:
     return node
 
 
+def _rewrite_img_src(nodes: list, local_img: str) -> None:
+    """Recursively replace atwiki image src with local machine image path."""
+    for node in nodes:
+        if not isinstance(node, dict):
+            continue
+        if node.get("t") == "img":
+            attrs = node.get("a", {})
+            src = attrs.get("src", "")
+            if _ATWIKI_IMG.match(src):
+                attrs["src"] = local_img
+        _rewrite_img_src(node.get("c", []), local_img)
+
+
 def html_to_nodes(content_html: str) -> list:
     """将 content_html 解析为节点树列表。"""
     soup = BeautifulSoup(content_html, "html.parser")
@@ -204,6 +220,8 @@ def process_one(machine_id: str, force: bool = False) -> bool:
 
     print(f"[CONV] {machine_id} ...", end=" ", flush=True)
     nodes = html_to_nodes(html)
+    num = machine_id.split("_")[0].lstrip("m")
+    _rewrite_img_src(nodes, f"/images/machines/{num}.png")
     data["content_nodes"] = nodes
     path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     size_kb = path.stat().st_size // 1024

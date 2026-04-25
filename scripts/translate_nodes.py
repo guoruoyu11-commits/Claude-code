@@ -84,6 +84,35 @@ def collect_refs(nodes: list, refs: list):
 
 # ── Gemini 调用 ─────────────────────────────────────────────────
 
+_MICRO_BATCH_PROMPT = (
+    "将以下 JSON 数组中的日文字符串翻译成中文（简体），"
+    "游戏专有名词使用中文惯用译名。"
+    "直接输出相同长度的 JSON 字符串数组，不要加任何说明或代码块标记。\n\n{texts}"
+)
+
+
+def _call_gemini_raw(texts: list[str], _unused_template, client, model_name: str, retries: int = 2) -> list[str] | None:
+    """Positional 格式（plain string array）：用于缺失条目的微批次补译。"""
+    texts_json = json.dumps(texts, ensure_ascii=False)
+    prompt = _MICRO_BATCH_PROMPT.replace("{texts}", texts_json)
+    for attempt in range(retries):
+        try:
+            response = client.models.generate_content(model=model_name, contents=prompt)
+            raw = response.text.strip()
+            raw = re.sub(r"^```(?:json)?\s*", "", raw, flags=re.IGNORECASE)
+            raw = re.sub(r"\s*```$", "", raw)
+            result = json.loads(raw)
+            if isinstance(result, list) and len(result) == len(texts):
+                return [str(r) for r in result]
+            return None
+        except Exception as e:
+            if attempt < retries - 1:
+                time.sleep(5 * (2 ** attempt))
+            else:
+                return None
+    return None
+
+
 def translate_batch(
     texts: list[str],
     prompt_template: str,
@@ -92,24 +121,59 @@ def translate_batch(
     retries: int = 3,
 ) -> list[str] | None:
     """
-    将文本列表序列化为 JSON 数组，调用 Gemini 翻译，返回等长翻译列表。
-    失败时返回 None。
+    ID 格式：发送 {id, t} 数组，按 id 匹配响应。
+    Gemini 少返回条目时自动补译，保证返回等长列表。
+    网络/解析完全失败时返回 None。
     """
-    texts_json = json.dumps(texts, ensure_ascii=False)
+    tagged = [{"id": i, "t": t} for i, t in enumerate(texts)]
+    texts_json = json.dumps(tagged, ensure_ascii=False)
     prompt = prompt_template.replace("{texts}", texts_json)
 
     for attempt in range(retries):
         try:
             response = client.models.generate_content(model=model_name, contents=prompt)
             raw = response.text.strip()
-            # 去除可能的 markdown 代码块
             raw = re.sub(r"^```(?:json)?\s*", "", raw, flags=re.IGNORECASE)
             raw = re.sub(r"\s*```$", "", raw)
             result = json.loads(raw)
-            if isinstance(result, list) and len(result) == len(texts):
-                return [str(r) for r in result]
-            print(f"  [WARN] 返回数组长度不匹配（期望 {len(texts)}，得到 {len(result)}）")
-            return None
+
+            # 按 id 匹配
+            id_map: dict[int, str] = {}
+            if isinstance(result, list):
+                for item in result:
+                    if isinstance(item, dict) and "id" in item and "t" in item:
+                        try:
+                            id_map[int(item["id"])] = str(item["t"])
+                        except (ValueError, TypeError):
+                            pass
+
+            if not id_map:
+                # 格式完全错误，重试
+                if attempt < retries - 1:
+                    wait = 5 * (2 ** attempt)
+                    print(f"\n  [RETRY {attempt+1}/{retries-1}] {wait}s 后重试（格式错误）...", flush=True)
+                    time.sleep(wait)
+                    continue
+                return None
+
+            missing = [i for i in range(len(texts)) if i not in id_map]
+            if missing:
+                print(f"\n  [WARN] {len(missing)} 条缺失，补译中...", end=" ", flush=True)
+                for chunk_start in range(0, len(missing), 20):
+                    chunk_ids = missing[chunk_start:chunk_start + 20]
+                    chunk_texts = [texts[i] for i in chunk_ids]
+                    chunk_result = _call_gemini_raw(chunk_texts, prompt_template, client, model_name)
+                    if chunk_result:
+                        for idx, translated in zip(chunk_ids, chunk_result):
+                            id_map[idx] = translated
+                still_missing = [i for i in range(len(texts)) if i not in id_map]
+                if still_missing:
+                    print(f"[WARN] 仍缺失 {len(still_missing)} 条，保留原文")
+                    for i in still_missing:
+                        id_map[i] = texts[i]
+
+            return [id_map[i] for i in range(len(texts))]
+
         except Exception as e:
             if attempt < retries - 1:
                 wait = 5 * (2 ** attempt)
@@ -118,6 +182,7 @@ def translate_batch(
             else:
                 print(f"  [ERR] Gemini 调用失败: {e}")
                 return None
+    return None
 
 
 # ── 进度存档 ────────────────────────────────────────────────────
@@ -151,13 +216,13 @@ def _delete_progress(machine_id: str):
 
 # ── 分批 ────────────────────────────────────────────────────────
 
-def make_batches(texts: list[str], max_chars: int = 4000) -> list[list[str]]:
-    """将文本列表按字符总量分批，每批不超过 max_chars 字符。"""
+def make_batches(texts: list[str], max_chars: int = 4000, max_items: int = 100) -> list[list[str]]:
+    """将文本列表按字符总量和条目数分批，每批不超过 max_chars 字符且不超过 max_items 条。"""
     batches: list[list[str]] = []
     buf: list[str] = []
     buf_len = 0
     for t in texts:
-        if buf and buf_len + len(t) > max_chars:
+        if buf and (buf_len + len(t) > max_chars or len(buf) >= max_items):
             batches.append(buf)
             buf, buf_len = [], 0
         buf.append(t)
@@ -172,7 +237,7 @@ def make_batches(texts: list[str], max_chars: int = 4000) -> list[list[str]]:
 def translate_one_nodes(
     machine_id: str,
     prompt_file: str | Path = DEFAULT_PROMPT_FILE,
-    model_name: str = "gemini-2.5-pro",
+    model_name: str = "gemini-2.5-flash",
     delay: float = 1.0,
     force: bool = False,
 ) -> dict | None:
@@ -185,6 +250,12 @@ def translate_one_nodes(
     out_path = OUTPUT_DIR / f"{machine_id}_zh.json"
 
     if not force and out_path.exists():
+        src = json.loads(src_path.read_text(encoding="utf-8"))
+        for sp in src.get("sub_pages", []):
+            sub_id = sp["file"]
+            if not (OUTPUT_DIR / f"{sub_id}_zh.json").exists():
+                print(f"  >> 补翻缺失子页面: {sp['name']} ({sub_id})")
+                translate_one_nodes(sub_id, prompt_file, model_name, delay, force)
         return {"status": "skipped"}
 
     if not src_path.exists():
@@ -327,6 +398,10 @@ def translate_one_nodes(
     # 跟随翻译子页面
     sub_pages = src.get("sub_pages", [])
     if sub_pages:
+        # _build_output 已经通过 _strip_nav_row 提取了中文名，优先使用
+        translated_names = {s["file"]: s["name"] for s in data.get("sub_pages", [])}
+        # _strip_nav_row 未能从导航行提取时（仍为日文），回退到翻译日志查找
+        log_lookup = {e["source"]: e["target"] for e in dict_log + gemini_log}
         sub_pages_zh = []
         for sp in sub_pages:
             sub_id = sp["file"]
@@ -336,7 +411,10 @@ def translate_one_nodes(
                 print(f"  [OK] 子页面已保存: {sub_id}_zh.json")
             elif sub_result and sub_result.get("status") == "skipped":
                 print(f"  -- 子页面已存在，跳过: {sub_id}")
-            sub_pages_zh.append({"name": sp["name"], "file": sub_id, "url": sp["url"]})
+            name = translated_names.get(sub_id, sp["name"])
+            if has_japanese(name):
+                name = log_lookup.get(sp["name"], name)
+            sub_pages_zh.append({"name": name, "file": sub_id, "url": sp["url"]})
         data["sub_pages"] = sub_pages_zh
         out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -433,7 +511,7 @@ def main():
     parser = argparse.ArgumentParser(description="基于节点树翻译单个机体页面（日文→中文）")
     parser.add_argument("id",       type=str,                              help="机体 ID，如 m12504")
     parser.add_argument("--prompt", type=str, default=str(DEFAULT_PROMPT_FILE), help="提示词文件路径（默认 prompt_nodes.txt）")
-    parser.add_argument("--model",  type=str, default="gemini-2.5-pro",   help="Gemini 模型名（默认 gemini-2.5-pro）")
+    parser.add_argument("--model",  type=str, default="gemini-2.5-flash",   help="Gemini 模型名（默认 gemini-2.5-flash）")
     parser.add_argument("--delay",  type=float, default=1.0,              help="批间等待秒数（默认 1.0）")
     parser.add_argument("--force",  action="store_true",                  help="覆盖已有译文")
     args = parser.parse_args()

@@ -29,9 +29,8 @@ const availableCosts = computed(() =>
   [...new Set(MACHINES.map(m => m.cost))].sort((a, b) => b - a)
 )
 
-const BASE = 'https://exvsdb.com/wp-content/images/exvs2ib/cost/'
 function imgUrl(cost, active) {
-  return active ? `${BASE}cost${cost}.png` : `${BASE}cost${cost}_off.png`
+  return active ? `/images/cost/cost${cost}.png` : `/images/cost/cost${cost}_off.png`
 }
 </script>
 

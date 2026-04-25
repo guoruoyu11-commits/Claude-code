@@ -74,8 +74,13 @@ def get_browser_context():
         print("[ERR] Playwright 未安装，请运行：pip install playwright && py -m playwright install chromium")
         sys.exit(1)
 
+    CHROME_PATH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+
     _pw_instance = sync_playwright().start()
-    browser = _pw_instance.chromium.launch(headless=True)
+    browser = _pw_instance.chromium.launch(
+        headless=True,
+        executable_path=CHROME_PATH if Path(CHROME_PATH).exists() else None,
+    )
     _pw_context = browser.new_context(
         user_agent=HEADERS["User-Agent"],
         locale="ja-JP",

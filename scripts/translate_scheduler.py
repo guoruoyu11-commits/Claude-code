@@ -38,7 +38,7 @@ def save_failed_ids(ids: list[str]):
 def run_batch(
     machine_ids: list[str] | None = None,
     prompt_file: str | Path = DEFAULT_PROMPT_FILE,
-    model_name: str = "gemini-2.0-flash",
+    model_name: str = "gemini-2.5-flash",
     delay: float = 1.0,
     force: bool = False,
 ) -> dict:
@@ -102,7 +102,7 @@ def main():
     parser = argparse.ArgumentParser(description="批量翻译机体攻略页面")
     parser.add_argument("--id",     type=str,   action="append", default=None, help="只翻译指定机体 ID（可多次使用）")
     parser.add_argument("--prompt", type=str,   default=str(DEFAULT_PROMPT_FILE), help="提示词文件路径（默认 prompt_nodes.txt）")
-    parser.add_argument("--model",  type=str,   default="gemini-2.0-flash",       help="Gemini 模型名（默认 gemini-2.0-flash）")
+    parser.add_argument("--model",  type=str,   default="gemini-2.5-flash",       help="Gemini 模型名（默认 gemini-2.5-flash）")
     parser.add_argument("--delay",  type=float, default=1.0,  help="批间等待秒数（默认 1.0）")
     parser.add_argument("--force",  action="store_true",      help="覆盖已有译文")
     args = parser.parse_args()

@@ -2,22 +2,22 @@
   <main>
     <nav class="breadcrumb" aria-label="breadcrumb">
       <a href="/">EXVSDB</a><span>›</span>
-      <span>Tier表</span>
+      <span>Tier 表</span>
     </nav>
 
     <div class="title-block">
-      <h1>【2026年4月最新】イニブ機体ランク・Tier表</h1>
+      <h1>【2026年4月最新】极限爆发 机体强度·Tier 表</h1>
       <p class="update-meta">
-        最終更新：<b>2026年4月12日</b>
+        最后更新：<b>2026年4月12日</b>
         <span class="meta-sep">|</span>
-        対象バージョン：インフィニットブースト Ver.2.40
+        适用版本：极限爆发 Ver.2.40
       </p>
     </div>
 
     <div class="desc-box">
-      ガンダム EXVS.2 インフィニットブースト（イニブ）の<b>機体ランク・Tier表</b>です。<br />
-      対戦勝率・使用率・上位プレイヤー実績をもとに独自ランク付けしています。
-      コストタブでフィルタリングして確認できます。ランクはあくまでも参考情報です。
+      高达 EXVS.2 极限爆发（INF-B）的<b>机体强度·Tier 表</b>。<br />
+      基于对战胜率、使用率及高端玩家战绩进行独立评级。
+      可通过费用标签筛选查看，等级仅供参考。
     </div>
 
     <CostFilter v-model="selectedCost" />

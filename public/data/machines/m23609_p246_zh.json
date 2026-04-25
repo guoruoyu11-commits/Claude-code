@@ -1,0 +1,6693 @@
+{
+  "status": "ok",
+  "id": "m23609_p246",
+  "name": "通常時",
+  "translated_at": "2026-04-25T13:07:26.430663+00:00",
+  "source_id": "m23609_p246",
+  "model": "gemini-2.5-flash",
+  "content_nodes": [
+    {
+      "t": "hr"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "射击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "名称"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "弾数"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "威力"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "备注"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "主射击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "凤法尔西亚光束棍"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "8"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "75"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "标准BR"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "射击CS"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "凤法尔西亚光束棍【连射】"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "20~127"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "停足连射\n追加射击输入可射出第2发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_4"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "N副射击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "法尔西亚浮游炮【停滞】"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "26~106"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "在自机周围展开浮游炮\n再次输入副射击发射"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_5"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "摇杆输入副射击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "法尔西亚浮游炮【射出】"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "缠绕在敌人头顶\n全方位攻击"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_6"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "特殊射击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "凤法尔西亚光束棍【照射】"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "29~217"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "高性能照射光束"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_7"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTCORAL;"
+                  },
+                  "v": "N特殊格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "rowspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "呼叫高达雷基鲁斯"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "3"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "20~74"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "雷基鲁斯浮游炮包围"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_8"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTCORAL;"
+                  },
+                  "v": "前后特殊格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "68"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "射击屏障突击"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_9"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTCORAL;"
+                  },
+                  "v": "横向特殊格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "144"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "步枪2连射→雷基鲁斯加农炮"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_10"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:YELLOW;"
+                  },
+                  "v": "格斗CS"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "X-Rounder解放"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "100"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "时限换装\n耐久值259以下或觉醒中也有同等效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_11"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "名称"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "输入"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "弾数"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "威力"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "备注"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_12"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "N格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "凤法尔西亚光束棍"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "NNN"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "186"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "第3段发生较慢"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_13"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "c": [
+                    {
+                      "t": "span",
+                      "a": {
+                        "style": "background-color: LIGHTGREEN;"
+                      },
+                      "v": "后派生"
+                    },
+                    {
+                      "t": "#",
+                      "v": " 挥斩上挑"
+                    }
+                  ]
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "N后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "112"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "无法受身浮空"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_14"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "NN后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "164"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_15"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "前格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "突刺"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "前"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "90"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "发生快、判定优秀"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_16"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "横格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "扫击→挥斩上挑→挥斩下劈"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "横NN"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "171"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "绕背3段"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_17"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "c": [
+                    {
+                      "t": "span",
+                      "a": {
+                        "style": "background-color: LIGHTGREEN;"
+                      },
+                      "v": "后派生"
+                    },
+                    {
+                      "t": "#",
+                      "v": " 挥斩上挑"
+                    }
+                  ]
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "横后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "124"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "与N格起手相同"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_18"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "横N后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "160"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_19"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "后格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "凤法尔西亚光束棍\n【挥舞】"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "80"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "原地攻击周围\n长按延长攻击时间"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_20"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "BD格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "斩击穿透→扫击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "BD中前N"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "-"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "132"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "延伸性好"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "collapse",
+      "label": "▼目录",
+      "open": true,
+      "c": [
+        {
+          "t": "div",
+          "a": {
+            "class": "plugin_contents"
+          },
+          "c": [
+            {
+              "t": "ul",
+              "c": [
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_057126df"
+                      },
+                      "v": "概要"
+                    }
+                  ]
+                },
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_07583269"
+                      },
+                      "v": "取消路线"
+                    }
+                  ]
+                },
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_69b21a33"
+                      },
+                      "v": "支援动作"
+                    }
+                  ]
+                },
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_1652746f"
+                      },
+                      "v": "射击武器"
+                    },
+                    {
+                      "t": "ul",
+                      "c": [
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_bfe788e0"
+                              },
+                              "v": "【主射击】凤法尔西亚光束棍"
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_13f8330e"
+                              },
+                              "v": "【射击CS】凤法尔西亚光束棍【连射】"
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_1d6df84d"
+                              },
+                              "v": "【副射击】法尔西亚浮游炮"
+                            },
+                            {
+                              "t": "ul",
+                              "c": [
+                                {
+                                  "t": "li",
+                                  "c": [
+                                    {
+                                      "t": "a",
+                                      "a": {
+                                        "href": "#id_c1e569ab"
+                                      },
+                                      "v": "【N副射击】停滞"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "t": "li",
+                                  "c": [
+                                    {
+                                      "t": "a",
+                                      "a": {
+                                        "href": "#id_491f9274"
+                                      },
+                                      "v": "【摇杆输入副射击】射出"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_ac95eb74"
+                              },
+                              "v": "【特殊射击】凤法尔西亚光束棍【照射】"
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_22101fea"
+                              },
+                              "v": "【特殊格斗】呼叫高达雷基鲁斯"
+                            },
+                            {
+                              "t": "ul",
+                              "c": [
+                                {
+                                  "t": "li",
+                                  "c": [
+                                    {
+                                      "t": "a",
+                                      "a": {
+                                        "href": "#id_ba846215"
+                                      },
+                                      "v": "【N特殊格斗】 雷基鲁斯浮游炮【包围】"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "t": "li",
+                                  "c": [
+                                    {
+                                      "t": "a",
+                                      "a": {
+                                        "href": "#id_4e5b5f1a"
+                                      },
+                                      "v": "【前后特殊格斗】突击"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "t": "li",
+                                  "c": [
+                                    {
+                                      "t": "a",
+                                      "a": {
+                                        "href": "#id_e811f481"
+                                      },
+                                      "v": "【横向特殊格斗】雷基鲁斯步枪2连射→雷基鲁斯加农炮"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_ef676e3e"
+                              },
+                              "v": "【格斗CS】X-Rounder解放"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_48e45ba7"
+                      },
+                      "v": "格斗"
+                    },
+                    {
+                      "t": "ul",
+                      "c": [
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_6f6eb3cf"
+                              },
+                              "v": "【通常格斗】凤法尔西亚光束棍"
+                            },
+                            {
+                              "t": "ul",
+                              "c": [
+                                {
+                                  "t": "li",
+                                  "c": [
+                                    {
+                                      "t": "a",
+                                      "a": {
+                                        "href": "#id_7b731739"
+                                      },
+                                      "v": "【N格斗/横格斗后派生】挥斩上挑"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_0818409e"
+                              },
+                              "v": "【前格斗】突刺"
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_0bfe2ab7"
+                              },
+                              "v": "【横格斗】扫击→挥斩上挑→挥斩下劈"
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_58a7bf99"
+                              },
+                              "v": "【后格斗】挥舞"
+                            }
+                          ]
+                        },
+                        {
+                          "t": "li",
+                          "c": [
+                            {
+                              "t": "a",
+                              "a": {
+                                "href": "#id_a1571214"
+                              },
+                              "v": "【BD格斗】斩击穿透→扫击"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_0607a765"
+                      },
+                      "v": "连段"
+                    }
+                  ]
+                },
+                {
+                  "t": "li",
+                  "c": [
+                    {
+                      "t": "a",
+                      "a": {
+                        "href": "#id_47dad8b1"
+                      },
+                      "v": "参考资料集"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_057126df"
+      },
+      "v": "概要"
+    },
+    {
+      "t": "div",
+      "c": [
+        {
+          "t": "a",
+          "a": {
+            "href": "//w.atwiki.jp/exvs2infiniteboost/pages/245.html",
+            "title": "フォーンファルシア (18d)"
+          },
+          "v": "凤法尔西亚"
+        },
+        {
+          "t": "#",
+          "v": "的通常形态。虽说本作中游戏将其形态分开，但设定上并不存在模式切换。\n剧中以能追随AGE-FX机动力的强大性能为傲，多次让奇奥陷入苦战。"
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "此形态是压制力稍弱的射击型万能机。\n拥有强诱导的射击CS、作为落地技巧铺垫的N副射、缠绕距离长且弹药性能优秀的摇杆输入副射、弹药数3发共3种辅助攻击，虽然缺乏强压选项，但射击武装齐全且优秀。\n考虑到时限强化机的范畴，其在常态下拥有相当多的弹药可供发射，因此在对手不近身的情况下，这个形态能够发挥相当大的作用。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_07583269"
+      },
+      "v": "取消路线"
+    },
+    {
+      "t": "ul",
+      "c": [
+        {
+          "t": "li",
+          "v": "主射击→后格斗、各副射、特射、各特格"
+        },
+        {
+          "t": "li",
+          "v": "射击CS(包含射击派生)→各副射"
+        },
+        {
+          "t": "li",
+          "v": "各特格→各副射"
+        },
+        {
+          "t": "li",
+          "v": "N·横格后派生→特射"
+        }
+      ]
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_69b21a33"
+      },
+      "v": "支援动作"
+    },
+    {
+      "t": "ul",
+      "c": [
+        {
+          "t": "li",
+          "v": "射击"
+        },
+        {
+          "t": "li",
+          "v": "格斗"
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_1652746f"
+      },
+      "v": "射击武器"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_bfe788e0"
+      },
+      "v": "【主射击】凤法尔西亚光束棍"
+    },
+    {
+      "t": "div",
+      "v": "与消耗值相符的BR。仍然在牵制、追击、抓落地等方面出场率高。\n即使在时限强化中也保持不变，弹药不会回复，请注意。\n通常时除了这个以外没有能瞬间发射的弹药，因此要好好管理弹药。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "装填"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "常时/3秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "光束"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "75(70%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "踉跄"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_13f8330e"
+      },
+      "v": "【射击CS】凤法尔西亚光束棍【连射】"
+    },
+    {
+      "t": "div",
+      "v": "挥动光束棍展开12发光束弹，并使其错时突击。\n在挥动动作中BD取消的话，会在全弹展开前被取消。\n虽然惯性不强，要打完12发会停足相当长一段时间，但因为是瞬间连射强诱导光束，作为弹幕很强，能出其不意地命中敌人。\n在红锁范围极限处撒布更容易发挥作用，有时能弯曲近90度。特别是在可变形机体的变形移动中效果显著。\n在敌人未察觉时应积极使用。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "追加主射击输入可再次射出光束。\n由于是完全停足的武装，因此射出后需要充分注意自身保护。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "蓄力"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "光束"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "127(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "20(-%)*12"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "5.4"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.45*12"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "强硬直"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_1d6df84d"
+      },
+      "v": "【副射击】法尔西亚浮游炮"
+    },
+    {
+      "t": "div",
+      "v": "同时展开5个浮游炮的全方位攻击。\n摇杆输入可改变行动。\n强化移行时弹药数会回复。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "装填"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "4秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "光束"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "106(50%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "26(-10%)*5"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "5.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.0*5"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "强硬直"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h4",
+      "a": {
+        "id": "id_c1e569ab"
+      },
+      "v": "【N副射击】停滞"
+    },
+    {
+      "t": "div",
+      "v": "“为了那些逝去的人们……！”\n在自机周围展开5个浮游炮，再次输入副射击发射。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "此形态下的落地手段。\n预先展开后，从转身主射击或各特殊格斗发射即可进入自由落地。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "请注意，辅助取消只能在停滞中进入自由落地。\n作为小技巧，在射出光束的浮游炮仍留在自机周围时，可以通过空射取消转身主射击或辅助的硬直。\n将此应用于二段落地技巧和错位落地，增加攻击次数，从而在通常时坚持下去。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h4",
+      "a": {
+        "id": "id_491f9274"
+      },
+      "v": "【摇杆输入副射击】射出"
+    },
+    {
+      "t": "div",
+      "v": "“被浮游炮之雨吞噬吧！”\n以在敌人头顶形成五边形的方式缠绕攻击的全方位攻击。\n射程极限相当长。在中距离甚至更远的地方也能轻松命中，因此作为后卫会很有用。\n觉醒时即使全中也只会造成硬直，因此可以追击。\n由于副射击成为辅助攻击中唯一的落地技巧，分配给摇杆输入副射击的机会减少了。\n它的优点是无需展开即可瞬间发射。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_ac95eb74"
+      },
+      "v": "【特殊射击】凤法尔西亚光束棍【照射】"
+    },
+    {
+      "t": "div",
+      "v": "“别指望能活着回去！”\n从突出的光束棍中发射照射光束。\n虽然略细，但发生快，且在强化移行时弹药数会回复，因此易于使用。\n在追击和抓硬直时要大胆使用。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "装填"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "12秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "照射光束"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "217(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "29(-6%)*10"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "5.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.5*10"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_22101fea"
+      },
+      "v": "【特殊格斗】呼叫高达雷基鲁斯"
+    },
+    {
+      "t": "div",
+      "v": "“杰哈特大人，清场就交给我吧。”\n呼叫杰哈特·加雷特驾驶的雷基鲁斯进行辅助攻击。摇杆输入可改变性能。\n可取消至各副射。在N副射停滞中，通过特格→副射输入，即使背对敌人也能落地。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "作为本作的辅助攻击，虽然弹药数较多，但装填时间也长。\n在时限强化中也能在后台进行装填，因此在使用格斗CS之前将其打完更划算。\n开局时，由于强化装填没有冷却时间，即使勉强打完3发，强化也会先到来，所以要积极使用。"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "装填"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "打空/17秒"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h4",
+      "a": {
+        "id": "id_ba846215"
+      },
+      "v": "【N特殊格斗】 雷基鲁斯浮游炮【包围】"
+    },
+    {
+      "t": "div",
+      "v": "4个浮游炮包围敌人并突击。是可操作机体的后副射。与前作更新后一样射程很长。\n由于是强硬直，所以易于追击。\n即使全中，也无法通过1发主射击造成强制倒地，因此需要使用连段或特射等进行追击。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "辅助"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "特殊实弹"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "74(80%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "20(-5%)-4"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.6"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.4*4"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "强硬直"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h4",
+      "a": {
+        "id": "id_4e5b5f1a"
+      },
+      "v": "【前后特殊格斗】突击"
+    },
+    {
+      "t": "div",
+      "v": "进行带射击屏障的突击。是可操作机体的前副射。\n由于是屏障辅助，惯性差，辅助取消几乎是垂直落下。因此易于利用射击屏障。\n具有不错的诱导性，前进缓慢，因此常能命中未被察觉的敌人。\n虽然难以命中，但一旦命中，如果能用特射追击就赚了。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "突击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "辅助"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "68(76%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "9(-3%)*8"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.6"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.2*8"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "半旋转倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h4",
+      "a": {
+        "id": "id_e811f481"
+      },
+      "v": "【横向特殊格斗】雷基鲁斯步枪2连射→雷基鲁斯加农炮"
+    },
+    {
+      "t": "div",
+      "v": "发射雷基鲁斯步枪2连射→雷基鲁斯加农炮。是可操作机体的主射2发→格斗CS1发。\n前2发具有与普通BR相当的诱导和弹速，但第3发诱导和弹速略有提升，且第3发倒地值达5，仅凭此即可造成强制倒地。常发生只命中第3发的情况。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "属性"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "步枪"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "辅助"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "光束"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "72(60%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "40(-20%)*2"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "踉跄"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_4"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第2段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "加农炮"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "光束"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "144(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "120(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "5↑"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "5↑"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_ef676e3e"
+      },
+      "v": "【格斗CS】X-Rounder解放"
+    },
+    {
+      "t": "div",
+      "v": "“我想保护那个人……保护那份温柔的心！”\n伴随着独特的音效，机体发出红色光芒的时限强化。\n耐久值在259以下或觉醒中始终能获得时限强化的效果。\n在格斗CS使用中觉醒，能量槽减少会停止，觉醒结束后会重新开始消耗。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "因受弹而通过耐久值强制解放时，\n在落地硬直或武装硬直中，硬直会优先，不会进入无敌状态，硬直会持续下去。\n如果目标是受弹解放，最好在落地且能行走的状态（无硬直状态）下触发受弹强化。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n虽然擅长距离在通常时和强化时略有不同，但基本上强化时更为优秀，因此蓄满后立即发动即可。反而如果过度保留，会增加搭档的负担。\n\n"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "蓄力"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "持续"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "冷却时间"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "装填"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "17秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "5秒"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "15秒"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_48e45ba7"
+      },
+      "v": "格斗"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_6f6eb3cf"
+      },
+      "v": "【通常格斗】凤法尔西亚光束棍"
+    },
+    {
+      "t": "div",
+      "v": "袈裟斩→斩击上挑→龙卷突击。\n在第2段将敌人击飞，再以缠绕浮游炮的多段命中突击追击的3段格斗。再现了与AGE-FX的刀剑相交。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "第3段的突击具有与解放中的N/前后特格相同的射击屏障判定。\n虽然不是能刻意使用的，但作为防止敌人切入的幸运情况记住也不错。\n此外，倒地值较高，若在1.8以上命中，则在全中前会强制倒地。\n因打完后自身也会大幅上升并击飞敌人，所以追击很容易。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n本作中，打完的伤害略有提升。\n\n"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n可从第1段及第2段进行后派生。\n\n"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "N格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "袈裟斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "65(80%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "65(-20%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "踉跄"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_4"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "┗第2段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "斩击上挑"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "121(65%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "70(-15%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.3"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "倒地"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_5"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "　┗第3段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "龙卷突击"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "186(53%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "17(-2%)*6"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "3.2"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.2*6"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "沙尘倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h4",
+      "a": {
+        "id": "id_7b731739"
+      },
+      "v": "【N格斗/横格斗后派生】挥斩上挑"
+    },
+    {
+      "t": "div",
+      "v": "单发斩击系1段。旧后格斗。\n因是无法受身倒地，所以在OH时派生也不必担心受到反击。\n可取消至特射。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "格斗派生"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "3",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "累计威力(累计补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:TOP;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "单发威力\n(单发补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "累计倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "单发倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
+                  },
+                  "v": "N·横"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
+                  },
+                  "v": "NN"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
+                  },
+                  "v": "横N"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
+                  },
+                  "v": "N·横"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
+                  },
+                  "v": "NN·横N"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "┗后派生"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "挥斩上挑"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(65%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(50%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(50%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(-15%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "3.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "无法受身倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_0818409e"
+      },
+      "v": "【前格斗】突刺"
+    },
+    {
+      "t": "div",
+      "v": "将光束棍向前突刺的多段命中1段格斗。判定和延伸性较强。\n突刺的攻击距离相当长，是主动进攻时的选择。更适合先手而非迎击。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "前格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "突刺"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "90(80%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "24(-5%)*4"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.8"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.45*4"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "沙尘倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_0bfe2ab7"
+      },
+      "v": "【横格斗】扫击→挥斩上挑→挥斩下劈"
+    },
+    {
+      "t": "div",
+      "v": "标准的3段格斗。\n第3段会改变视角。\n突进性能不佳，出招结束时的浮空较低，难以追击，优点较少。\n第1、2段可以派生出与N格斗相同的招式。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n累计伤害也略有提升。\n\n"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "横格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "挥打"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "60(80%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "60(-20%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "踉跄"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_4"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "┗第2段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "上挑"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "112(65%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "65(-15%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0.3"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "踉跄"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "　┗第3段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "下劈"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "171(53%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "90(-12%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "3.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "倒地"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_58a7bf99"
+      },
+      "v": "【后格斗】挥舞"
+    },
+    {
+      "t": "div",
+      "v": "在原地挥舞警棍，攻击周围。\n判定强但范围小，并且与外观相反，没有射击屏障。\n不宜主动命中，而应配合格斗进行反击使用。\n本机的下降技巧即使背对敌人也能使用，因此无需为此目的使用。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n可从主射击取消。\n\n"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "N特格"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "挥舞"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "80(-20%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "不可受身倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h3",
+      "a": {
+        "id": "id_a1571214"
+      },
+      "v": "【BD格斗】突进斩→挥打"
+    },
+    {
+      "t": "div",
+      "v": "以突进斩起手的2段格斗。\n具有突进斩系特有的优秀突进性能，在各种追击和偷袭等场合有广泛的用途。\n第2段后，前方向的浮空可以衔接主射击。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
+                  },
+                  "v": "BD格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
+                  },
+                  "v": "动作"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "威力(补正率)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "colspan": "2",
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "倒地值"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "rowspan": "2",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "效果"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
+                  },
+                  "v": "单发"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "累计"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
+                  },
+                  "v": "单发"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "第1段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "突进斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "60(80%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "60(-20%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "半旋转倒地"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_4"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
+                  },
+                  "v": "┗第2段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "突进斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "132(65%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "90(-15%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "2.7"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "1.0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "不可受身倒地"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_0607a765"
+      },
+      "v": "连段"
+    },
+    {
+      "t": "div",
+      "v": "\n(>表示垫步，≫表示BD冲刺，→表示直接取消 因取消补正导致威力变动的会在括号内并记)\n\n"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "table",
+      "c": [
+        {
+          "t": "tbody",
+          "c": [
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_1"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:GOLD;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
+                  },
+                  "v": "威力"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:GOLD;"
+                  },
+                  "v": "备注"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_2"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
+                  },
+                  "v": "射击起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:SKYBLUE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:SKYBLUE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_3"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "???"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_4"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "N格斗起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_5"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "???"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_6"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "前格斗起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_7"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "???"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_8"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                  },
+                  "v": "横格斗起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_9"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "???"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_10"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;text-align:center;"
+                  },
+                  "v": "后格斗起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_11"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "???"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_12"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;text-align:center;"
+                  },
+                  "v": "BD格斗起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:LIGHTGREEN;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_13"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "???"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_14"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:VIOLET;text-align:center;"
+                  },
+                  "v": "觉醒中射击起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:VIOLET;vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "F/S"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:VIOLET;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_15"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "??/??/??"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_16"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:VIOLET;text-align:center;"
+                  },
+                  "v": "觉醒中格斗起手"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:VIOLET;vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "E"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "background-color:VIOLET;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_17"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "??/??/??"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "h2",
+      "a": {
+        "id": "id_47dad8b1"
+      },
+      "v": "参考资料集"
+    },
+    {
+      "t": "br"
+    }
+  ],
+  "translation_log": [
+    {
+      "source": "弾数",
+      "target": "弾数",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "威力",
+      "target": "威力",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "備考",
+      "target": "备注",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "メイン射撃",
+      "target": "主射击",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "特殊射撃",
+      "target": "特殊射击",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "入力",
+      "target": "输入",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "弾数",
+      "target": "弾数",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "威力",
+      "target": "威力",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "備考",
+      "target": "备注",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "N格闘",
+      "target": "N格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "前格闘",
+      "target": "前格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "横格闘",
+      "target": "横格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "後格闘",
+      "target": "后格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "BD格闘",
+      "target": "BD格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "概要",
+      "target": "概要",
+      "method": "dict",
+      "node_type": "a"
+    },
+    {
+      "source": "コンボ",
+      "target": "连段",
+      "method": "dict",
+      "node_type": "a"
+    },
+    {
+      "source": "概要",
+      "target": "概要",
+      "method": "dict",
+      "node_type": "h2"
+    },
+    {
+      "source": "リロード",
+      "target": "装填",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "よろけ",
+      "target": "踉跄",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "リロード",
+      "target": "装填",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "リロード",
+      "target": "装填",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン",
+      "target": "倒地",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "リロード",
+      "target": "装填",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "属性",
+      "target": "属性",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "よろけ",
+      "target": "踉跄",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン",
+      "target": "倒地",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "リロード",
+      "target": "装填",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "N格闘",
+      "target": "N格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "よろけ",
+      "target": "踉跄",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン",
+      "target": "倒地",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "前格闘",
+      "target": "前格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "横格闘",
+      "target": "横格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "よろけ",
+      "target": "踉跄",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "よろけ",
+      "target": "踉跄",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン",
+      "target": "倒地",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "BD格闘",
+      "target": "BD格斗",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "ダウン値",
+      "target": "倒地值",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "効果",
+      "target": "效果",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "コンボ",
+      "target": "连段",
+      "method": "dict",
+      "node_type": "h2"
+    },
+    {
+      "source": "威力",
+      "target": "威力",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "備考",
+      "target": "备注",
+      "method": "dict",
+      "node_type": "td"
+    },
+    {
+      "source": "フォーンファルシア",
+      "target": "凤法尔西亚",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "フォーンファルシア_通常時",
+      "target": "凤法尔西亚_通常时",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "総合解説",
+      "target": "综合解说",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "通常時",
+      "target": "通常时",
+      "method": "gemini",
+      "node_type": "span"
+    },
+    {
+      "source": "Xラウンダー解放中",
+      "target": "X-Rounder解放中",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "射撃",
+      "target": "射击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "名称",
+      "target": "名称",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "フォーンファルシアバトン",
+      "target": "凤法尔西亚光束棍",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "標準的なBR",
+      "target": "标准BR",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "射撃CS",
+      "target": "射击CS",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "フォーンファルシアバトン【連射】",
+      "target": "凤法尔西亚光束棍【连射】",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "足を止めて連射\n射撃追加入力で2射目射出",
+      "target": "停足连射\n追加射击输入可射出第2发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "Nサブ射撃",
+      "target": "N副射击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ファルシアビット【停滞】",
+      "target": "法尔西亚浮游炮【停滞】",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "自機の周りにビットを展開し\nサブ再入力で発射",
+      "target": "在自机周围展开浮游炮\n再次输入副射击发射",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "レバー入れサブ射撃",
+      "target": "摇杆输入副射击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ファルシアビット【射出】",
+      "target": "法尔西亚浮游炮【射出】",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "敵の頭上に取り付く\nオールレンジ攻撃",
+      "target": "缠绕在敌人头顶\n全方位攻击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "フォーンファルシアバトン【照射】",
+      "target": "凤法尔西亚光束棍【照射】",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "高性能な照射ビーム",
+      "target": "高性能照射光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "N特殊格闘",
+      "target": "N特殊格斗",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ガンダムレギルス 呼出",
+      "target": "呼叫高达雷基鲁斯",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "レギルスビット包囲",
+      "target": "雷基鲁斯浮游炮包围",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "前後特殊格闘",
+      "target": "前后特殊格斗",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "射撃バリア突撃",
+      "target": "射击屏障突击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "横特殊格闘",
+      "target": "横向特殊格斗",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ライフル2連射→レギルスキャノン",
+      "target": "步枪2连射→雷基鲁斯加农炮",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "格闘CS",
+      "target": "格斗CS",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "Xラウンダー解放",
+      "target": "X-Rounder解放",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "時限換装\n耐久値259以下or覚醒中も同等の効果",
+      "target": "时限换装\n耐久值259以下或觉醒中也有同等效果",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "格闘",
+      "target": "格斗",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "名称",
+      "target": "名称",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "フォーンファルシアバトン",
+      "target": "凤法尔西亚光束棍",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "3段目の発生が遅い",
+      "target": "第3段发生较慢",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "後派生",
+      "target": "后派生",
+      "method": "gemini",
+      "node_type": "span"
+    },
+    {
+      "source": " 振り上げ",
+      "target": " 挥斩上挑",
+      "method": "gemini",
+      "node_type": "#"
+    },
+    {
+      "source": "N後",
+      "target": "N后",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "受身不可打ち上げ",
+      "target": "无法受身浮空",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "NN後",
+      "target": "NN后",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "突き",
+      "target": "突刺",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "前",
+      "target": "前",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "発生・判定に優れる",
+      "target": "发生快、判定优秀",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "振り払い→振り上げ→振り下ろし",
+      "target": "扫击→挥斩上挑→挥斩下劈",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "横NN",
+      "target": "横NN",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "回り込み3段",
+      "target": "绕背3段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "後派生",
+      "target": "后派生",
+      "method": "gemini",
+      "node_type": "span"
+    },
+    {
+      "source": " 振り上げ",
+      "target": " 挥斩上挑",
+      "method": "gemini",
+      "node_type": "#"
+    },
+    {
+      "source": "横後",
+      "target": "横后",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "N格始動と同様",
+      "target": "与N格起手相同",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "横N後",
+      "target": "横N后",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "フォーンファルシアバトン\n【振り回し】",
+      "target": "凤法尔西亚光束棍\n【挥舞】",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "後",
+      "target": "后",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "その場で周囲に攻撃\n長押しで攻撃時間延長",
+      "target": "原地攻击周围\n长按延长攻击时间",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "斬り抜け→振り払い",
+      "target": "斩击穿透→扫击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "BD中前N",
+      "target": "BD中前N",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "伸びが良い",
+      "target": "延伸性好",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "▼目次",
+      "target": "▼目录",
+      "method": "gemini",
+      "node_type": "collapse"
+    },
+    {
+      "source": "キャンセルルート",
+      "target": "取消路线",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "サポートアクション",
+      "target": "支援动作",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "射撃武器",
+      "target": "射击武器",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【メイン射撃】フォーンファルシアバトン",
+      "target": "【主射击】凤法尔西亚光束棍",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【射撃CS】フォーンファルシアバトン【連射】",
+      "target": "【射击CS】凤法尔西亚光束棍【连射】",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【サブ射撃】ファルシアビット",
+      "target": "【副射击】法尔西亚浮游炮",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【Nサブ射撃】停滞",
+      "target": "【N副射击】停滞",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【レバー入れサブ射撃】射出",
+      "target": "【摇杆输入副射击】射出",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【特殊射撃】フォーンファルシアバトン【照射】",
+      "target": "【特殊射击】凤法尔西亚光束棍【照射】",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【特殊格闘】ガンダムレギルス 呼出",
+      "target": "【特殊格斗】呼叫高达雷基鲁斯",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【N特殊格闘】 レギルスビット【包囲】",
+      "target": "【N特殊格斗】 雷基鲁斯浮游炮【包围】",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【前後特殊格闘】突撃",
+      "target": "【前后特殊格斗】突击",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【横特殊格闘】レギルスライフル2連射→レギルスキャノン",
+      "target": "【横向特殊格斗】雷基鲁斯步枪2连射→雷基鲁斯加农炮",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【格闘CS】Xラウンダー解放",
+      "target": "【格斗CS】X-Rounder解放",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "格闘",
+      "target": "格斗",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【通常格闘】フォーンファルシアバトン",
+      "target": "【通常格斗】凤法尔西亚光束棍",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【N格闘/横格闘後派生】振り上げ",
+      "target": "【N格斗/横格斗后派生】挥斩上挑",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【前格闘】突き",
+      "target": "【前格斗】突刺",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【横格闘】振り払い→振り上げ→振り下ろし",
+      "target": "【横格斗】扫击→挥斩上挑→挥斩下劈",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【後格闘】振り回し",
+      "target": "【后格斗】挥舞",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "【BD格闘】斬り抜け→振り払い",
+      "target": "【BD格斗】斩击穿透→扫击",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "参考資料集",
+      "target": "参考资料集",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "フォーンファルシア",
+      "target": "凤法尔西亚",
+      "method": "gemini",
+      "node_type": "a"
+    },
+    {
+      "source": "の通常形態。と言っても本作ではゲーム上形態を分けられているだけで、設定としてのモードチェンジは存在しない。\n劇中ではAGE-FXの機動力に追従するほどの高い性能を誇り、幾度となくキオを苦しめた。",
+      "target": "的通常形态。虽说本作中游戏将其形态分开，但设定上并不存在模式切换。\n剧中以能追随AGE-FX机动力的强大性能为傲，多次让奇奥陷入苦战。",
+      "method": "gemini",
+      "node_type": "#"
+    },
+    {
+      "source": "この形態はやや押しが弱い射撃寄り万能機。\n強誘導の射撃CS、降りテクの布石のNサブ、取り付き距離が長く弾の性能も良いレバー入れサブ、弾数3で3種類のアシストと押し付け択には乏しいものの優秀な射撃武装が揃っている。\n時限強化機のカテゴリーで考えると生時としてはそれなりに飛ばせる弾があるので、相手が詰めてこない間はかなり働ける形態。",
+      "target": "此形态是压制力稍弱的射击型万能机。\n拥有强诱导的射击CS、作为落地技巧铺垫的N副射、缠绕距离长且弹药性能优秀的摇杆输入副射、弹药数3发共3种辅助攻击，虽然缺乏强压选项，但射击武装齐全且优秀。\n考虑到时限强化机的范畴，其在常态下拥有相当多的弹药可供发射，因此在对手不近身的情况下，这个形态能够发挥相当大的作用。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "キャンセルルート",
+      "target": "取消路线",
+      "method": "gemini",
+      "node_type": "h2"
+    },
+    {
+      "source": "メイン→後格、各サブ、特射、各特格",
+      "target": "主射击→后格斗、各副射、特射、各特格",
+      "method": "gemini",
+      "node_type": "li"
+    },
+    {
+      "source": "射撃CS(射撃派生含む)→各サブ",
+      "target": "射击CS(包含射击派生)→各副射",
+      "method": "gemini",
+      "node_type": "li"
+    },
+    {
+      "source": "各特格→各サブ",
+      "target": "各特格→各副射",
+      "method": "gemini",
+      "node_type": "li"
+    },
+    {
+      "source": "N・横格後派生→特射",
+      "target": "N·横格后派生→特射",
+      "method": "gemini",
+      "node_type": "li"
+    },
+    {
+      "source": "サポートアクション",
+      "target": "支援动作",
+      "method": "gemini",
+      "node_type": "h2"
+    },
+    {
+      "source": "射撃",
+      "target": "射击",
+      "method": "gemini",
+      "node_type": "li"
+    },
+    {
+      "source": "格闘",
+      "target": "格斗",
+      "method": "gemini",
+      "node_type": "li"
+    },
+    {
+      "source": "射撃武器",
+      "target": "射击武器",
+      "method": "gemini",
+      "node_type": "h2"
+    },
+    {
+      "source": "【メイン射撃】フォーンファルシアバトン",
+      "target": "【主射击】凤法尔西亚光束棍",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "コスト相応のBR。依然として牽制、追撃、着地取りなど出番が多い。\n時限強化しても据え置きであり弾数回復などはないので注意。\n通常時はこれ以外に咄嗟に出せる弾が無いため弾数管理はしっかりと。",
+      "target": "与消耗值相符的BR。仍然在牵制、追击、抓落地等方面出场率高。\n即使在时限强化中也保持不变，弹药不会回复，请注意。\n通常时除了这个以外没有能瞬间发射的弹药，因此要好好管理弹药。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "常時/3秒",
+      "target": "常时/3秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ビーム",
+      "target": "光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【射撃CS】フォーンファルシアバトン【連射】",
+      "target": "【射击CS】凤法尔西亚光束棍【连射】",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "バトンを薙ぎ払って12発のビーム弾を展開し、時間差で突撃させる。\n薙ぎ払い動作中にBDCすると全弾展開する前にキャンセルされる。\n慣性があまり乗らず12発撃ち切るにはそれなりに足を止めてしまうが、誘導が強めのビームを一瞬で連射するため弾幕として強く、敵の虚を突いたような引っ掛かり方をする。\n赤ロック限界くらいで撒くと機能しやすく、90°近く曲がることも。特に可変機の変形移動には面白いように刺さる。\n見られていない時には積極的に撃っていきたい。",
+      "target": "挥动光束棍展开12发光束弹，并使其错时突击。\n在挥动动作中BD取消的话，会在全弹展开前被取消。\n虽然惯性不强，要打完12发会停足相当长一段时间，但因为是瞬间连射强诱导光束，作为弹幕很强，能出其不意地命中敌人。\n在红锁范围极限处撒布更容易发挥作用，有时能弯曲近90度。特别是在可变形机体的变形移动中效果显著。\n在敌人未察觉时应积极使用。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "メイン追加入力で再度ビームを射出可能。\n足を完全に止める武装なので射出後のケアには十分注意する必要がある。",
+      "target": "追加主射击输入可再次射出光束。\n由于是完全停足的武装，因此射出后需要充分注意自身保护。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "チャージ",
+      "target": "蓄力",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "秒",
+      "target": "秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ビーム",
+      "target": "光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "強よろけ",
+      "target": "强硬直",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【サブ射撃】ファルシアビット",
+      "target": "【副射击】法尔西亚浮游炮",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "5基のビットを一斉展開するオールレンジ攻撃。\nレバー入れで挙動変化。\n強化移行時に弾数が回復する。",
+      "target": "同时展开5个浮游炮的全方位攻击。\n摇杆输入可改变行动。\n强化移行时弹药数会回复。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "4秒",
+      "target": "4秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ビーム",
+      "target": "光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "強よろけ",
+      "target": "强硬直",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【Nサブ射撃】停滞",
+      "target": "【N副射击】停滞",
+      "method": "gemini",
+      "node_type": "h4"
+    },
+    {
+      "source": "「死んでいった者たちの為にも…！」\n自機の周りに5基のビットを展開し、もう一度サブ入力で発射する。",
+      "target": "“为了那些逝去的人们……！”\n在自机周围展开5个浮游炮，再次输入副射击发射。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "この形態での落下手段。\nあらかじめ展開しておき、振り向きメインや各特格から発射で自由落下に移行出来る。",
+      "target": "此形态下的落地手段。\n预先展开后，从转身主射击或各特殊格斗发射即可进入自由落地。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "アサキャンは停滞中でしか自由落下に移行しないので注意。\n小ワザとして、ビームを射出したビットが自機周囲に残っている間は振り向きメインやアシストの硬直を空撃ちでキャンセルすることが出来る。\nこれを応用した二段降りテクや着地ずらしを立ち回りに取り入れ、手数を増やしながら通常時を耐え抜こう。",
+      "target": "请注意，辅助取消只能在停滞中进入自由落地。\n作为小技巧，在射出光束的浮游炮仍留在自机周围时，可以通过空射取消转身主射击或辅助的硬直。\n将此应用于二段落地技巧和错位落地，增加攻击次数，从而在通常时坚持下去。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "【レバー入れサブ射撃】射出",
+      "target": "【摇杆输入副射击】射出",
+      "method": "gemini",
+      "node_type": "h4"
+    },
+    {
+      "source": "「ビットの雨に呑まれなさい！」\n敵の頭上に五角形を作る形で取り付くオールレンジ攻撃。\n射程限界がかなり長い。中距離以遠でも余裕で届くので後衛ではお世話になる。\n覚醒時はフルヒットでもよろけ止まりなので追撃可能。\nサブ射撃がアシストからの唯一の降りテクとなったことで、レバサブに割り振る機会は減った。\nこちらの利点は展開せずに咄嗟に出せること。",
+      "target": "“被浮游炮之雨吞噬吧！”\n以在敌人头顶形成五边形的方式缠绕攻击的全方位攻击。\n射程极限相当长。在中距离甚至更远的地方也能轻松命中，因此作为后卫会很有用。\n觉醒时即使全中也只会造成硬直，因此可以追击。\n由于副射击成为辅助攻击中唯一的落地技巧，分配给摇杆输入副射击的机会减少了。\n它的优点是无需展开即可瞬间发射。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "【特殊射撃】フォーンファルシアバトン【照射】",
+      "target": "【特殊射击】凤法尔西亚光束棍【照射】",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "「生きて帰れるとは思わないことね！」\n突き出したバトンから照射ビームを撃つ。\nやや細めだが発生が早く、強化移行時に弾数が回復するので使いやすい。\n追撃や硬直取りにはガンガン使っていこう。",
+      "target": "“别指望能活着回去！”\n从突出的光束棍中发射照射光束。\n虽然略细，但发生快，且在强化移行时弹药数会回复，因此易于使用。\n在追击和抓硬直时要大胆使用。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "12秒",
+      "target": "12秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "照射ビーム",
+      "target": "照射光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【特殊格闘】ガンダムレギルス 呼出",
+      "target": "【特殊格斗】呼叫高达雷基鲁斯",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "「ゼハート様、露払いは私にお任せください」\nゼハートのレギルスを呼び出すアシスト攻撃。レバー入力で性能が変化する。\n各サブへキャンセルが可能。Nサブ停滞中に特格→サブ入力で敵に背を向けていても落下が可能。",
+      "target": "“杰哈特大人，清场就交给我吧。”\n呼叫杰哈特·加雷特驾驶的雷基鲁斯进行辅助攻击。摇杆输入可改变性能。\n可取消至各副射。在N副射停滞中，通过特格→副射输入，即使背对敌人也能落地。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "本作におけるアシストとしては弾数が多めな反面、リロードも長い。\n時限強化中にも裏でリロードが進むので、格闘CSを使う前に撃ち切ってしまう方がお得。\n開幕は強化のリロードにクールタイムが無い関係上、無理して3発使っても強化が先に来てしまうレベルなのでガンガン回そう。",
+      "target": "作为本作的辅助攻击，虽然弹药数较多，但装填时间也长。\n在时限强化中也能在后台进行装填，因此在使用格斗CS之前将其打完更划算。\n开局时，由于强化装填没有冷却时间，即使勉强打完3发，强化也会先到来，所以要积极使用。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "撃ち切り/17秒",
+      "target": "打空/17秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【N特殊格闘】 レギルスビット【包囲】",
+      "target": "【N特殊格斗】 雷基鲁斯浮游炮【包围】",
+      "method": "gemini",
+      "node_type": "h4"
+    },
+    {
+      "source": "4発のビットが敵を包囲して突撃する。プレイアブルの後サブ。前作アプデ後同様射程距離が長い。\n強よろけなので追撃し易い。\nフルヒットでもメイン1発では強制ダウンまで持っていけないので、ズンダを仕込むか特射等で追撃を。",
+      "target": "4个浮游炮包围敌人并突击。是可操作机体的后副射。与前作更新后一样射程很长。\n由于是强硬直，所以易于追击。\n即使全中，也无法通过1发主射击造成强制倒地，因此需要使用连段或特射等进行追击。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "アシスト",
+      "target": "辅助",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "特殊実弾",
+      "target": "特殊实弹",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "強よろけ",
+      "target": "强硬直",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【前後特殊格闘】突撃",
+      "target": "【前后特殊格斗】突击",
+      "method": "gemini",
+      "node_type": "h4"
+    },
+    {
+      "source": "射撃バリア付きの突撃を行う。プレイアブルの前サブ。\nバリアアシストのため慣性の乗りが悪く、アサキャンはほぼ真下に落ちる。ゆえに射撃バリアを生かしやすい。\nそこそこの誘導を持ち、ゆっくりと進むため見られていない敵には当たることも多い。\n当てる事は難しいが当たると思ったら特射で追撃出来ると美味しい。",
+      "target": "进行带射击屏障的突击。是可操作机体的前副射。\n由于是屏障辅助，惯性差，辅助取消几乎是垂直落下。因此易于利用射击屏障。\n具有不错的诱导性，前进缓慢，因此常能命中未被察觉的敌人。\n虽然难以命中，但一旦命中，如果能用特射追击就赚了。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "突撃",
+      "target": "突击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "アシスト",
+      "target": "辅助",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "格闘",
+      "target": "格斗",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "半回転ダウン",
+      "target": "半旋转倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【横特殊格闘】レギルスライフル2連射→レギルスキャノン",
+      "target": "【横向特殊格斗】雷基鲁斯步枪2连射→雷基鲁斯加农炮",
+      "method": "gemini",
+      "node_type": "h4"
+    },
+    {
+      "source": "レギルスライフル2連射→レギルスキャノンを撃つ。プレイアブルのメイン2射→格闘CS1射。\n2発目までは普通のBR並の誘導と弾速だが、3発目のみ若干誘導と弾速が上がり、3発目はダウン値5のためこれだけで強制ダウンを取れる。3発目だけ当たることも多い。",
+      "target": "发射雷基鲁斯步枪2连射→雷基鲁斯加农炮。是可操作机体的主射2发→格斗CS1发。\n前2发具有与普通BR相当的诱导和弹速，但第3发诱导和弹速略有提升，且第3发倒地值达5，仅凭此即可造成强制倒地。常发生只命中第3发的情况。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ライフル",
+      "target": "步枪",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "アシスト",
+      "target": "辅助",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ビーム",
+      "target": "光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "2段目",
+      "target": "第2段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "キャノン",
+      "target": "加农炮",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "ビーム",
+      "target": "光束",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【格闘CS】Xラウンダー解放",
+      "target": "【格斗CS】X-Rounder解放",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "「私はあの人を…あの人の優しい心を守りたい！」\n特徴的なSEと共に機体が赤く発光する時限強化。\n耐久値が259以下・あるいは覚醒中は常に時限強化の効果が得られる。\n格闘CS使用中に覚醒するとゲージ減少が止まり、覚醒終了時に改めて消費が再開される。",
+      "target": "“我想保护那个人……保护那份温柔的心！”\n伴随着独特的音效，机体发出红色光芒的时限强化。\n耐久值在259以下或觉醒中始终能获得时限强化的效果。\n在格斗CS使用中觉醒，能量槽减少会停止，觉醒结束后会重新开始消耗。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "被弾による耐久値での強制解放の場合、\n着地硬直や武装硬直中は硬直が優先され無敵に入らずよろけが継続されてしまう。\n被弾解放を狙う場合、なるべく着地しつつ歩ける状態(無硬直状態)で被弾強化を狙いたい。",
+      "target": "因受弹而通过耐久值强制解放时，\n在落地硬直或武装硬直中，硬直会优先，不会进入无敌状态，硬直会持续下去。\n如果目标是受弹解放，最好在落地且能行走的状态（无硬直状态）下触发受弹强化。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "\n得意とする距離が通常時と強化時で若干異なるものの、基本的には強化時の方が優秀なので貯まり次第発動するくらいでいい。むしろ温存し過ぎると相方負担が大きくなる。\n\n",
+      "target": "\n虽然擅长距离在通常时和强化时略有不同，但基本上强化时更为优秀，因此蓄满后立即发动即可。反而如果过度保留，会增加搭档的负担。\n\n",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "チャージ",
+      "target": "蓄力",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "持続",
+      "target": "持续",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "クールタイム",
+      "target": "冷却时间",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "2秒",
+      "target": "2秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "17秒",
+      "target": "17秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "5秒",
+      "target": "5秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "15秒",
+      "target": "15秒",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "格闘",
+      "target": "格斗",
+      "method": "gemini",
+      "node_type": "h2"
+    },
+    {
+      "source": "【通常格闘】フォーンファルシアバトン",
+      "target": "【通常格斗】凤法尔西亚光束棍",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "袈裟斬り→斬り上げ→竜巻突撃。\n2段目で打ち上げ、ビットを纏った多段ヒット突撃で追撃する3段格闘。AGE-FXとの鍔迫り合いの再現。",
+      "target": "袈裟斩→斩击上挑→龙卷突击。\n在第2段将敌人击飞，再以缠绕浮游炮的多段命中突击追击的3段格斗。再现了与AGE-FX的刀剑相交。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "3段目の突撃には解放中N/前後特格と同様の射撃バリア判定がある。\n狙って使えるものではないが、敵からのカットを防げたらラッキー程度に覚えておくのもありか。\nまたダウン値がやや高く、1.8以上から当てるとフルヒット前に強制ダウンする。\n出し切りで大きく打ち上げつつ自分も上昇するため追撃は楽。",
+      "target": "第3段的突击具有与解放中的N/前后特格相同的射击屏障判定。\n虽然不是能刻意使用的，但作为防止敌人切入的幸运情况记住也不错。\n此外，倒地值较高，若在1.8以上命中，则在全中前会强制倒地。\n因打完后自身也会大幅上升并击飞敌人，所以追击很容易。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "\n今作では出し切りダメージがわずかに上昇した。\n\n",
+      "target": "\n本作中，打完的伤害略有提升。\n\n",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "\n1段目及び2段目から後派生が可能。\n\n",
+      "target": "\n可从第1段及第2段进行后派生。\n\n",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "袈裟斬り",
+      "target": "袈裟斩",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "┗2段目",
+      "target": "┗第2段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "斬り上げ",
+      "target": "斩击上挑",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "　┗3段目",
+      "target": "　┗第3段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "竜巻突撃",
+      "target": "龙卷突击",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "砂埃ダウン",
+      "target": "沙尘倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【N格闘/横格闘後派生】振り上げ",
+      "target": "【N格斗/横格斗后派生】挥斩上挑",
+      "method": "gemini",
+      "node_type": "h4"
+    },
+    {
+      "source": "単発の斬り上げ系1段。旧後格闘。\n受身不可ダウンの為、OH時に派生しても反撃を受ける心配がない。\n特射にキャンセル可。",
+      "target": "单发斩击系1段。旧后格斗。\n因是无法受身倒地，所以在OH时派生也不必担心受到反击。\n可取消至特射。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "格闘派生",
+      "target": "格斗派生",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計威力(累計補正率)",
+      "target": "累计威力(累计补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発威力\n(単発補正率)",
+      "target": "单发威力\n(单发补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計ダウン値",
+      "target": "累计倒地值",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発ダウン値",
+      "target": "单发倒地值",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "N・横",
+      "target": "N·横",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "横N",
+      "target": "横N",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "N・横",
+      "target": "N·横",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "NN・横N",
+      "target": "NN·横N",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "┗後派生",
+      "target": "┗后派生",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "振り上げ",
+      "target": "挥斩上挑",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "受身不可ダウン",
+      "target": "无法受身倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【前格闘】突き",
+      "target": "【前格斗】突刺",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "バトンを前に突き出す多段hit1段格闘。判定・伸びが強め。\n突き出しのリーチがわりと長めでこちらから仕掛ける際の選択肢となる。迎撃より先出し向け。",
+      "target": "将光束棍向前突刺的多段命中1段格斗。判定和延伸性较强。\n突刺的攻击距离相当长，是主动进攻时的选择。更适合先手而非迎击。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "突き",
+      "target": "突刺",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "砂埃ダウン",
+      "target": "沙尘倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【横格闘】振り払い→振り上げ→振り下ろし",
+      "target": "【横格斗】扫击→挥斩上挑→挥斩下劈",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "標準的な3段格闘。\n3段目で視点変更。\n伸びが悪く、出し切りの浮きが浅く追撃困難とやや褒めにくい。\n1・2段目からN格と同様の派生が可能。",
+      "target": "标准的3段格斗。\n第3段会改变视角。\n突进性能不佳，出招结束时的浮空较低，难以追击，优点较少。\n第1、2段可以派生出与N格斗相同的招式。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "\nこちらも累計ダメージがわずかに上昇した。\n\n",
+      "target": "\n累计伤害也略有提升。\n\n",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "振り払い",
+      "target": "挥打",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "┗2段目",
+      "target": "┗第2段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "振り上げ",
+      "target": "上挑",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "　┗3段目",
+      "target": "　┗第3段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "振り下ろし",
+      "target": "下劈",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【後格闘】振り回し",
+      "target": "【后格斗】挥舞",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "その場でバトンを振り回し、周囲を攻撃する。\n強判定だが範囲が小さく、且つ見た目に反して射撃バリアは無い。\n意図的に当てに行くのではなく、格闘に合わせてカウンター気味に使う。\n本機の降りテクは敵に背を向けていても使えるため、その目的では使う必要はない。",
+      "target": "在原地挥舞警棍，攻击周围。\n判定强但范围小，并且与外观相反，没有射击屏障。\n不宜主动命中，而应配合格斗进行反击使用。\n本机的下降技巧即使背对敌人也能使用，因此无需为此目的使用。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "\nメイン射撃からキャンセル可能。\n\n",
+      "target": "\n可从主射击取消。\n\n",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "N特格",
+      "target": "N特格",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "振り回し",
+      "target": "挥舞",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "受身不可ダウン",
+      "target": "不可受身倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "【BD格闘】斬り抜け→振り払い",
+      "target": "【BD格斗】突进斩→挥打",
+      "method": "gemini",
+      "node_type": "h3"
+    },
+    {
+      "source": "斬り抜け始動の2段格闘。\n斬り抜け系らしく伸びが良く、各種追撃や闇討ちなど活躍の場面は多い。\n2段目から前フワでメインが繋がる。",
+      "target": "以突进斩起手的2段格斗。\n具有突进斩系特有的优秀突进性能，在各种追击和偷袭等场合有广泛的用途。\n第2段后，前方向的浮空可以衔接主射击。",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "動作",
+      "target": "动作",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "威力(補正率)",
+      "target": "威力(补正率)",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "累計",
+      "target": "累计",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "単発",
+      "target": "单发",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "1段目",
+      "target": "第1段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "斬り抜け",
+      "target": "突进斩",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "半回転ダウン",
+      "target": "半旋转倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "┗2段目",
+      "target": "┗第2段",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "斬り抜け",
+      "target": "突进斩",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "受身不可ダウン",
+      "target": "不可受身倒地",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "\n(>はステップ、≫はブーストダッシュ、→はそのままキャンセル キャンセル補正で威力が変動する物は()で併記)\n\n",
+      "target": "\n(>表示垫步，≫表示BD冲刺，→表示直接取消 因取消补正导致威力变动的会在括号内并记)\n\n",
+      "method": "gemini",
+      "node_type": "div"
+    },
+    {
+      "source": "射撃始動",
+      "target": "射击起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "N格始動",
+      "target": "N格斗起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "前格始動",
+      "target": "前格斗起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "横格始動",
+      "target": "横格斗起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "後格始動",
+      "target": "后格斗起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "BD格始動",
+      "target": "BD格斗起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "覚醒中射撃始動",
+      "target": "觉醒中射击起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "覚醒中格闘始動",
+      "target": "觉醒中格斗起手",
+      "method": "gemini",
+      "node_type": "td"
+    },
+    {
+      "source": "参考資料集",
+      "target": "参考资料集",
+      "method": "gemini",
+      "node_type": "h2"
+    }
+  ]
+}

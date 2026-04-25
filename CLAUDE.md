@@ -23,6 +23,8 @@ py scripts/translate_scheduler.py           # Batch-translate all machines
 py scripts/translate_scheduler.py --id <id> # Translate one machine via batch script
 py scripts/translate_scheduler.py --force   # Overwrite all existing translations
 py scripts/translate_scheduler.py --delay 2.0  # Slow down inter-machine wait
+py scripts/download_assets.py               # Download machine + cost images from exvsdb.com → public/images/
+py scripts/localize_wiki_images.py          # Replace atwiki image URLs in JSON files with local /images/machines/{num}.png
 ```
 
 Python dependencies: `pip install beautifulsoup4 playwright google-genai` then `py -m playwright install chromium`
