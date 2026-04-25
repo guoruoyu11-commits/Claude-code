@@ -62,6 +62,7 @@ export default defineComponent({
     }
 
     const EXTERNAL_URL_RE = /^(https?:)?\/\//
+    const ALLOWED_EXTERNAL_RE = /^https?:\/\/web\.vsmobile\.jp/
     const VOID_TAGS = ['br', 'hr', 'img', 'source']
 
     function applyExternalLink(attrs) {
@@ -109,7 +110,10 @@ export default defineComponent({
         return
       }
 
-      if (EXTERNAL_URL_RE.test(href)) applyExternalLink(attrs)
+      if (EXTERNAL_URL_RE.test(href)) {
+        if (ALLOWED_EXTERNAL_RE.test(href)) applyExternalLink(attrs)
+        else delete attrs.href
+      }
     }
 
     function renderJsonNode(n, poc) {
@@ -171,7 +175,10 @@ export default defineComponent({
         const href = node.getAttribute('href')
         if (href && href !== 'javascript:void(0)') {
           attrs.href = href
-          if (EXTERNAL_URL_RE.test(href)) applyExternalLink(attrs)
+          if (EXTERNAL_URL_RE.test(href)) {
+            if (ALLOWED_EXTERNAL_RE.test(href)) applyExternalLink(attrs)
+            else delete attrs.href
+          }
         }
       }
 
