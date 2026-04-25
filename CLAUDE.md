@@ -10,21 +10,24 @@ npm run build       # Production build
 npm run preview     # Preview production build
 
 # Python scripts (use py, not python3, on this Windows machine)
-py scripts/scrape_one.py <id>               # Scrape one machine's wiki page → public/data/machines/<id>.json
-py scripts/scrape_one.py <id> --force       # Overwrite existing
-py scripts/scrape_one.py <id> --debug       # Debug mode
-py scripts/scrape_scheduler.py              # Batch-scrape all machines (skip existing)
-py scripts/scrape_scheduler.py --delay 2.0  # Slow down to 2s/request
-py scripts/scrape_scheduler.py --id <id>    # Scrape one machine via batch script
-py scripts/translate_nodes.py <id>          # Translate one machine (node-based, recommended)
-py scripts/translate_nodes.py <id> --force  # Overwrite existing translation
-py scripts/translate_nodes.py <id> --model gemini-2.0-flash  # Use a different model
-py scripts/translate_scheduler.py           # Batch-translate all machines
-py scripts/translate_scheduler.py --id <id> # Translate one machine via batch script
-py scripts/translate_scheduler.py --force   # Overwrite all existing translations
-py scripts/translate_scheduler.py --delay 2.0  # Slow down inter-machine wait
-py scripts/download_assets.py               # Download machine + cost images from exvsdb.com → public/images/
-py scripts/localize_wiki_images.py          # Replace atwiki image URLs in JSON files with local /images/machines/{num}.png
+py scripts/pipeline.py <id> [<id2> ...]          # Full pipeline: scrape → translate → localize images
+py scripts/pipeline.py <id> --force              # Force re-scrape and re-translate
+py scripts/pipeline.py <id> --skip-scrape        # Skip scraping, translate only
+py scripts/pipeline.py <id> --model gemini-2.0-flash  # Use a specific model
+py scripts/pipeline.py <id> --workers 10         # Parallel workers (batch mode)
+py scripts/pipeline.py <id> --retries 2          # Retry failed machines N times
+
+py scripts/scrape_one.py <id>                    # Scrape one machine's wiki page → public/data/machines/<id>.json
+py scripts/scrape_one.py <id> --force            # Overwrite existing
+py scripts/scrape_scheduler.py                   # Batch-scrape all machines (skip existing)
+
+py scripts/translate_nodes.py <id>               # Translate one machine
+py scripts/translate_nodes.py <id> --force       # Overwrite existing translation
+py scripts/translate_scheduler.py                # Batch-translate all machines
+py scripts/translate_scheduler.py --force        # Overwrite all existing translations
+
+py scripts/download_assets.py                    # Download machine + cost images → public/images/
+py scripts/localize_wiki_images.py               # Replace atwiki image URLs in JSON with local /images/machines/{num}.png
 ```
 
 Python dependencies: `pip install beautifulsoup4 playwright google-genai` then `py -m playwright install chromium`
@@ -38,28 +41,31 @@ Vue 3 + Vite + vue-router app. Two routes:
 - `/machine/:id` → `MachineDetailPage.vue` — machine detail with wiki content
 
 **`src/data/machines.js`** — single source of truth for all machine data. Exports:
-- `MACHINES` — array of `{ id, name, short, cost, tier, img, link? }`. `name` is Chinese. `img` is from `https://exvsdb.com/wp-content/images/exvs2ib/{id}.png`.
+- `MACHINES` — array of `{ id, name, short, cost, tier, img }`. `name` is Chinese.
 - `TIERS` — ordered array `['S','A+','A','A-','B+','B','B-','C']`
 - `TIER_META` — maps tier string → `{ label, sub, cls }` where `cls` drives CSS class on tier label
 
 **Component responsibilities:**
-- `CostFilter.vue` — cost tab buttons using exvsdb.com images (`cost{N}.png` / `cost{N}_off.png`). Emits `update:modelValue`.
+- `CostFilter.vue` — cost tab buttons using local `/images/cost/cost{N}.png` images. Emits `update:modelValue`.
 - `TierTable.vue` — groups filtered machines by tier, renders one `TierRow` per tier.
-- `TierRow.vue` — tier label (colored by `.tier-label.{cls}`) + row of `MachineCard`s. Tier label colors defined here as scoped CSS `.tier-label.{cls}` — add new entries when adding tiers to `TIER_META`.
-- `MachineCard.vue` — 127×55px card. Shows `machine.img` with cost badge overlay; falls back to gradient + `machine.short` if image missing. Clicking navigates to `/machine/:id`.
+- `TierRow.vue` — tier label + row of `MachineCard`s.
+- `MachineCard.vue` — 127×55px card with cost badge; falls back to gradient + `machine.short` if image missing.
+- `WikiContent.vue` — renders `content_nodes` tree. Handles: collapse sections, sub-page link routing, external link filtering (whitelist: `web.vsmobile.jp` only), and hides "参考資料/外部リンク/参戦PV" sections automatically.
 
 **Machine detail data flow:**
-- `MachineDetailPage.vue` fetches `/data/machines/{id}_zh.json` first (Chinese), falls back to `/data/machines/{id}.json` (Japanese) if not available. Shows lang toggle only when Chinese version exists.
-- `WikiContent.vue` renders content: prefers `content_nodes` (structured node tree) over `content_html` (raw HTML). All newly generated translations use `content_nodes`.
-- JSON files live in `public/data/machines/` and are served as static assets.
+- `MachineDetailPage.vue` fetches `/data/machines/{id}_zh.json` (Chinese), falls back to `{id}.json` (Japanese).
+- JSON files in `public/data/machines/` are static assets served directly.
+- Sub-pages stored as `{id}_p{pageNum}.json` and `{id}_p{pageNum}_zh.json`.
 
 **Data generation pipeline:**
-1. `scripts/scrape_one.py` — fetches atwiki page for a machine (with Playwright fallback for JS-rendered pages), extracts HTML content, saves `public/data/machines/{id}.json` with `content_html` and `content_nodes`
-2. `scripts/html_to_nodes.py` — converts `content_html` (raw Japanese HTML) into a compact `content_nodes` JSON tree; called automatically by `translate_nodes.py` when nodes are missing
-3. `scripts/translate_nodes.py` — **standard translation script**: extracts only leaf Japanese text from nodes, pre-substitutes ~95 fixed terms via `ja_zh_dict.py` (zero API cost), sends remaining text in batches to Gemini as JSON arrays, saves `{id}_zh.json` with `content_nodes`. Supports checkpoint/resume via `{id}_zh_nodes_progress.json`.
-4. `scripts/ja_zh_dict.py` — fixed Japanese→Chinese term dictionary (section headings, table column names, game terms). Provides `has_japanese()` and `apply_dict()`.
-5. `generate_machines.py` (root) — parses saved HTML from exvsdb.com to regenerate `src/data/machines.js`
-6. `translate_machines.py` (root) — replaces Japanese names with Chinese in `machines.js`
+1. `scripts/pipeline.py` — **main entry point**: orchestrates scrape → translate → localize for one or more machines. Supports parallel workers (`--workers`), retry (`--retries`), and skip flags.
+2. `scripts/scrape_one.py` — fetches atwiki page (Playwright fallback for JS-rendered pages), saves `{id}.json` with `content_html` and `content_nodes`. Detects and scrapes sub-pages automatically.
+3. `scripts/html_to_nodes.py` — converts `content_html` into `content_nodes` JSON tree; called by `translate_nodes.py` when nodes are missing.
+4. `scripts/translate_nodes.py` — extracts leaf Japanese text from nodes, pre-substitutes ~95 fixed terms via `ja_zh_dict.py`, sends batches to Gemini as `[{"id": N, "t": "text"}]` arrays (ID-based to handle partial responses), saves `{id}_zh.json`. Supports checkpoint/resume via `{id}_zh_nodes_progress.json`. Handles sub-pages automatically.
+5. `scripts/ja_zh_dict.py` — fixed Japanese→Chinese term dictionary.
+6. `scripts/localize_wiki_images.py` — replaces atwiki image URLs in JSON files with local paths.
+7. `generate_machines.py` (root) — regenerates `src/data/machines.js` from exvsdb.com HTML.
+8. `translate_machines.py` (root) — replaces Japanese names with Chinese in `machines.js`.
 
 **Translation output format** (`{id}_zh.json`):
 ```json
@@ -68,7 +74,7 @@ Vue 3 + Vite + vue-router app. Two routes:
   "id": "m12504",
   "name": "...",
   "translated_at": "...",
-  "model": "gemini-2.5-pro",
+  "model": "gemini-2.5-flash",
   "content_nodes": [...],
   "translation_log": [
     { "source": "原文", "target": "译文", "method": "dict", "node_type": "td" },
@@ -76,34 +82,28 @@ Vue 3 + Vite + vue-router app. Two routes:
   ]
 }
 ```
-No `content_html` in translated output — only `content_nodes`. `translation_log` records every translated segment in document order: dict hits first (in node order), then Gemini results. Each entry has `source` (original Japanese), `target` (translated text), `method` (`"dict"` or `"gemini"`), and `node_type` (tag of the containing node).
 
-**Failed translation tracking:** `public/data/translate_failed.json` stores IDs that failed last run; `translate_scheduler.py` retries these first on the next run.
-
-`scripts/translate_one.py` (legacy HTML-based translation) is retained but no longer part of the standard pipeline.
+**Failed translation tracking:** `public/data/translate_failed.json` stores IDs that failed; `translate_scheduler.py` retries these first on the next run.
 
 ## Deployment
 
-Production runs as a Docker container on Alibaba Cloud ECS, served by nginx on port 80.
+Production: Docker container on Alibaba Cloud ECS, nginx on ports 80 (HTTP→HTTPS redirect) and 443 (HTTPS).
 
-**CI/CD pipeline** (`.github/workflows/deploy.yml`):
-1. Push to `main` → GitHub Actions triggers
-2. `npm ci && npm run build` on GitHub runner
-3. Docker image built and pushed to GHCR (`ghcr.io/<owner>/<repo>:latest`) using built-in `GITHUB_TOKEN`
-4. SSH into ECS → pull new image (using `GH_PAT` secret) → restart container
+**CI/CD** (`.github/workflows/deploy.yml`): push to `main` → build on GitHub runner → push Docker image to GHCR → SSH to ECS → pull and restart container.
 
 **Required GitHub Secrets:**
+
 | Secret | Description |
 |--------|-------------|
-| `GH_PAT` | GitHub PAT with `read:packages` scope (for ECS to pull from GHCR) |
+| `GH_PAT` | GitHub PAT with `read:packages` scope |
 | `ECS_HOST` | ECS public IP |
-| `ECS_USERNAME` | SSH username (usually `root`) |
+| `ECS_USERNAME` | SSH username |
 | `ECS_SSH_KEY` | SSH private key content |
 
-**Local Docker build (for testing):**
+**SSL:** Certificates mounted from ECS host at `/etc/ssl/exvsdb/` (`.pem` and `.key`). Must be placed on the ECS machine manually; nginx reads them via Docker volume mount.
+
+**Local Docker build:**
 ```bash
 docker build -t exvsdb .
-docker run -p 80:80 exvsdb
+docker run -p 80:80 -p 443:443 exvsdb
 ```
-
-nginx config (`nginx.conf`) includes SPA fallback (`try_files $uri $uri/ /index.html`) required for vue-router history mode, plus cache headers for `/assets/` (1 year immutable) and `/data/` (1 hour).
