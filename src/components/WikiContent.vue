@@ -195,11 +195,46 @@ export default defineComponent({
       return h(tag, attrs, children.length ? children : undefined)
     }
 
+    const REF_SECTION_RE = /参考|外部[リ链]/
+
+    function filterTocUl(n) {
+      if (n.t !== 'ul' && n.t !== 'ol') return n
+      const filtered = (n.c || [])
+        .filter(li => {
+          const anchor = (li.c || []).find(c => c.t === 'a')
+          return !anchor || !REF_SECTION_RE.test(anchor.v || '')
+        })
+        .map(li => ({ ...li, c: (li.c || []).map(c => filterTocUl(c)) }))
+      return { ...n, c: filtered }
+    }
+
+    function filterRefSection(nodes) {
+      let skip = false
+      return nodes
+        .filter(n => {
+          if ((n.t === 'h2' || n.t === 'h3') && typeof n.v === 'string') {
+            skip = REF_SECTION_RE.test(n.v)
+          }
+          return !skip
+        })
+        .map(n => {
+          if (n.t !== 'collapse') return n
+          return {
+            ...n,
+            c: (n.c || []).map(child =>
+              child.t === 'div' && child.a?.class?.includes('plugin_contents')
+                ? { ...child, c: (child.c || []).map(filterTocUl) }
+                : child
+            )
+          }
+        })
+    }
+
     return () => {
       const poc = { n: 0 }
 
       if (props.nodes) {
-        const children = props.nodes.map(n => renderJsonNode(n, poc)).filter(Boolean)
+        const children = filterRefSection(props.nodes).map(n => renderJsonNode(n, poc)).filter(Boolean)
         return h('div', { class: 'wiki-content' }, children)
       }
 
