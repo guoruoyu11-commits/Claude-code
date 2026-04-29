@@ -262,6 +262,11 @@ export default defineComponent({
   color: var(--text-primary);
 }
 
+.wiki-content p {
+  margin: 0.7em 0;
+  line-height: 1.85;
+}
+
 .wiki-content h1,
 .wiki-content h2,
 .wiki-content h3 {
@@ -274,23 +279,50 @@ export default defineComponent({
 
 .wiki-content table {
   border-collapse: collapse;
-  margin: 12px 0;
+  margin: 16px 0;
   font-size: 13px;
   display: block;
   overflow-x: auto;
-  width: max-content;
+  width: 100%;
   max-width: 100%;
+  line-height: 1.5;
 }
 .wiki-content th,
 .wiki-content td {
   border: 1px solid var(--border);
-  padding: 6px 10px;
-  text-align: left;
+  min-width: 56px;
+  padding: 8px 12px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.55;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 .wiki-content th {
   background: rgba(255,255,255,0.05);
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.wiki-content :deep(th:first-child),
+.wiki-content :deep(td:first-child) {
+  min-width: 76px;
+}
+
+.wiki-content :deep(th:nth-child(2)),
+.wiki-content :deep(td:nth-child(2)) {
+  min-width: 78px;
+}
+
+.wiki-content :deep(td[colspan]),
+.wiki-content :deep(th[colspan]) {
+  min-width: 96px;
+}
+
+.wiki-content :deep(td:last-child),
+.wiki-content :deep(th:last-child) {
+  min-width: 92px;
 }
 
 .wiki-content a {

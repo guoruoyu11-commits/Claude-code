@@ -38,8 +38,8 @@ function imgUrl(cost, active) {
 .filter-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  margin-bottom: 12px;
+  gap: 6px;
+  margin-bottom: 14px;
 }
 .cost-tab {
   padding: 0;
@@ -47,14 +47,26 @@ function imgUrl(cost, active) {
   background: transparent;
   cursor: pointer;
   opacity: 0.75;
-  transition: opacity .15s, transform .15s;
+  border-radius: 6px;
+  transition: opacity .15s, transform .15s, filter .15s;
 }
-.cost-tab:hover { opacity: 1; }
-.cost-tab.active { opacity: 1; }
+.cost-tab:hover { opacity: 1; filter: brightness(1.05); }
+.cost-tab.active { opacity: 1; transform: translateY(-1px); }
 
 .cost-img {
   display: block;
-  width: 240px;
+  width: min(240px, calc((100vw - 72px) / 2));
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .filter-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cost-img {
+    width: 100%;
+  }
 }
 </style>

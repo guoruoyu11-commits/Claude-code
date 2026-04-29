@@ -86,23 +86,30 @@ header::before {
 }
 
 .logo-sub {
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text-muted);
   letter-spacing: 1px;
   white-space: nowrap;
 }
 
 .header-badge {
-  font-family: var(--font-ui);
-  font-size: 10px;
+  height: 32px;
+  min-width: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   color: var(--text-muted);
   border: 1px solid var(--border-bright);
-  padding: 2px 7px;
-  border-radius: 3px;
+  padding: 1px 12px 0;
+  border-radius: 6px;
   margin-left: auto;
+  line-height: 31px;
+  text-align: center;
 }
 
 .theme-toggle {
@@ -112,6 +119,7 @@ header::before {
   border-radius: 6px;
   width: 32px;
   height: 32px;
+  flex: 0 0 32px;
   display: flex;
   align-items: center;
   justify-content: center;
