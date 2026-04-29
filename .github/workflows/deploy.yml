@@ -1,56 +1,23 @@
-name: Build & Deploy
+name: Deploy to Vercel
 
 on:
   push:
     branches: [main]
 
-env:
-  REGISTRY: ghcr.io
-
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set lowercase image name
-        run: echo "IMAGE_NAME=$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
         with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build & Push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-
-      - name: Deploy to ECS via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.ECS_HOST }}
-          username: ${{ secrets.ECS_USERNAME }}
-          key: ${{ secrets.ECS_SSH_KEY }}
-          command_timeout: 30m
-          script: |
-            echo ${{ secrets.GH_PAT }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            docker pull ghcr.io/${{ env.IMAGE_NAME }}:latest
-            docker stop exvsdb || true
-            docker rm exvsdb || true
-            docker run -d \
-              --name exvsdb \
-              --restart unless-stopped \
-              -p 80:80 \
-              -p 443:443 \
-              -v /etc/ssl/exvsdb:/etc/ssl/exvsdb:ro \
-              ghcr.io/${{ env.IMAGE_NAME }}:latest
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
