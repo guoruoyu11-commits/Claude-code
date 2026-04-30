@@ -6,7 +6,13 @@
     </div>
     <div class="tier-content">
       <template v-if="machines.length > 0">
-        <MachineCard v-for="m in machines" :key="m.id" :machine="m" :tier-cls="meta.cls" />
+        <MachineCard
+          v-for="(m, index) in machines"
+          :key="m.id"
+          :machine="m"
+          :tier-cls="meta.cls"
+          :style="{ '--card-delay': `${index * 45}ms` }"
+        />
       </template>
       <span v-else class="empty-msg">— 暂无机体 —</span>
     </div>

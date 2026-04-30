@@ -34,35 +34,39 @@
           <strong>{{ selectedCost }} COST</strong>
         </div>
 
-        <div class="stat-grid">
-          <div class="stat-item">
-            <span>收录机体</span>
-            <b>{{ filteredMachines.length }}</b>
-          </div>
-          <div class="stat-item">
-            <span>S / A+ 档</span>
-            <b>{{ highTierCount }}</b>
-          </div>
-          <div class="stat-item">
-            <span>攻略覆盖</span>
-            <b>{{ guideCount }}</b>
-          </div>
-        </div>
+        <Transition name="panel-switch" mode="out-in">
+          <div :key="selectedCost" class="panel-body">
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span>收录机体</span>
+                <b>{{ animatedTotal }}</b>
+              </div>
+              <div class="stat-item">
+                <span>S / A+ 档</span>
+                <b>{{ animatedHigh }}</b>
+              </div>
+              <div class="stat-item">
+                <span>攻略覆盖</span>
+                <b>{{ animatedGuide }}</b>
+              </div>
+            </div>
 
-        <div class="spotlight">
-          <span class="panel-label">高评价机体</span>
-          <div class="spotlight-list">
-            <RouterLink
-              v-for="machine in spotlightMachines"
-              :key="machine.id"
-              class="spotlight-card"
-              :to="`/machine/${machine.id}`"
-            >
-              <img :src="machine.img" :alt="machine.name" />
-              <span>{{ machine.name }}</span>
-            </RouterLink>
+            <div class="spotlight">
+              <span class="panel-label">高评价机体</span>
+              <div class="spotlight-list">
+                <RouterLink
+                  v-for="machine in spotlightMachines"
+                  :key="machine.id"
+                  class="spotlight-card"
+                  :to="`/machine/${machine.id}`"
+                >
+                  <img :src="machine.img" :alt="machine.name" />
+                  <span>{{ machine.name }}</span>
+                </RouterLink>
+              </div>
+            </div>
           </div>
-        </div>
+        </Transition>
       </aside>
     </section>
 
@@ -79,13 +83,15 @@
       </div>
 
       <CostFilter v-model="selectedCost" />
-      <TierTable :machines="filteredMachines" />
+      <Transition name="tier-switch" mode="out-in">
+        <TierTable :key="selectedCost" :machines="filteredMachines" />
+      </Transition>
     </section>
   </main>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { RouterLink } from 'vue-router'
 import { MACHINES } from '../data/machines.js'
 import CostFilter from '../components/CostFilter.vue'
@@ -113,6 +119,27 @@ const highTierCount = computed(() =>
 const guideCount = computed(() =>
   filteredMachines.value.filter(machine => Boolean(machine.link)).length
 )
+
+const animatedTotal = ref(0)
+const animatedHigh  = ref(0)
+const animatedGuide = ref(0)
+
+function animateCounter(target, to, duration = 550) {
+  const start = performance.now()
+  const tick = (now) => {
+    const t = Math.min((now - start) / duration, 1)
+    const eased = 1 - Math.pow(1 - t, 3)
+    target.value = Math.round(to * eased)
+    if (t < 1) requestAnimationFrame(tick)
+  }
+  requestAnimationFrame(tick)
+}
+
+watch(selectedCost, () => {
+  animateCounter(animatedTotal, filteredMachines.value.length)
+  animateCounter(animatedHigh,  highTierCount.value)
+  animateCounter(animatedGuide, guideCount.value)
+}, { immediate: true })
 
 const spotlightMachines = computed(() => {
   const ranked = filteredMachines.value.filter(machine => topTiers.includes(machine.tier))
@@ -377,6 +404,18 @@ h2 {
   font-weight: 700;
   letter-spacing: .8px;
 }
+
+/* TierTable 切换动效 */
+.tier-switch-leave-active { transition: opacity 0.15s ease, transform 0.15s ease; }
+.tier-switch-enter-active { transition: opacity 0.22s ease, transform 0.22s ease; }
+.tier-switch-leave-to  { opacity: 0; transform: translateY(-6px); }
+.tier-switch-enter-from { opacity: 0; transform: translateY(10px); }
+
+/* 右侧面板数据切换动效 */
+.panel-switch-leave-active { transition: opacity 0.12s ease; }
+.panel-switch-enter-active { transition: opacity 0.2s ease, transform 0.2s ease; }
+.panel-switch-leave-to  { opacity: 0; }
+.panel-switch-enter-from { opacity: 0; transform: translateY(6px); }
 
 @media (max-width: 900px) {
   .overview {

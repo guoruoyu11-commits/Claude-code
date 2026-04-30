@@ -32,6 +32,11 @@ const imgFailed = ref(false)
 </script>
 
 <style scoped>
+@keyframes card-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
 .machine-card {
   width: 148px;
   position: relative;
@@ -39,6 +44,8 @@ const imgFailed = ref(false)
   display: inline-block;
   text-decoration: none;
   transition: transform .18s ease, filter .18s ease;
+  animation: card-enter 0.32s ease-out backwards;
+  animation-delay: var(--card-delay, 0ms);
 }
 .machine-card:hover {
   transform: translateY(-4px) scale(1.02);

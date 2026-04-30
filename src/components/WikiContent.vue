@@ -1,5 +1,5 @@
 <script>
-import { h, ref, computed, watchEffect, defineComponent } from 'vue'
+import { h, ref, computed, watchEffect, defineComponent, Transition } from 'vue'
 
 export default defineComponent({
   name: 'WikiContent',
@@ -50,14 +50,31 @@ export default defineComponent({
       collapseStates.value[key] = !collapseStates.value[key]
     }
 
+    function addFlashHandler(attrs) {
+      const orig = attrs.onClick
+      attrs.onClick = (e) => {
+        const el = e.currentTarget
+        if (el) {
+          el.classList.add('link-flash')
+          setTimeout(() => el.classList.remove('link-flash'), 500)
+        }
+        if (orig) orig(e)
+      }
+    }
+
     function renderCollapse(key, rawLabel, inner) {
       const isOpen = collapseStates.value[key] !== false
-      const label = (isOpen ? '▼' : '▶') + (rawLabel ? ' ' + rawLabel : '')
+      const label = rawLabel ? (' ' + rawLabel) : ''
       return h('div', { class: 'plugin-openclose' }, [
         h('div', { class: 'plugin-openclose-link' }, [
-          h('a', { onClick: () => toggle(key) }, label)
+          h('a', { onClick: () => toggle(key) }, [
+            h('span', { class: isOpen ? 'poc-arrow' : 'poc-arrow poc-collapsed' }, '▾'),
+            label
+          ])
         ]),
-        h('div', { class: 'plugin-openclose-contents', style: isOpen ? '' : 'display:none' }, inner)
+        h(Transition, { name: 'poc-expand' }, () =>
+          isOpen ? h('div', { class: 'plugin-openclose-contents' }, inner) : null
+        )
       ])
     }
 
@@ -88,6 +105,38 @@ export default defineComponent({
 
     function resolveAnchorAttrs(attrs) {
       const href = attrs.href || ''
+
+      // In-page anchor: smooth scroll + target highlight
+      if (href.startsWith('#')) {
+        attrs.onClick = (e) => {
+          e.preventDefault()
+          const target = document.querySelector(href)
+          if (!target) return
+          const headerH = document.querySelector('header')?.offsetHeight ?? 56
+          const y = target.getBoundingClientRect().top + window.scrollY - headerH - 16
+          window.scrollTo({ top: y, behavior: 'smooth' })
+          history.replaceState(null, '', href)
+          // Wait for scroll to finish before flashing
+          let timer
+          const onScroll = () => {
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+              window.removeEventListener('scroll', onScroll)
+              target.classList.add('nav-target-flash')
+              setTimeout(() => target.classList.remove('nav-target-flash'), 2200)
+            }, 80)
+          }
+          window.addEventListener('scroll', onScroll, { passive: true })
+          // Fallback: already at position or very short scroll
+          timer = setTimeout(() => {
+            window.removeEventListener('scroll', onScroll)
+            target.classList.add('nav-target-flash')
+            setTimeout(() => target.classList.remove('nav-target-flash'), 2200)
+          }, 600)
+        }
+        return
+      }
+
       const pageNumMatch = href.match(/\/pages\/(\d+)\.html/)
 
       if (pageNumMatch) {
@@ -129,7 +178,10 @@ export default defineComponent({
       const tag = n.t
       const attrs = n.a ? { ...n.a } : {}
 
-      if (tag === 'a') resolveAnchorAttrs(attrs)
+      if (tag === 'a') {
+        resolveAnchorAttrs(attrs)
+        if (!attrs.target) addFlashHandler(attrs)
+      }
 
       if (VOID_TAGS.includes(tag)) return h(tag, attrs)
 
@@ -180,6 +232,7 @@ export default defineComponent({
             else delete attrs.href
           }
         }
+        if (!attrs.target) addFlashHandler(attrs)
       }
 
       for (const attr of DOM_PASSTHROUGH_ATTRS) {
@@ -351,6 +404,31 @@ export default defineComponent({
 .plugin-openclose-link:hover { background: rgba(255,255,255,0.06); }
 .plugin-openclose-link a { cursor: pointer; }
 
+/* collapse arrow rotation */
+.poc-arrow {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
+}
+.poc-arrow.poc-collapsed { transform: rotate(-90deg); }
+
+/* expand / collapse transition */
+.poc-expand-enter-active,
+.poc-expand-leave-active {
+  overflow: hidden;
+  transition: max-height 0.32s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+.poc-expand-enter-from,
+.poc-expand-leave-to {
+  max-height: 0 !important;
+  opacity: 0;
+}
+.poc-expand-enter-to,
+.poc-expand-leave-from {
+  max-height: 4000px;
+  opacity: 1;
+}
+
 .plugin-openclose-contents {
   margin-top: 6px;
   border: 1px solid var(--border) !important;
@@ -365,6 +443,36 @@ export default defineComponent({
   padding: 0;
 }
 .plugin-openclose-contents li { padding: 2px 0; }
+
+/* anchor target highlight after smooth scroll */
+@keyframes nav-target-anim {
+  0%   {
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    box-shadow: -3px 0 0 var(--accent);
+  }
+  70%  {
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+    box-shadow: -3px 0 0 color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  100% {
+    background: transparent;
+    box-shadow: -3px 0 0 transparent;
+  }
+}
+.nav-target-flash {
+  animation: nav-target-anim 2.2s ease-out forwards !important;
+  border-radius: 2px;
+}
+
+/* link click flash */
+@keyframes link-flash-anim {
+  0%   { background: color-mix(in srgb, var(--accent) 28%, transparent); }
+  100% { background: transparent; }
+}
+.wiki-content a.link-flash {
+  animation: link-flash-anim 0.45s ease-out forwards;
+  border-radius: 3px;
+}
 
 .wiki-content :deep(ul),
 .wiki-content :deep(ol) {

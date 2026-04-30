@@ -34,6 +34,30 @@
 
       <!-- 攻略内容 -->
       <div class="content-section">
+        <!-- Left sidebar: machine list by cost -->
+        <aside class="machine-nav-sidebar">
+          <div class="sidebar-inner">
+            <div class="sidebar-title">机体目录</div>
+            <div v-for="group in costGroups" :key="group.cost" class="cost-group">
+              <button class="cost-heading" @click="toggleCostGroup(group.cost)">
+                <span class="cost-label">{{ group.cost }} COST</span>
+                <span class="toggle-arrow" :class="{ collapsed: sidebarCollapsed[group.cost] }">▾</span>
+              </button>
+              <Transition name="expand">
+                <ul v-if="!sidebarCollapsed[group.cost]" class="machine-list">
+                  <li v-for="m in group.machines" :key="m.id">
+                    <RouterLink
+                      :to="`/machine/${m.id}`"
+                      class="machine-link"
+                      :class="{ active: m.id === id }"
+                    >{{ m.name }}</RouterLink>
+                  </li>
+                </ul>
+              </Transition>
+            </div>
+          </div>
+        </aside>
+
         <div v-if="loading" class="status-box">加载中…</div>
         <div v-else-if="pageData" class="detail-layout">
           <WikiContent
@@ -68,6 +92,15 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter, RouterLink } from 'vue-router'
 import { MACHINES } from '../data/machines.js'
 import WikiContent from '../components/WikiContent.vue'
+
+const COST_ORDER = [3000, 2500, 2000, 1500]
+const costGroups = computed(() =>
+  COST_ORDER.map(c => ({ cost: c, machines: MACHINES.filter(m => m.cost === c) }))
+)
+const sidebarCollapsed = ref({ 3000: true, 2500: true, 2000: true, 1500: true })
+function toggleCostGroup(cost) {
+  sidebarCollapsed.value[cost] = !sidebarCollapsed.value[cost]
+}
 
 const route = useRoute()
 const router = useRouter()
@@ -186,6 +219,10 @@ onMounted(async () => {
 })
 onUnmounted(() => window.removeEventListener('scroll', onScroll))
 watch(id, (newId) => loadPageData(newId))
+
+watch(machine, (m) => {
+  if (m) sidebarCollapsed.value[m.cost] = false
+}, { immediate: true })
 </script>
 
 <style scoped>
@@ -274,11 +311,125 @@ watch(id, (newId) => loadPageData(newId))
 
 /* 内容区 */
 .content-section {
+  position: relative;
   margin-bottom: 32px;
   font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 15px;
   line-height: 1.9;
   letter-spacing: 0.02em;
+}
+
+/* Left sidebar */
+.machine-nav-sidebar {
+  display: none;
+  position: absolute;
+  right: calc(100% + 20px);
+  top: 0;
+  width: 200px;
+  height: 100%;
+}
+
+@media (min-width: 1220px) {
+  .machine-nav-sidebar { display: block; }
+}
+
+.sidebar-inner {
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.sidebar-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.cost-group {
+  margin-bottom: 4px;
+}
+
+.cost-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  transition: background .12s;
+}
+.cost-heading:hover { background: rgba(255,255,255,0.06); }
+
+.cost-label { opacity: .85; }
+
+.toggle-arrow {
+  font-size: 11px;
+  opacity: .55;
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s;
+}
+.toggle-arrow.collapsed { transform: rotate(-90deg); }
+.cost-heading:hover .toggle-arrow { opacity: .85; }
+
+/* expand/collapse transition */
+.expand-enter-active,
+.expand-leave-active {
+  overflow: hidden;
+  transition: max-height 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.25s ease;
+}
+.expand-enter-from,
+.expand-leave-to {
+  max-height: 0 !important;
+  opacity: 0;
+}
+.expand-enter-to,
+.expand-leave-from {
+  max-height: 2400px;
+  opacity: 1;
+}
+
+.machine-list {
+  list-style: none;
+  padding: 0;
+  margin: 2px 0 6px;
+}
+
+.machine-link {
+  display: block;
+  padding: 3px 6px 3px 14px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color .12s, background .12s;
+  line-height: 1.5;
+}
+.machine-link:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+.machine-link.active {
+  color: var(--accent);
+  font-weight: 600;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
 }
 
 .detail-layout { position: relative; }
