@@ -125,6 +125,10 @@ const animatedHigh  = ref(0)
 const animatedGuide = ref(0)
 
 function animateCounter(target, to, duration = 550) {
+  if (typeof requestAnimationFrame === 'undefined') {
+    target.value = to
+    return
+  }
   const start = performance.now()
   const tick = (now) => {
     const t = Math.min((now - start) / duration, 1)
