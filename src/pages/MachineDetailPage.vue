@@ -58,26 +58,28 @@
           </div>
         </aside>
 
-        <div v-if="loading" class="status-box">加载中…</div>
-        <div v-else-if="pageData" class="detail-layout">
-          <WikiContent
-            :nodes="mainNodes"
-            :html="mainNodes === null ? (pageData.content_html ?? null) : null"
-            :sub-pages="subPages"
-            :parent-url="machine.link"
-            :machine-id="id"
-            @select-sub="selectSub"
-          />
-          <aside v-if="infoboxNode" class="infobox-sidebar">
-            <WikiContent :nodes="[infoboxNode]" :machine-id="id" />
-          </aside>
-        </div>
-        <div v-else class="status-box no-data">
-          <p>暂无攻略内容</p>
-          <a v-if="machine.link" :href="machine.link" target="_blank" rel="noopener noreferrer" class="ext-btn">
-            查看原版攻略 ↗
-          </a>
-        </div>
+        <Transition name="wiki-switch" mode="out-in">
+          <div v-if="loading" key="loading" class="status-box">加载中…</div>
+          <div v-else-if="pageData" :key="pageKey" class="detail-layout">
+            <WikiContent
+              :nodes="mainNodes"
+              :html="mainNodes === null ? (pageData.content_html ?? null) : null"
+              :sub-pages="subPages"
+              :parent-url="machine.link"
+              :machine-id="id"
+              @select-sub="selectSub"
+            />
+            <aside v-if="infoboxNode" class="infobox-sidebar">
+              <WikiContent :nodes="[infoboxNode]" :machine-id="id" />
+            </aside>
+          </div>
+          <div v-else key="empty" class="status-box no-data">
+            <p>暂无攻略内容</p>
+            <a v-if="machine.link" :href="machine.link" target="_blank" rel="noopener noreferrer" class="ext-btn">
+              查看原版攻略 ↗
+            </a>
+          </div>
+        </Transition>
       </div>
 
       <RouterLink to="/" class="back-btn">← 返回Tier表</RouterLink>
@@ -125,6 +127,8 @@ function extractInfobox(nodes) {
   ) ?? null
 }
 
+const pageKey = computed(() => `${id.value}__${currentSub.value ?? 'main'}__${lang.value}`)
+
 const mainNodes = computed(() => {
   const nodes = pageData.value?.content_nodes
   if (!nodes) return null
@@ -132,21 +136,24 @@ const mainNodes = computed(() => {
   return ib ? nodes.filter(n => n !== ib) : nodes
 })
 
-async function loadPageData(machineId) {
+async function loadPageData(machineId, checkHasZh = true) {
   loading.value = true
   pageData.value = null
   currentSub.value = null
   subPages.value = []
   infoboxNode.value = null
   try {
-    const zhRes = await fetch(`/data/machines/${machineId}_zh.json`)
-    hasZh.value = zhRes.ok
-    if (!hasZh.value) lang.value = 'ja'
-
     let data
-    if (lang.value === 'zh' && hasZh.value) {
-      data = await zhRes.json()
-    } else {
+    if (checkHasZh) {
+      const zhRes = await fetch(`/data/machines/${machineId}_zh.json`)
+      hasZh.value = zhRes.ok
+      if (!hasZh.value) lang.value = 'ja'
+      if (lang.value === 'zh') data = await zhRes.json()
+    } else if (lang.value === 'zh' && hasZh.value) {
+      const zhRes = await fetch(`/data/machines/${machineId}_zh.json`)
+      if (zhRes.ok) data = await zhRes.json()
+    }
+    if (!data) {
       const res = await fetch(`/data/machines/${machineId}.json`)
       if (res.ok) data = await res.json()
     }
@@ -166,11 +173,16 @@ async function loadSubContent(fileId) {
   loading.value = true
   pageData.value = null
   try {
-    const zhFile = `/data/machines/${fileId}_zh.json`
-    const zhRes = await fetch(zhFile)
-    const url = lang.value === 'zh' && zhRes.ok ? zhFile : `/data/machines/${fileId}.json`
-    const res = await fetch(url)
-    if (res.ok) pageData.value = await res.json()
+    let data
+    if (lang.value === 'zh') {
+      const zhRes = await fetch(`/data/machines/${fileId}_zh.json`)
+      if (zhRes.ok) data = await zhRes.json()
+    }
+    if (!data) {
+      const res = await fetch(`/data/machines/${fileId}.json`)
+      if (res.ok) data = await res.json()
+    }
+    if (data) pageData.value = data
   } catch {
     // no data
   } finally {
@@ -200,7 +212,7 @@ async function setLang(newLang) {
     } catch {}
     await loadSubContent(currentSub.value)
   } else {
-    await loadPageData(id.value)
+    await loadPageData(id.value, false)
   }
 }
 
@@ -431,6 +443,11 @@ watch(machine, (m) => {
   font-weight: 600;
   background: color-mix(in srgb, var(--accent) 10%, transparent);
 }
+
+.wiki-switch-leave-active { transition: opacity 0.12s ease, transform 0.12s ease; }
+.wiki-switch-enter-active { transition: opacity 0.2s ease, transform 0.2s ease; }
+.wiki-switch-leave-to   { opacity: 0; transform: translateY(-5px); }
+.wiki-switch-enter-from { opacity: 0; transform: translateY(8px); }
 
 .detail-layout { position: relative; }
 
