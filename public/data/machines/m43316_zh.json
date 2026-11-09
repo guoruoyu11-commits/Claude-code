@@ -2,9 +2,9 @@
   "status": "ok",
   "id": "m43316",
   "name": "铁人·刀兹",
-  "translated_at": "2026-04-25T15:25:55.837657+00:00",
+  "translated_at": "2026-11-09T02:27:16.627360+00:00",
   "source_id": "m43316",
-  "model": "gemini-2.5-flash",
+  "model": "manual-glm",
   "content_nodes": [
     {
       "t": "h2",
@@ -13,7 +13,7 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/292.html",
-            "title": "ティエレンタオツー (3d)"
+            "title": "ティエレンタオツー (9d)"
           },
           "v": "铁人桃子"
         }
@@ -64,14 +64,14 @@
                                   "t": "source",
                                   "a": {
                                     "media": "(max-width: 320px)",
-                                    "srcset": "/images/machines/43316.png"
+                                    "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/292/194/t/ms.png"
                                   }
                                 },
                                 {
                                   "t": "source",
                                   "a": {
                                     "media": "(max-width: 480px)",
-                                    "srcset": "/images/machines/43316.png"
+                                    "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/292/194/m/ms.png"
                                   }
                                 },
                                 {
@@ -79,7 +79,7 @@
                                   "a": {
                                     "class": "atwiki_plugin_image",
                                     "height": "104",
-                                    "src": "/images/machines/43316.png",
+                                    "src": "//img.atwiki.jp/exvs2infiniteboost/attach/292/194/ms.png",
                                     "style": "aspect-ratio: 228/104;",
                                     "width": "228"
                                   }
@@ -231,7 +231,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "通常BD"
+                      "v": "普通BD"
                     }
                   ]
                 },
@@ -339,7 +339,7 @@
                         "class": "table_style_1_column_1",
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "上手难度"
+                      "v": "操作难度"
                     },
                     {
                       "t": "td",
@@ -633,11 +633,11 @@
                       "a": {
                         "style": "background-color: LIGHTGREEN;"
                       },
-                      "v": "N格派生"
+                      "v": "N格斗派生"
                     },
                     {
                       "t": "#",
-                      "v": "连续斩击"
+                      "v": " 连续斩击"
                     }
                   ]
                 },
@@ -730,11 +730,11 @@
                       "a": {
                         "style": "background-color: LIGHTGREEN;"
                       },
-                      "v": "横格派生"
+                      "v": "横格斗派生"
                     },
                     {
                       "t": "#",
-                      "v": "横扫"
+                      "v": " 扫击"
                     }
                   ]
                 },
@@ -772,7 +772,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTCORAL;"
                   },
-                  "v": "格斗CS"
+                  "v": "蓄力格斗"
                 },
                 {
                   "t": "td",
@@ -905,7 +905,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTCORAL;"
                   },
-                  "v": "横特殊射击"
+                  "v": "横向特殊射击"
                 },
                 {
                   "t": "td",
@@ -1154,7 +1154,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "斩穿"
+                  "v": "穿斩"
                 },
                 {
                   "t": "td",
@@ -1280,7 +1280,7 @@
                 {
                   "t": "td",
                   "a": {
-                    "rowspan": "2",
+                    "rowspan": "3",
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
                   "v": "N格斗"
@@ -1302,7 +1302,7 @@
                 {
                   "t": "td",
                   "a": {
-                    "rowspan": "2",
+                    "rowspan": "3",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
                   "v": "-"
@@ -1379,6 +1379,53 @@
                 {
                   "t": "td",
                   "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "c": [
+                    {
+                      "t": "span",
+                      "a": {
+                        "style": "background-color: LIGHTGREEN;"
+                      },
+                      "v": "后派生"
+                    },
+                    {
+                      "t": "#",
+                      "v": "踩踏&滑膛炮&踢飞"
+                    }
+                  ]
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "N后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "连按格斗增加威力"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_24"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
                   "v": "前格斗"
@@ -1423,13 +1470,13 @@
             {
               "t": "tr",
               "a": {
-                "class": "atwiki_tr_even atwiki_tr_24"
+                "class": "atwiki_tr_odd atwiki_tr_25"
               },
               "c": [
                 {
                   "t": "td",
                   "a": {
-                    "rowspan": "2",
+                    "rowspan": "3",
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
                   "v": "横格斗"
@@ -1451,7 +1498,7 @@
                 {
                   "t": "td",
                   "a": {
-                    "rowspan": "2",
+                    "rowspan": "3",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
                   "v": "-"
@@ -1468,14 +1515,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;"
                   },
-                  "v": "绕背格斗"
+                  "v": "绕后格斗"
                 }
               ]
             },
             {
               "t": "tr",
               "a": {
-                "class": "atwiki_tr_odd atwiki_tr_25"
+                "class": "atwiki_tr_even atwiki_tr_26"
               },
               "c": [
                 {
@@ -1515,14 +1562,61 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;"
                   },
-                  "v": "与N格起手相同"
+                  "v": "与N格斗起手相同。"
                 }
               ]
             },
             {
               "t": "tr",
               "a": {
-                "class": "atwiki_tr_even atwiki_tr_26"
+                "class": "atwiki_tr_odd atwiki_tr_27"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "c": [
+                    {
+                      "t": "span",
+                      "a": {
+                        "style": "background-color: LIGHTGREEN;"
+                      },
+                      "v": "后派生"
+                    },
+                    {
+                      "t": "#",
+                      "v": "踩踏&滑膛炮&踢飞"
+                    }
+                  ]
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "横后"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;"
+                  },
+                  "v": "与N格斗起手相同。"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_28"
               },
               "c": [
                 {
@@ -1571,7 +1665,7 @@
             {
               "t": "tr",
               "a": {
-                "class": "atwiki_tr_odd atwiki_tr_27"
+                "class": "atwiki_tr_odd atwiki_tr_29"
               },
               "c": [
                 {
@@ -1614,14 +1708,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;"
                   },
-                  "v": "不可受身浮空"
+                  "v": "无法受身浮空"
                 }
               ]
             },
             {
               "t": "tr",
               "a": {
-                "class": "atwiki_tr_even atwiki_tr_28"
+                "class": "atwiki_tr_even atwiki_tr_30"
               },
               "c": [
                 {
@@ -1665,7 +1759,7 @@
             {
               "t": "tr",
               "a": {
-                "class": "atwiki_tr_odd atwiki_tr_29"
+                "class": "atwiki_tr_odd atwiki_tr_31"
               },
               "c": [
                 {
@@ -1759,7 +1853,7 @@
                       "a": {
                         "href": "#id_69b21a33"
                       },
-                      "v": "援护动作"
+                      "v": "支援动作"
                     }
                   ]
                 },
@@ -2151,50 +2245,9 @@
                             {
                               "t": "a",
                               "a": {
-                                "href": "#id_cf514c41"
+                                "href": "#id_8919930f"
                               },
-                              "v": "【觉醒技】"
-                            }
-                          ]
-                        },
-                        {
-                          "t": "li",
-                          "c": [
-                            {
-                              "t": "a",
-                              "a": {
-                                "href": "#id_0a5de37f"
-                              },
-                              "v": "【后觉醒技】"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "t": "li",
-                  "c": [
-                    {
-                      "t": "a",
-                      "a": {
-                        "href": "#id_06615441"
-                      },
-                      "v": "特殊"
-                    },
-                    {
-                      "t": "ul",
-                      "c": [
-                        {
-                          "t": "li",
-                          "c": [
-                            {
-                              "t": "a",
-                              "a": {
-                                "href": "#id_db416aef"
-                              },
-                              "v": "技能名"
+                              "v": "【觉醒技】我是…超兵！"
                             }
                           ]
                         }
@@ -2246,7 +2299,7 @@
                       "a": {
                         "href": "#id_5b447b5d"
                       },
-                      "v": "连招套路"
+                      "v": "固定连招"
                     }
                   ]
                 },
@@ -2258,7 +2311,7 @@
                       "a": {
                         "href": "#id_bf07a260"
                       },
-                      "v": "对抗策略"
+                      "v": "对战策略"
                     }
                   ]
                 },
@@ -2323,7 +2376,7 @@
                       "a": {
                         "href": "#id_9a051108"
                       },
-                      "v": "外部链接及参考资料集"
+                      "v": "外部链接&参考资料集"
                     }
                   ]
                 }
@@ -2398,7 +2451,7 @@
     },
     {
       "t": "collapse",
-      "label": "▼与前作的变更点",
+      "label": "▼前作以来的变更点",
       "open": true,
       "c": [
         {
@@ -2431,11 +2484,11 @@
             },
             {
               "t": "li",
-              "v": "副射击:新增武装。3连射类似旧射击CS射击派生的非强制倒地弹。"
+              "v": "格斗CS:新增武装。追随援护2机。"
             },
             {
               "t": "li",
-              "v": "格斗CS:新增武装。追随援护2机。"
+              "v": "副射击:新增武装。3连射类似旧射击CS射击派生的非强制倒地弹。"
             },
             {
               "t": "li",
@@ -2447,7 +2500,7 @@
             },
             {
               "t": "li",
-              "v": "横特殊射击:诱导・枪口降低。"
+              "v": "横特殊射击:诱导・瞄准下降。"
             },
             {
               "t": "li",
@@ -2455,7 +2508,7 @@
             },
             {
               "t": "li",
-              "v": "N・横格斗前派生:旧N・横格斗射击派生的第一段移动。变更为强硬直→扬尘倒地。"
+              "v": "N・横格斗前派生:旧N・横格斗射击派生的初段部分作为新规派生追加。变更为强踉跄→沙尘倒地。"
             }
           ]
         }
@@ -2476,7 +2529,7 @@
       "c": [
         {
           "t": "li",
-          "v": "主射击→副射击、各特射"
+          "v": "主射击→副射击、各特殊射击"
         },
         {
           "t": "li",
@@ -2488,7 +2541,7 @@
         },
         {
           "t": "li",
-          "v": "副射击→各特射"
+          "v": "副射→各特射"
         },
         {
           "t": "li",
@@ -2505,7 +2558,7 @@
       "a": {
         "id": "id_69b21a33"
       },
-      "v": "支援行动"
+      "v": "支援动作"
     },
     {
       "t": "ul",
@@ -2607,7 +2660,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;"
                       },
-                      "v": "打空常驻 ?秒"
+                      "v": "打完常时 ?秒"
                     },
                     {
                       "t": "td",
@@ -2754,7 +2807,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;"
                       },
-                      "v": "打空常驻 ?秒"
+                      "v": "打完常时 ?秒"
                     },
                     {
                       "t": "td",
@@ -2794,7 +2847,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;"
                       },
-                      "v": "?命中硬直"
+                      "v": "?Hit硬直"
                     }
                   ]
                 }
@@ -2810,7 +2863,7 @@
           "c": [
             {
               "t": "li",
-              "v": "火箭炮等多部位射击"
+              "v": "火箭筒等多部位射击"
             }
           ]
         },
@@ -2971,7 +3024,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
                       },
-                      "v": "爆炸范围"
+                      "v": "爆炸"
                     },
                     {
                       "t": "td",
@@ -3148,7 +3201,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
                       },
-                      "v": "爆炸范围"
+                      "v": "爆炸"
                     },
                     {
                       "t": "td",
@@ -3364,7 +3417,7 @@
           "c": [
             {
               "t": "li",
-              "v": "带派生的蓄力射击"
+              "v": "有派生技的蓄力射击"
             }
           ]
         },
@@ -3394,7 +3447,7 @@
                         "rowspan": "2",
                         "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
                       },
-                      "v": "射击CS"
+                      "v": "蓄力射击"
                     },
                     {
                       "t": "td",
@@ -3493,7 +3546,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:SKYBLUE;"
                       },
-                      "v": "1段"
+                      "v": "第1段"
                     },
                     {
                       "t": "td",
@@ -3662,7 +3715,7 @@
           "c": [
             {
               "t": "li",
-              "v": "仅装填"
+              "v": "仅限装填"
             }
           ]
         },
@@ -3698,7 +3751,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;"
                       },
-                      "v": "打空\n援护消失 ?秒"
+                      "v": "用尽\n援护机消失？秒"
                     }
                   ]
                 }
@@ -3757,7 +3810,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;"
                       },
-                      "v": "打空常驻/?秒"
+                      "v": "射空常驻/?秒"
                     },
                     {
                       "t": "td",
@@ -4008,7 +4061,7 @@
           "c": [
             {
               "t": "li",
-              "v": "不含装填和属性的伤害推移"
+              "v": "不含装填及属性的伤害推移"
             }
           ]
         },
@@ -4313,7 +4366,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;"
                       },
-                      "v": "打空\n援护消失 ?秒"
+                      "v": "用尽\n援护机消失？秒"
                     },
                     {
                       "t": "td",
@@ -5078,7 +5131,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
                       },
-                      "v": "1段"
+                      "v": "第1段"
                     },
                     {
                       "t": "td",
@@ -5147,7 +5200,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
                       },
-                      "v": "2段"
+                      "v": "第2段"
                     },
                     {
                       "t": "td",
@@ -5315,7 +5368,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
                       },
-                      "v": "1段"
+                      "v": "第1段"
                     },
                     {
                       "t": "td",
@@ -5507,7 +5560,7 @@
           "c": [
             {
               "t": "li",
-              "v": "追踪援护"
+              "v": "追随援护"
             }
           ]
         },
@@ -5570,7 +5623,7 @@
                         "rowspan": "2",
                         "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
                       },
-                      "v": "追踪时间"
+                      "v": "追随时间"
                     },
                     {
                       "t": "td",
@@ -5705,7 +5758,7 @@
           "c": [
             {
               "t": "li",
-              "v": "限时强化"
+              "v": "时限强化"
             }
           ]
         },
@@ -5904,7 +5957,7 @@
           "c": [
             {
               "t": "li",
-              "v": "可派生格斗"
+              "v": "派生格斗"
             }
           ]
         },
@@ -6115,7 +6168,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
                       },
-                      "v": "　┣＊派生"
+                      "v": "　┣＊派生技"
                     },
                     {
                       "t": "td",
@@ -6381,7 +6434,7 @@
           "c": [
             {
               "t": "li",
-              "v": "仅显示派生时"
+              "v": "仅写派生时"
             }
           ]
         },
@@ -6494,14 +6547,14 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
                       },
-                      "v": "N・横"
+                      "v": "N·横"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": "vertical-align:MIDDLE;text-align:center;background-color:PINK;"
                       },
-                      "v": "NN・横N"
+                      "v": "NN·横N"
                     }
                   ]
                 },
@@ -6516,7 +6569,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
                       },
-                      "v": "┣派生"
+                      "v": "┣派生技"
                     },
                     {
                       "t": "td",
@@ -6589,7 +6642,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;"
                       },
-                      "v": "┗派生"
+                      "v": "┗派生技"
                     },
                     {
                       "t": "td",
@@ -6663,7 +6716,7 @@
           "c": [
             {
               "t": "li",
-              "v": "跳转至外部参考网站的方法"
+              "v": "跳转到外部网站参考文献的方法"
             }
           ]
         },
@@ -6690,9 +6743,6 @@
       ]
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_d558e0ff"
@@ -6701,7 +6751,7 @@
     },
     {
       "t": "div",
-      "v": "\n装填6发的实弹BR。是陶拉斯射击中唯一不会停下脚步的武装，也可用于格斗CS的取消硬直，因此要好好管理弹药。\n\n"
+      "v": "\n6发装填的实弹射击。是刀兹射击中唯一不停步的、格斗CS起的A取消也活用、弹数管理想扎实进行。\n\n"
     },
     {
       "t": "br"
@@ -6766,14 +6816,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "射完常时/?秒"
+                  "v": "射空常驻/?秒"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
                   },
-                  "v": "实弹/光束"
+                  "v": "实弹"
                 },
                 {
                   "t": "td",
@@ -6918,7 +6968,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "射完常时 ?秒"
+                  "v": "打完常时 ?秒"
                 },
                 {
                   "t": "td",
@@ -6958,16 +7008,13 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "?命中硬直"
+                  "v": "?Hit硬直"
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -7127,7 +7174,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "?命中硬直"
+                  "v": "?Hit硬直"
                 }
               ]
             }
@@ -7139,17 +7186,11 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h4",
       "a": {
         "id": "id_a11b2358"
       },
-      "v": "【射击CSN格斗派生】连续斩击"
-    },
-    {
-      "t": "br"
+      "v": "【射击CS N格斗派生】连续斩击"
     },
     {
       "t": "div",
@@ -7159,24 +7200,15 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h5",
       "a": {
         "id": "id_ac1e5d92"
       },
-      "v": "【射击CSN格斗派生/N格斗/横格斗后派生】零距离射击→踢飞"
+      "v": "【射击CS N格斗派生/N格斗/横格斗后派生】零距离射击→踢飞"
     },
     {
       "t": "div",
       "v": "\n一边踢击一边下降，通过连打按钮进行最多11连的零距离射击，最后以踢飞收尾。\n\n"
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -7442,7 +7474,7 @@
       "a": {
         "id": "id_2bee93b2"
       },
-      "v": "【射击CS横格斗派生】横扫"
+      "v": "【射击CS 横格斗派生】横扫"
     },
     {
       "t": "div",
@@ -7548,14 +7580,11 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_83bd7e27"
       },
-      "v": "【格斗CS】铁人宇宙型 呼叫【追随】"
+      "v": "【格斗CS】铁人宇宙型 呼出【追随】"
     },
     {
       "t": "div",
@@ -7754,9 +7783,6 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_a84fce87"
@@ -7871,7 +7897,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "射完耗尽常驻 ?秒"
+                  "v": "打完常时 ?秒"
                 },
                 {
                   "t": "td",
@@ -7911,7 +7937,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "?命中硬直"
+                  "v": "?Hit硬直"
                 }
               ]
             }
@@ -7923,14 +7949,11 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_57ab6fe4"
       },
-      "v": "【特殊射击】铁人宇宙型 呼叫【射击】 / 【突击】"
+      "v": "【特殊射击】 铁人宇宙型 呼出【射击】 / 【突击】"
     },
     {
       "t": "div",
@@ -7978,7 +8001,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "射完耗尽或援护消失\n?秒"
+                  "v": "射空或援护消失\n?秒"
                 },
                 {
                   "t": "td",
@@ -8005,7 +8028,7 @@
     },
     {
       "t": "div",
-      "v": "出现一架机体并使用网枪。倒地值较低，命中后造成眩晕+减速。\n本作弹速提升，以叉状轨迹向下强力诱导。\n基本是瞄准追击时的减速效果，但如果配合对手的惯性落地射击，也可抓落地。\n但是横向诱导较弱，不可过分相信。"
+      "v": "1机出现网络枪。倒地值偏低、命中麻痹+减速。\n本作起弹速上升、以叉子轨道对上下方向强诱导。\n基本瞄准追击付减速、但配合对手惯性下落射也能抓落地。\n但横诱导松、过信禁止。"
     },
     {
       "t": "br"
@@ -8091,7 +8114,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "眩晕"
+                  "v": "麻痹"
                 }
               ]
             }
@@ -8107,14 +8130,11 @@
       "a": {
         "id": "id_a2bba815"
       },
-      "v": "【横特殊射击】突击"
+      "v": "【横特殊射击】 突击"
     },
     {
       "t": "div",
       "v": "性能保守的两机突击援护。\n发生速度很慢，即使在近距离也无法从主射连接，请注意。\n此外，枪口似乎在突击前就会切断，也不适合自我取消。\n虽有最低限度的诱导，对于不进行垫步的对手能起到一定牵制作用，但恐怕超不出新手狩猎的范畴。\n虽然可以利用其发生慢的特点进行援护盾，但没有惯性且内部硬直较长也很严峻。\n基本上还是优先使用其他特殊射击吧。"
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -8592,7 +8612,7 @@
       "a": {
         "id": "id_c78846ff"
       },
-      "v": "【后特殊射击】滑膛炮"
+      "v": "【后特殊射击】 滑膛炮"
     },
     {
       "t": "div",
@@ -8831,14 +8851,11 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_7742d190"
       },
-      "v": "【特殊格斗】铁人宇宙指挥官型 呼叫【追随】"
+      "v": "【特殊格斗】铁人宇宙指挥官型 呼出【追随】"
     },
     {
       "t": "div",
@@ -8871,7 +8888,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
                   },
-                  "v": "持续时间"
+                  "v": "持续"
                 },
                 {
                   "t": "td",
@@ -8951,7 +8968,7 @@
       "a": {
         "id": "id_17a13d22"
       },
-      "v": "【主射联动】滑膛炮"
+      "v": "【主射击联动】滑膛炮"
     },
     {
       "t": "div",
@@ -9056,7 +9073,7 @@
       "a": {
         "id": "id_64fc00af"
       },
-      "v": "【N特殊格斗指令】滑膛炮两发"
+      "v": "【N特格指令】滑膛炮二连发"
     },
     {
       "t": "div",
@@ -9214,7 +9231,7 @@
       "a": {
         "id": "id_88cdc30c"
       },
-      "v": "【前后特殊格斗指令】斩击穿透"
+      "v": "【前后特格指令】斩击冲刺"
     },
     {
       "t": "div",
@@ -9319,14 +9336,11 @@
       "a": {
         "id": "id_9ed0c7a0"
       },
-      "v": "【横向特殊格斗指令】抓取→直拳"
+      "v": "【横特格指令】抓取→直拳"
     },
     {
       "t": "div",
       "v": "突进并用单手抓住敌人，稍作停顿后用强制击落的拳击将其打飞。再现了对战能天使时施展的一幕。\n突进速度尚可但几乎没有诱导性，所以基本用于追击。"
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -9559,9 +9573,6 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h2",
       "a": {
         "id": "id_48e45ba7"
@@ -9573,11 +9584,14 @@
       "a": {
         "id": "id_1ffc1b9b"
       },
-      "v": "【普通格斗】"
+      "v": "【通常格斗】"
     },
     {
       "t": "div",
       "v": "姑且算是重视威力的两段格斗。\n注意，完整打完后没有可以继续连段的格斗技。"
+    },
+    {
+      "t": "br"
     },
     {
       "t": "table",
@@ -9597,7 +9611,7 @@
                     "rowspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
                   },
-                  "v": "普通格斗"
+                  "v": "通常格斗"
                 },
                 {
                   "t": "td",
@@ -9859,6 +9873,9 @@
     {
       "t": "div",
       "v": "带有盾牌判定（霸体）的冲撞。命中后会将敌人击飞至低空。\n是可受身的击落，所以在空中命中时要注意。\n基本用于挣扎，但直接命中性能不差。"
+    },
+    {
+      "t": "br"
     },
     {
       "t": "table",
@@ -10281,9 +10298,6 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_760d21ba"
@@ -10293,6 +10307,9 @@
     {
       "t": "div",
       "v": "格斗反击。成功后会以三段格斗迎击。\n是可受身的击落，所以要注意。"
+    },
+    {
+      "t": "br"
     },
     {
       "t": "table",
@@ -10498,18 +10515,18 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_171fa93c"
       },
-      "v": "【冲刺格斗】"
+      "v": "【BD格斗】"
     },
     {
       "t": "div",
       "v": "完整打完后会以无法受身击落的方式将敌人打飞的两段格斗。\n突进速度一般，但延伸性尚可。"
+    },
+    {
+      "t": "br"
     },
     {
       "t": "table",
@@ -10715,9 +10732,6 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h2",
       "a": {
         "id": "id_15265135"
@@ -10727,118 +10741,13 @@
     {
       "t": "h3",
       "a": {
-        "id": "id_cf514c41"
+        "id": "id_8919930f"
       },
-      "v": "【觉醒技】"
+      "v": "【觉醒技】我是…超兵！"
     },
     {
-      "t": "br"
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "h3",
-      "a": {
-        "id": "id_0a5de37f"
-      },
-      "v": "【后觉醒技】"
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "table",
-      "c": [
-        {
-          "t": "tbody",
-          "c": [
-            {
-              "t": "tr",
-              "a": {
-                "class": "atwiki_tr_odd atwiki_tr_1"
-              },
-              "c": [
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
-                  },
-                  "v": "觉醒技"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;background-color:KHAKI;"
-                  },
-                  "v": "动作"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
-                  },
-                  "v": "威力(补正率) F/S/E"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
-                  },
-                  "v": "倒地值"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;background-color:ORANGE;"
-                  },
-                  "v": "效果"
-                }
-              ]
-            },
-            {
-              "t": "tr",
-              "a": {
-                "class": "atwiki_tr_even atwiki_tr_2"
-              },
-              "c": [
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:VIOLET;"
-                  },
-                  "v": "第1段"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "//(-%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "t": "div",
+      "v": "「让你见识…超兵的实力！」\n横扫→袈裟斩→斩上→谢尔盖机突击→十字斩穿的乱舞技。发动时特殊格斗装填到100"
     },
     {
       "t": "br"
@@ -10877,7 +10786,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(补正率) F/S/E"
+                  "v": "威力(修正率) F/S/E"
                 },
                 {
                   "t": "td",
@@ -10929,7 +10838,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:ORANGE;text-align:center;"
                   },
-                  "v": "单发(原始值)"
+                  "v": "单发(原值)"
                 }
               ]
             },
@@ -11208,30 +11117,13 @@
     {
       "t": "h2",
       "a": {
-        "id": "id_06615441"
-      },
-      "v": "特殊"
-    },
-    {
-      "t": "h3",
-      "a": {
-        "id": "id_db416aef"
-      },
-      "v": "技能名"
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "h2",
-      "a": {
         "id": "id_0607a765"
       },
       "v": "连段"
     },
     {
       "t": "div",
-      "v": "\n(>是垫步，≫是冲刺，→是直接取消。因取消补正而威力变动者在()中并记)\n\n"
+      "v": "\n(>是垫步，≫是冲刺，→是直接取消，因取消补正而威力变动的招式会在括号中并记)\n\n"
     },
     {
       "t": "br"
@@ -11335,7 +11227,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
-                  "v": "N格起手"
+                  "v": "N格斗起手"
                 },
                 {
                   "t": "td",
@@ -11389,7 +11281,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
-                  "v": "前格起手"
+                  "v": "前格斗起手"
                 },
                 {
                   "t": "td",
@@ -11443,7 +11335,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
-                  "v": "横格起手"
+                  "v": "横格斗起手"
                 },
                 {
                   "t": "td",
@@ -11497,7 +11389,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;text-align:center;"
                   },
-                  "v": "后格起手"
+                  "v": "后格斗起手"
                 },
                 {
                   "t": "td",
@@ -11551,7 +11443,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;text-align:center;"
                   },
-                  "v": "BD格起手"
+                  "v": "BD格斗起手"
                 },
                 {
                   "t": "td",
@@ -11716,7 +11608,7 @@
       "a": {
         "id": "id_33c8a07c"
       },
-      "v": "EX觉醒分析"
+      "v": "EX爆发分析"
     },
     {
       "t": "div",
@@ -11732,7 +11624,7 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/33.html",
-            "title": "覚醒性能一覧 (25d)"
+            "title": "覚醒性能一覧 (39d)"
           },
           "v": "觉醒类型"
         },
@@ -11762,7 +11654,7 @@
                   "a": {
                     "style": "color:red;"
                   },
-                  "v": "F觉醒"
+                  "v": "F爆发"
                 }
               ]
             }
@@ -11772,7 +11664,7 @@
     },
     {
       "t": "div",
-      "v": "格斗攻击修正:+% 防御修正:-20% : Boost消耗减轻:-15%\n不推荐。\n本机虽然是近战型角色，但并非依靠格斗输出伤害的机体。虽然可以增加格斗系援护的伤害，但有其限度。"
+      "v": "格斗攻击补正:+%　防御补正:-20% : BD减轻:-15%\n不推荐。\n刀兹是近接角色所以常被认为与F觉醒相性好、但本机是用射击取伤害的机体。\n后派生或格斗系援护的伤害能增、但都有限度。\n机动提升S觉醒也能获得、选择理由几乎没有。"
     },
     {
       "t": "br"
@@ -11794,7 +11686,7 @@
                   "a": {
                     "style": "color:blue;"
                   },
-                  "v": "S觉醒"
+                  "v": "S爆发"
                 }
               ]
             }
@@ -11804,7 +11696,26 @@
     },
     {
       "t": "div",
-      "v": "射击攻击修正:+8% Boost消耗减轻:-10%\n推荐。\n“在近距离发起物量战”的理念下，增加了高速装填和各种取消路线，即使是3000成本也能进行高精度的追击，使其无法逃脱。\n各种援护可以通过主射取消下降，单纯的主射连打也十分强力。CS和主射组合的连携循环也很强。\n另一方面，与格斗后派生配合时，请注意能量槽管理，以免无意中蓄力格斗CS。"
+      "c": [
+        {
+          "t": "#",
+          "v": "射击攻击补正:+8% BD减轻:-10%\n推荐。"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "span",
+          "a": {
+            "style": "font-weight: bold;"
+          },
+          "v": "「在近距发起物量战」"
+        },
+        {
+          "t": "#",
+          "v": "的概念上、增设高速装填与各种取消路线、就算3000也不放跑的高精度进攻可成立。\n各种援护能以主射取消落地、单纯主射连打也强力。CS与主射组合的连携循环也强。\n另一方面与格斗后派生组合时、注意槽管理别意外蓄了格斗CS。"
+        }
+      ]
     },
     {
       "t": "br"
@@ -11826,7 +11737,7 @@
                   "a": {
                     "style": "color: green;"
                   },
-                  "v": "E觉醒"
+                  "v": "E爆发"
                 }
               ]
             }
@@ -11836,7 +11747,7 @@
     },
     {
       "t": "div",
-      "v": "防御修正:-35%\n不推荐。\n如果只是为了自卫而浪费觉醒，不如选择进攻型的觉醒。"
+      "v": "防御补正:-35%\n论外。\n与其用觉醒堵自卫、不如选进攻的觉醒。"
     },
     {
       "t": "h2",
@@ -11853,7 +11764,7 @@
       "a": {
         "id": "id_5b447b5d"
       },
-      "v": "预设战术"
+      "v": "固定连招"
     },
     {
       "t": "br"
@@ -11863,7 +11774,7 @@
       "a": {
         "id": "id_bf07a260"
       },
-      "v": "对位对策"
+      "v": "对战策略"
     },
     {
       "t": "br"
@@ -11873,7 +11784,7 @@
       "a": {
         "id": "id_ff69b207"
       },
-      "v": "队友分析"
+      "v": "僚机分析"
     },
     {
       "t": "br"
@@ -11883,7 +11794,7 @@
       "a": {
         "id": "id_b0c3b81c"
       },
-      "v": "适合的队友"
+      "v": "适合的僚机"
     },
     {
       "t": "div",
@@ -11897,7 +11808,7 @@
       "a": {
         "id": "id_c81a9608"
       },
-      "v": "不适合的队友"
+      "v": "不适合的僚机"
     },
     {
       "t": "div",
@@ -11911,7 +11822,7 @@
       "a": {
         "id": "id_fc8ca213"
       },
-      "v": "不同成本组合的战术分析"
+      "v": "各费用模式下的战术分析"
     },
     {
       "t": "ul",
@@ -12049,7 +11960,7 @@
       "a": {
         "id": "id_9a051108"
       },
-      "v": "外部链接与参考资料集"
+      "v": "外部链接&参考资料集"
     },
     {
       "t": "ul",
@@ -12076,4858 +11987,76 @@
   ],
   "translation_log": [
     {
-      "source": "作品枠",
-      "target": "作品系列",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "パイロット",
-      "target": "驾驶员",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "コスト",
-      "target": "费用",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "耐久値",
-      "target": "耐久值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "メイン射撃",
-      "target": "主射击",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "サブ射撃",
-      "target": "副射击",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "特殊格闘",
-      "target": "特殊格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "特殊格闘",
-      "target": "特殊格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "入力",
-      "target": "输入",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "N格闘",
-      "target": "N格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "前格闘",
-      "target": "前格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "横格闘",
-      "target": "横格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "後格闘",
-      "target": "后格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "BD格闘",
-      "target": "BD格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
+      "source": "【覚醒技】私は・・・超兵！",
+      "target": "【觉醒技】我是…超兵！",
+      "method": "manual",
       "node_type": "a"
     },
     {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "a"
+      "source": "横特殊射撃:誘導・照準低下。",
+      "target": "横特殊射击:诱导・瞄准下降。",
+      "method": "manual",
+      "node_type": "li"
     },
     {
-      "source": "技名",
-      "target": "技能名",
-      "method": "dict",
-      "node_type": "a"
+      "source": "N・横格闘前派生:旧N・横格闘射撃派生の初段部分が新規派生として追加。強よろけ→砂埃ダウンに変更。",
+      "target": "N・横格斗前派生:旧N・横格斗射击派生的初段部分作为新规派生追加。变更为强踉跄→沙尘倒地。",
+      "method": "manual",
+      "node_type": "li"
     },
     {
-      "source": "コンボ",
-      "target": "连段",
-      "method": "dict",
-      "node_type": "a"
+      "source": "\n6発装填の実弾射撃。タオツーの射撃で唯一足が止まらず、格闘CSからのアメキャンでも活用するため、弾数管理はしっかりとしたい。\n\n",
+      "target": "\n6发装填的实弹射击。是刀兹射击中唯一不停步的、格斗CS起的A取消也活用、弹数管理想扎实进行。\n\n",
+      "method": "manual",
+      "node_type": "div"
     },
     {
-      "source": "戦術",
-      "target": "战术",
-      "method": "dict",
-      "node_type": "a"
+      "source": "一機が現れネットガン。ダウン値が低めで当たるとスタン+鈍足。\n今作より弾速が上昇し、フォーク軌道で上下方向に強く誘導するようになった。\n追撃での鈍足付与を狙うのが基本だが、相手の慣性落下に合わせて撃てば着地を取ることも可能。\nただし横の誘導は甘めなので過信は禁物。",
+      "target": "1机出现网络枪。倒地值偏低、命中麻痹+减速。\n本作起弹速上升、以叉子轨道对上下方向强诱导。\n基本瞄准追击付减速、但配合对手惯性下落射也能抓落地。\n但横诱导松、过信禁止。",
+      "method": "manual",
+      "node_type": "div"
     },
     {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "よろけ",
-      "target": "踉跄",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "よろけ",
-      "target": "踉跄",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "よろけ",
-      "target": "踉跄",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "よろけ",
-      "target": "踉跄",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "前格闘",
-      "target": "前格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "前格闘",
-      "target": "前格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "よろけ",
-      "target": "踉跄",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "前格闘",
-      "target": "前格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "横格闘",
-      "target": "横格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "後格闘",
-      "target": "后格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "BD格闘",
-      "target": "BD格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "技名",
-      "target": "技能名",
-      "method": "dict",
+      "source": "【覚醒技】私は・・・超兵！",
+      "target": "【觉醒技】我是…超兵！",
+      "method": "manual",
       "node_type": "h3"
     },
     {
-      "source": "コンボ",
-      "target": "连段",
-      "method": "dict",
-      "node_type": "h2"
+      "source": "「超兵の実力を…思い知れ！」\n横薙ぎ→袈裟斬り→斬り上げ→セルゲイ機突撃→十字斬り抜けの乱舞技。発動時に特殊格闘が100までリロードされる",
+      "target": "「让你见识…超兵的实力！」\n横扫→袈裟斩→斩上→谢尔盖机突击→十字斩穿的乱舞技。发动时特殊格斗装填到100",
+      "method": "manual",
+      "node_type": "div"
     },
     {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
-      "node_type": "td"
+      "source": "格闘攻撃補正:+%　防御補正:-20% : ブースト軽減:-15%\n非推奨。\nタオツーは近接キャラであるためF覚と相性が良いと思われがちだが、本機は格闘ではなく射撃でダメージを取る機体である。\n後派生や格闘系のアシストのダメージは増やせるが、どちらも限度がある。\n機動力アップもS覚で得られるので、選ぶ理由がほぼ無い。",
+      "target": "格斗攻击补正:+%　防御补正:-20% : BD减轻:-15%\n不推荐。\n刀兹是近接角色所以常被认为与F觉醒相性好、但本机是用射击取伤害的机体。\n后派生或格斗系援护的伤害能增、但都有限度。\n机动提升S觉醒也能获得、选择理由几乎没有。",
+      "method": "manual",
+      "node_type": "div"
     },
     {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
+      "source": "射撃攻撃補正:+8% ブースト軽減:-10%\n推奨。",
+      "target": "射击攻击补正:+8% BD减轻:-10%\n推荐。",
+      "method": "manual",
+      "node_type": "#"
     },
     {
-      "source": "戦術",
-      "target": "战术",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "ティエレンタオツー",
-      "target": "铁人桃子",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "機動戦士ガンダム00",
-      "target": "机动战士高达00",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ソーマ・ピーリス",
-      "target": "索玛·皮利斯",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "形態移行",
-      "target": "形态移行",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "なし",
-      "target": "无",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "移動タイプ",
-      "target": "移动类型",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "通常BD",
-      "target": "通常BD",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BD回数",
-      "target": "BD次数",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "赤ロック距離",
-      "target": "红锁距离",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "変形コマンド",
-      "target": "变形指令",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "なし",
-      "target": "无",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "盾コマンド",
-      "target": "盾牌指令",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "あり",
-      "target": "有",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "扱いやすさ",
-      "target": "上手难度",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ノーマル",
-      "target": "普通",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "デフォルトBGM",
-      "target": "默认BGM",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "射撃",
-      "target": "射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "滑腔砲",
-      "target": "滑膛炮",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "弱実弾",
-      "target": "弱实弹",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "連動",
-      "target": "联动",
-      "method": "gemini",
+      "source": "「近距離で物量戦を仕掛ける」",
+      "target": "「在近距发起物量战」",
+      "method": "manual",
       "node_type": "span"
     },
     {
-      "source": " 12.7mm機銃",
-      "target": "12.7mm机枪",
-      "method": "gemini",
+      "source": "というコンセプトに高速リロードや各種キャンセルルートが増設されることで、3000だろうと逃がさない高精度の攻めが出来る。\n各種アシストをメインでキャンセルして降りられるようになり、単純なメイン連打も強力。CSとメインを組み合わせた連携ループも強い。\n一方で格闘後派生と合わせる場合は、意図せず格闘CSをチャージしてしまわぬようゲージ管理に注意。",
+      "target": "的概念上、增设高速装填与各种取消路线、就算3000也不放跑的高精度进攻可成立。\n各种援护能以主射取消落地、单纯主射连打也强力。CS与主射组合的连携循环也强。\n另一方面与格斗后派生组合时、注意槽管理别意外蓄了格斗CS。",
+      "method": "manual",
       "node_type": "#"
     },
     {
-      "source": "メインに連動して射撃",
-      "target": "与主射联动射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N射撃CS",
-      "target": "N射击CS",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "30mm機銃【突撃連射】",
-      "target": "30mm机枪【突击连射】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前進撃ち",
-      "target": "前进射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横後射撃CS",
-      "target": "横后射击CS",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "30mm機銃【移動連射】",
-      "target": "30mm机枪【移动连射】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "入力方向へ移動撃ち",
-      "target": "向输入方向移动射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "各射撃CS\n格闘派生",
-      "target": "各射击CS\n格斗派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格派生",
-      "target": "N格派生",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": " 連続斬り",
-      "target": "连续斩击",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "3入力3段格闘",
-      "target": "3输入3段格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格派生後派生",
-      "target": "N格派生后派生",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": " 踏みつけ&滑腔砲&蹴飛ばし",
-      "target": "踩踏&滑膛炮&踢飞",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "格闘連打で威力増加",
-      "target": "连按格斗增加威力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横格派生",
-      "target": "横格派生",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": " 薙ぎ払い",
-      "target": "横扫",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "受身不能の打ち上げ1段",
-      "target": "不可受身浮空1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘CS",
-      "target": "格斗CS",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ティエレン宇宙型 呼出【追従】",
-      "target": "铁人宇宙型 呼出【追随】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "自機の左右に展開し追従。メイン連動で射撃",
-      "target": "展开在自机左右并追随。与主射联动射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "滑腔砲【連射】",
-      "target": "滑膛炮【连射】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "新規武装。実弾3連射",
-      "target": "新武装。实弹3连射",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N特殊射撃",
-      "target": "N特殊射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ティエレン宇宙型 呼出【ネットガン】",
-      "target": "铁人宇宙型 呼出【网枪】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "スタン+鈍足",
-      "target": "眩晕+减速",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横特殊射撃",
-      "target": "横特殊射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ティエレン宇宙型 呼出【突撃】",
-      "target": "铁人宇宙型 呼出【突击】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2機体が突撃",
-      "target": "2机体突击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前特殊射撃",
-      "target": "前特殊射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ティエレン宇宙型 呼出【捕縛】",
-      "target": "铁人宇宙型 呼出【捕缚】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ミン中尉による拘束アシスト",
-      "target": "明中尉拘束援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "後特殊射撃",
-      "target": "后特殊射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ティエレン宇宙型 呼出【滑腔砲】",
-      "target": "铁人宇宙型 呼出【滑膛炮】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2機体が2発ずつ撃つ",
-      "target": "2机体各射2发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ティエレン宇宙指揮官型 呼出【追従】",
-      "target": "铁人宇宙指挥官型 呼出【追随】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "メインに連動して射撃",
-      "target": "与主射联动射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "呼出中\nN特殊格闘",
-      "target": "呼出中\nN特殊格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "滑腔砲",
-      "target": "滑膛炮",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2連射",
-      "target": "2连射",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "呼出中\n前後特殊格闘",
-      "target": "呼出中\n前后特殊格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "斬り抜け",
-      "target": "斩穿",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘アシスト",
-      "target": "格斗援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "呼出中\n横特殊格闘",
-      "target": "呼出中\n横特殊格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "掴み→ストレート",
-      "target": "抓取→直拳",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "掴んで高威力攻撃",
-      "target": "抓取后高威力攻击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "カーボンブレイド",
-      "target": "碳素刀",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段格闘",
-      "target": "2段格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前派生",
-      "target": "前派生",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": " 蹴り飛ばし",
-      "target": "踢飞",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "N前",
-      "target": "N前",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "新規派生。旧射撃派生の格闘部分",
-      "target": "新派生。旧射击派生的格斗部分",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "タックル",
-      "target": "冲撞",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前",
-      "target": "前",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "突進中に攻撃が当たるとシールド移行",
-      "target": "突进中受到攻击会转换为盾牌姿态",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横薙ぎ→薙ぎ払い",
-      "target": "横斩→横扫",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横N",
-      "target": "横N",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "回り込み格闘",
-      "target": "绕背格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前派生",
-      "target": "前派生",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": " 蹴り飛ばし",
-      "target": "踢飞",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "横前",
-      "target": "横前",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格始動と同様",
-      "target": "与N格起手相同",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘カウンター",
-      "target": "格斗反击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "後",
-      "target": "后",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "発生遅め",
-      "target": "发生较慢",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "キック→斬り抜け",
-      "target": "踢击→斩穿",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BD中前N",
-      "target": "BD中前N",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "受身不可打ち上げ",
-      "target": "不可受身浮空",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力\nF/S/E",
-      "target": "威力\nF/S/E",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "私は・・・超兵！",
-      "target": "我是……超兵！",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "乱舞系。入力時に特格の弾数を回復",
-      "target": "乱舞系。输入时恢复特格弹数",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "▼目次",
-      "target": "▼目录",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "キャンセルルート",
-      "target": "取消路线",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "サポートアクション",
-      "target": "援护动作",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "射撃武器",
-      "target": "射击武器",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【格闘派生】",
-      "target": "【格斗派生】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【メイン射撃】滑腔砲",
-      "target": "【主射击】滑膛炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【メイン射撃連動】12.7mm機銃",
-      "target": "【主射击联动】12.7mm机枪",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【射撃CS】30mm機銃【突撃連射】 / 【移動連射】",
-      "target": "【射击CS】30mm机枪【突击连射】 / 【移动连射】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【射撃CSN格闘派生】連続斬り",
-      "target": "【射击CS N格斗派生】连续斩击",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【射撃CSN格闘派生/N格闘/横格闘後派生】ゼロ距離射撃→蹴り飛ばし",
-      "target": "【射击CS N格斗派生/N格斗/横格斗后派生】零距离射击→踢飞",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【射撃CS横格闘派生】薙ぎ払い",
-      "target": "【射击CS 横格斗派生】横扫",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【格闘CS】ティエレン宇宙型　呼出【追従】",
-      "target": "【格斗CS】铁人宇宙型 呼出【追随】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【サブ射撃】滑腔砲【連射】",
-      "target": "【副射击】滑膛炮【连射】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【特殊射撃】 ティエレン宇宙型　呼出【射撃】 / 【突撃】",
-      "target": "【特殊射击】 铁人宇宙型 呼出【射击】 / 【突击】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【N特殊射撃】ネットガン",
-      "target": "【N特殊射击】网枪",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【横特殊射撃】 突撃",
-      "target": "【横特殊射击】 突击",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【前特殊射撃】捕縛",
-      "target": "【前特殊射击】捕缚",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【後特殊射撃】 滑腔砲",
-      "target": "【后特殊射击】 滑膛炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【特殊格闘】ティエレン宇宙指揮官型　呼出【追従】",
-      "target": "【特殊格斗】铁人宇宙指挥官型 呼出【追随】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【メイン連動】滑腔砲",
-      "target": "【主射击联动】滑膛炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【N特格指令】滑腔砲二発",
-      "target": "【N特格指令】滑膛炮二连发",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【前後特格指令】斬り抜け",
-      "target": "【前后特格指令】斩击冲刺",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【横特格指令】掴み→ストレートパンチ",
-      "target": "【横特格指令】抓取→直拳",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【通常格闘】",
-      "target": "【通常格斗】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【格闘前派生】蹴り飛ばし",
-      "target": "【格斗前派生】踢飞",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【前格闘】",
-      "target": "【前格斗】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【横格闘】",
-      "target": "【横格斗】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【後格闘】",
-      "target": "【后格斗】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【BD格闘】",
-      "target": "【BD格斗】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【覚醒技】",
-      "target": "【觉醒技】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【後覚醒技】",
-      "target": "【后觉醒技】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "特殊",
-      "target": "特殊",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "EXバースト考察",
-      "target": "EX爆发分析",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "セットプレイ",
-      "target": "连招套路",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "対面対策",
-      "target": "对抗策略",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "僚機考察",
-      "target": "僚机分析",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "適した僚機",
-      "target": "适合的僚机",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "適さない僚機",
-      "target": "不适合的僚机",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "コストパターンごとの戦術考察",
-      "target": "各费用模式下的战术分析",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "外部リンク&参考資料集",
-      "target": "外部链接及参考资料集",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "人類革新連盟の量産型MS・ティエレンの超兵専用仕様。漢字では「鉄人桃子」と書く。\nピンクのカラーリングが特徴的だが、2ndシーズンでは一般兵用の本機がロールアウトしている。",
-      "target": "人类革新联盟的量产型MS・铁人的超兵专用规格。汉字写作“铁人桃子”。\n粉色涂装是其特征，但在第二季中，本机的一般兵用型号也已亮相。",
-      "method": "gemini",
+      "source": "防御補正:-35%\n論外。\n自衛用に覚醒を潰すくらいなら攻めの覚醒を選んだほうがいい。",
+      "target": "防御补正:-35%\n论外。\n与其用觉醒堵自卫、不如选进攻的觉醒。",
+      "method": "manual",
       "node_type": "div"
-    },
-    {
-      "source": "\nパッと見は豊富なアシストや射撃択を用いた射撃戦をする1500後衛機のように見えるが、弾速に難を抱えているものが多い関係で",
-      "target": "\n乍一看像是使用丰富援护和射击选项进行射击战的1500后卫机，但由于许多武器弹速较慢，",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "インファイトする射撃機",
-      "target": "进行近战的射击机",
-      "method": "gemini",
-      "node_type": "strong"
-    },
-    {
-      "source": "がコンセプトとなっている。\n特に「中佐」こと時限式の追従アシストによるセルフクロスが強力で、期待値の高いセットプレイで試合を動かすことを狙うことになる。",
-      "target": "是其设计理念。\n特别是被称为“中佐”的限时追随援护带来的自我交叉射击非常强大，旨在通过高期待值的连招套路来主导比赛。",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "今作では追従式のアシストを格闘CSに獲得。これをメインでキャンセルできることにより、シリーズでは初の「降りテク」を得た。\nその上でダウン取りの要でもあったCS射撃派生が削除。更にサブと特射が特射系に統合されてしまいアシスト周りの操作難度が上がっている。\n上記のコンセプトはさらに先鋭化され、前に出て飛び道具を擦り付けて相手の動きを奪うインファイターとしての性質が強まったと言えるだろう。",
-      "target": "本作中，在格斗CS中获得了追随式援护。通过主射击取消该援护，使其首次在系列中获得了“下落技巧”。\n此外，曾经是击倒关键的CS射击派生被删除。副射击和特射也被整合到特射系中，导致援护操作难度增加。\n可以说，上述的设计理念进一步深化，作为一名近战机体的性质更强，需要上前利用投掷武器限制对手的行动。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "リザルトポーズ",
-      "target": "结算姿势",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "通常時:\n敗北時:",
-      "target": "通常时:\n败北时:",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "▼前作からの変更点",
-      "target": "▼与前作的变更点",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "\n前作のデータは",
-      "target": "\n前作的数据请看",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "こちら",
-      "target": "这里",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "メイン連動射撃:弾数増加(30発→60発)。弾速・誘導強化。",
-      "target": "主射击联动射击:弹药数增加(30发→60发)。弹速・诱导强化。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "射撃CS:射撃派生が削除。",
-      "target": "射击CS:射击派生被删除。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "サブ射撃:新規武装。旧射撃CS射撃派生に似た非強制ダウンの弾を3連射。",
-      "target": "副射击:新增武装。3连射类似旧射击CS射击派生的非强制倒地弹。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘CS:新規武装。追従アシスト2機。",
-      "target": "格斗CS:新增武装。追随援护2机。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "特殊射撃(全般):旧サブ射撃が統合。弾数増加(4発→8発)。",
-      "target": "特殊射击(全般):旧副射击被整合。弹药数增加(4发→8发)。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "N特殊射撃:弾速・誘導強化。",
-      "target": "N特殊射击:弹速・诱导强化。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "横特殊射撃:誘導・銃口低下。",
-      "target": "横特殊射击:诱导・枪口降低。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "N・横格闘射撃派生:削除。",
-      "target": "N・横格斗射击派生:删除。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "N・横格闘前派生:旧N・横格闘射撃派生の初段が移動。強よろけ→砂埃ダウンに変更。",
-      "target": "N・横格斗前派生:旧N・横格斗射击派生的第一段移动。变更为强硬直→扬尘倒地。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "キャンセルルート",
-      "target": "取消路线",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "メイン→サブ、各特射",
-      "target": "主射击→副射击、各特射",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "各射撃CS→各特射",
-      "target": "各射击CS→各特射",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘CS→メイン",
-      "target": "格斗CS→主射击",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "サブ→各特射",
-      "target": "副射击→各特射",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "各特射→別特射",
-      "target": "各特射→其他特射",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "N・横格闘前派生→各特射、各特格",
-      "target": "N・横格斗前派生→各特射、各特格",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "サポートアクション",
-      "target": "支援行动",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "射撃",
-      "target": "射击",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "射撃武器",
-      "target": "射击武器",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "武装表テンプレート",
-      "target": "武装表模板",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "単発射撃武装",
-      "target": "单发射击武装",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "リロード/チャージ",
-      "target": "装填/蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "撃ち切り常時 ?秒",
-      "target": "打空常驻 ?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "多段ヒット射撃武装",
-      "target": "多段命中射击武装",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "リロード/チャージ",
-      "target": "装填/蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "撃ち切り常時 ?秒",
-      "target": "打空常驻 ?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?ヒットよろけ",
-      "target": "?命中硬直",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BZ等複数部位射撃",
-      "target": "火箭炮等多部位射击",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "リロード/チャージ",
-      "target": "装填/蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "爆風",
-      "target": "爆炸范围",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "爆風",
-      "target": "爆炸范围",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数制チャージショット",
-      "target": "弹数制蓄力射击",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "派生があるチャージショット",
-      "target": "带派生的蓄力射击",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "射撃CS",
-      "target": "射击CS",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗格闘派生",
-      "target": "┗格斗派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗格闘",
-      "target": "┗格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "リロードのみ",
-      "target": "仅装填",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "撃ち切り\nアシスト消滅 ?秒",
-      "target": "打空\n援护消失 ?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード+属性",
-      "target": "装填+属性",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "撃ち切り常時/?秒",
-      "target": "打空常驻/?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード抜きダメージ推移",
-      "target": "不含装填的伤害推移",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード・属性抜きダメージ推移",
-      "target": "不含装填和属性的伤害推移",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト(単独武装時)",
-      "target": "援护(单独武装时)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "撃ち切り\nアシスト消滅 ?秒",
-      "target": "打空\n援护消失 ?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト(単発射撃)",
-      "target": "援护(单发射击)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト(多段ヒット射撃)",
-      "target": "援护(多段命中射击)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "\nアシスト(単発格闘)\n\n",
-      "target": "\n援护(单发格斗)\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト(多段ヒット格闘)",
-      "target": "援护(多段命中格斗)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗格闘",
-      "target": "┗格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┗格闘",
-      "target": "　┗格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト(射撃2種)",
-      "target": "援护(射击2种)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト(射撃→格闘)",
-      "target": "援护(射击→格斗)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "3段目",
-      "target": "第3段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "追従アシスト",
-      "target": "追踪援护",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "追従時間",
-      "target": "追踪时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "出現位置",
-      "target": "出现位置",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ビーム",
-      "target": "光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "時限強化",
-      "target": "限时强化",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "持続",
-      "target": "持续",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "クールタイム",
-      "target": "冷却时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発格闘",
-      "target": "单发格斗",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "派生のある格闘",
-      "target": "可派生格斗",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "通常格闘",
-      "target": "通常格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┣＊派生",
-      "target": "　┣＊派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┃┗2段目",
-      "target": "　┃┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┗3段目",
-      "target": "　┗第3段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　　┗4段目",
-      "target": "　　┗第4段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┗射撃派生",
-      "target": "　┗射击派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "派生のみを書く場合",
-      "target": "仅显示派生时",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "【格闘派生】",
-      "target": "【格斗派生】",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "格闘派生",
-      "target": "格斗派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計威力(累計補正率)",
-      "target": "累计威力(累计补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発威力\n(単発補正率)",
-      "target": "单发威力\n(单发补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計ダウン値",
-      "target": "累计倒地值",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発ダウン値",
-      "target": "单发倒地值",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横N",
-      "target": "横N",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N・横",
-      "target": "N・横",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "NN・横N",
-      "target": "NN・横N",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┣派生",
-      "target": "┣派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗派生",
-      "target": "┗派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "外部サイトの参考文献に飛ばす方法",
-      "target": "跳转至外部参考网站的方法",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "\n○○が",
-      "target": "\n○○是",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "である。\n\n",
-      "target": "。\n\n",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "【メイン射撃】滑腔砲",
-      "target": "【主射击】滑膛炮",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "\n6発装填の実弾BR。タオツーの射撃で唯一足が止まらず、格闘CSからのアメキャンでも活用するため、弾数管理はしっかりとしたい。\n\n",
-      "target": "\n装填6发的实弹BR。是陶拉斯射击中唯一不会停下脚步的武装，也可用于格斗CS的取消硬直，因此要好好管理弹药。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "撃ち切り常時/?秒",
-      "target": "射完常时/?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【メイン射撃連動】12.7mm機銃",
-      "target": "【主射击联动】12.7mm机枪",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "\n滑腔砲に搭載されている伏兵装の機銃からマシンガンを撃つ\n\n",
-      "target": "\n从滑膛炮搭载的隐藏武装机枪中射出机关枪。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "リロード/チャージ",
-      "target": "装填/蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "撃ち切り常時 ?秒",
-      "target": "射完常时 ?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?ヒットよろけ",
-      "target": "?命中硬直",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【射撃CS】30mm機銃【突撃連射】 / 【移動連射】",
-      "target": "【射击CS】30mm机枪【突击连射】 / 【移动连射】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "腹部に付いている機銃からマシンガンを撃ちつつレバー方向に移動する。\nここから格闘入力で派生技を出せる。\n今作では射撃派生が削除(というよりサブに移行している)\n特射系にキャンセルできるので、格闘レンジ外の場合は特射にキャンセルして繋ごう。",
-      "target": "从腹部搭载的机枪中射出机关枪，同时向摇杆方向移动。\n在此可输入格斗派生技。\n本作中射击派生已被删除（不如说已转移至副武装）。\n可以取消至特射系，因此当在格斗范围外时，取消至特射以进行连段。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾",
-      "target": "实弹",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?ヒットよろけ",
-      "target": "?命中硬直",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【射撃CSN格闘派生】連続斬り",
-      "target": "【射击CSN格斗派生】连续斩击",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "出し切りでバウンドが取れる三段切りを繰り出す。\n後派生対応。",
-      "target": "使出可造成弹地效果的三段斩击。\n支持后派生。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "【射撃CSN格闘派生/N格闘/横格闘後派生】ゼロ距離射撃→蹴り飛ばし",
-      "target": "【射击CSN格斗派生/N格斗/横格斗后派生】零距离射击→踢飞",
-      "method": "gemini",
-      "node_type": "h5"
-    },
-    {
-      "source": "\n足蹴にしつつ降下し、ボタン連打で11連打まで零距離射撃を決め、蹴り飛ばしで〆。\n\n",
-      "target": "\n一边踢击一边下降，通过连打按钮进行最多11连的零距离射击，最后以踢飞收尾。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "通常格闘",
-      "target": "通常格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┗3段目",
-      "target": "　┗第3段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【射撃CS横格闘派生】薙ぎ払い",
-      "target": "【射击CS横格斗派生】横扫",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "受け身不可で打ち上げる切り抜け。\n伸びはそれなりだが突進速度と判定に優れる。\n判定が出てしまえばキマリスヴィダールの横特と相打ちになる程度の判定を持つ。",
-      "target": "无法受身地将敌人击飞的突击技。\n延伸距离一般，但突进速度和判定优秀。\n一旦判定发生，其判定强度足以与格雷兹利达尔的横特格互冲。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【格闘CS】ティエレン宇宙型　呼出【追従】",
-      "target": "【格斗CS】铁人宇宙型 呼叫【追随】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "新規武装。自身の左右にティエレン宇宙型が二機現れる。\n以降、メインに連動して滑腔砲で支援射撃してくれる。\n呼び出しをメインでキャンセルできるため、降りテクとして利用できる。",
-      "target": "新武装。在自身左右出现两架铁人宇宙型。\n此后，会与主射联动，用滑膛炮进行支援射击。\n呼叫可被主射取消，因此可作为落地技巧使用。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "追従時間",
-      "target": "追随时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "出現位置",
-      "target": "出现位置",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾",
-      "target": "实弹",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【サブ射撃】滑腔砲【連射】",
-      "target": "【副射击】滑膛炮【连射】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "弾頭を三連射。いつでも各特射にキャンセルできる。\n全弾当たるとダウンが取れるので、着地取りや、単純に弾幕として撃っていこう。",
-      "target": "三连发弹头。随时可取消至各特殊射击。\n全弹命中可造成倒地，因此可用于抓落地或作为单纯的弹幕射击。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "リロード/チャージ",
-      "target": "装填/蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "撃ち切り常時 ?秒",
-      "target": "射完耗尽常驻 ?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?ヒットよろけ",
-      "target": "?命中硬直",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【特殊射撃】 ティエレン宇宙型　呼出【射撃】 / 【突撃】",
-      "target": "【特殊射击】铁人宇宙型 呼叫【射击】 / 【突击】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "前作までのサブと特射を特射に統合。青い宇宙用ティエレンが助けにきてくれる。\n特射系同士での相互キャンセルが可能であるが、内部硬直がそれなりにあるので注意。",
-      "target": "将前作的副射和特射整合至特殊射击。蓝色的宇宙用铁人会前来支援。\n特殊射击系统之间可以相互取消，但有相当长的内部硬直，请注意。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "撃ち切りorアシスト消滅\n?秒",
-      "target": "射完耗尽或援护消失\n?秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【N特殊射撃】ネットガン",
-      "target": "【N特殊射击】网枪",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "一機が現れネットガン。ダウン値が低めで当たるとスタン+鈍足。\n今作より弾速が上昇し、フォーク軌道で下方向に強く誘導するようになった。\n追撃での鈍足付与を狙うのが基本だが、相手の慣性落下に合わせて撃てば着地を取ることも可能。\nただし横の誘導は甘めなので過信は禁物。",
-      "target": "出现一架机体并使用网枪。倒地值较低，命中后造成眩晕+减速。\n本作弹速提升，以叉状轨迹向下强力诱导。\n基本是瞄准追击时的减速效果，但如果配合对手的惯性落地射击，也可抓落地。\n但是横向诱导较弱，不可过分相信。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾",
-      "target": "实弹",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "スタン",
-      "target": "眩晕",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【横特殊射撃】 突撃",
-      "target": "【横特殊射击】突击",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "性能が控えめな二体突撃アシスト。\n発生がかなり遅く至近距離でもメインから繋がらないので注意。\nまた銃口も突撃前に切れてしまうようで、セルフカットにも不向き。\n最低限の誘導はありステップを踏まない相手にはそれなりの牽制にはなるが、初心者狩りの域は出ないだろう。\n発生の遅さを生かしてアシスト盾もできなくはないが、慣性が乗らず内部硬直が長めなのも厳しい。\n基本的には他の特射を優先しよう。",
-      "target": "性能保守的两机突击援护。\n发生速度很慢，即使在近距离也无法从主射连接，请注意。\n此外，枪口似乎在突击前就会切断，也不适合自我取消。\n虽有最低限度的诱导，对于不进行垫步的对手能起到一定牵制作用，但恐怕超不出新手狩猎的范畴。\n虽然可以利用其发生慢的特点进行援护盾，但没有惯性且内部硬直较长也很严峻。\n基本上还是优先使用其他特殊射击吧。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【前特殊射撃】捕縛",
-      "target": "【前特殊射击】捕缚",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "ミン中尉が敵に突撃。当たると捕縛する。時間が経つと手を離して消えるタイプ。\n横特格を使ったコンボの始動のほか、単純な拘束に。",
-      "target": "明中尉突击敌人。命中后进行捕缚。属于时间到了会松手消失的类型。\n除了作为使用横特殊格斗的连招起手外，也可用于单纯的拘束。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【後特殊射撃】 滑腔砲",
-      "target": "【后特殊射击】滑膛炮",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "二機を前面に呼び出し、滑腔砲を二発ずつ撃つ、射撃ガード付きアシスト。\n射撃ガード自体は広めだが慣性が乗るせいでガードがズレやすい。\n計4射打つがダウン値4.0なのでこれ単体ではダウンが取れないので注意。",
-      "target": "在前方呼叫两架机体，各发射两发滑膛炮，是附带射击防御的援护。\n射击防御范围虽广，但由于会产生惯性，防御容易错位。\n总共射击4发，但倒地值仅为4.0，因此单独使用无法造成倒地，请注意。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "滑腔砲",
-      "target": "滑膛炮",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾",
-      "target": "实弹",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "滑腔砲",
-      "target": "滑膛炮",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾",
-      "target": "实弹",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【特殊格闘】ティエレン宇宙指揮官型　呼出【追従】",
-      "target": "【特殊格斗】铁人宇宙指挥官型 呼叫【追随】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "セルゲイ・スミルノフ中佐の駆る青いティエレン宇宙指揮官型を呼び出す。通称「中佐」。\n中佐は自機に追従し、自機のロック対象を独自のロックオンで追い回す。\nメイン連動含め、四種類の指令を送ることが出来る。\n各指令を送ると武装ゲージが赤くなり、暫く行動させられない時間が発生する。",
-      "target": "呼叫谢尔盖·斯米尔诺夫中校驾驶的蓝色铁人宇宙指挥官型。通称“中校”。\n中校会追随自机，并以独特的锁定方式追击自机的锁定目标。\n包括主射联动在内，可以下达四种指令。\n下达各指令后武装槽会变红，并产生一段时间无法行动的状态。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "持続",
-      "target": "持续时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "クールタイム",
-      "target": "冷却时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "秒",
-      "target": "秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "追従アシスト",
-      "target": "追随援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【メイン連動】滑腔砲",
-      "target": "【主射联动】滑膛炮",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "その場で滑腔砲を撃ってくれる。\nメインと違って強よろけだが、メインより安いので注意。",
-      "target": "会在原地发射滑膛炮。\n与主射不同，造成强硬直，但伤害比主射低，请注意。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【N特格指令】滑腔砲二発",
-      "target": "【N特殊格斗指令】滑膛炮两发",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "メイン連動と同じ弾を二発撃つ。\n合計ダウン値4.0なのでダウンを取るには追撃が必要。",
-      "target": "发射两发与主射击联动相同的子弹。\n总击落值4.0，因此需要追击才能击落。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "実弾/ビーム",
-      "target": "实弹/光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【前後特格指令】斬り抜け",
-      "target": "【前后特殊格斗指令】斩击穿透",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "スタン属性の斬り抜け一段。\n射程が短いが誘導が良いので着地を取ったり変形を咎めることが可能。\n突進速度が速いので単純に中佐を送り込む用途にも。",
-      "target": "带有眩晕属性的一段斩击穿透。\n射程短但诱导性好，因此可以抓落地或惩罚变形。\n突进速度快，也可用于单纯地将中佐送过去。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【横特格指令】掴み→ストレートパンチ",
-      "target": "【横向特殊格斗指令】抓取→直拳",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "突進して片手で敵を掴み、一拍置いて強制ダウンのパンチで吹っ飛ばす。エクシアに対して放った再現。\n突進速度はそれなりだが誘導はほとんどしないので基本的には追撃用。",
-      "target": "突进并用单手抓住敌人，稍作停顿后用强制击落的拳击将其打飞。再现了对战能天使时施展的一幕。\n突进速度尚可但几乎没有诱导性，所以基本用于追击。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "【通常格闘】",
-      "target": "【普通格斗】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "一応威力重視の二段格闘。\n出し切りから拾える格闘がないので注意。",
-      "target": "姑且算是重视威力的两段格斗。\n注意，完整打完后没有可以继续连段的格斗技。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "通常格闘",
-      "target": "普通格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "　┗3段目",
-      "target": "　┗第3段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【格闘前派生】蹴り飛ばし",
-      "target": "【格斗前派生】踢飞",
-      "method": "gemini",
-      "node_type": "h4"
-    },
-    {
-      "source": "その場で敵を蹴り飛ばす。旧作射撃派生の初段のみが独立。\n受け身不可で、ここから各特射にキャンセルできる。",
-      "target": "在原地将敌人踢飞。仅是旧作射击派生的第一段独立出来。\n无法受身，可以从这里取消到各种特殊射击。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "【前格闘】",
-      "target": "【前格斗】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "盾移行判定を纏うタックル。当たると低く吹き飛ばす。\n受け身可能ダウンなので上空で当てた場合は注意。\n基本的にはあがき用だが生当て性能は悪くない",
-      "target": "带有盾牌判定（霸体）的冲撞。命中后会将敌人击飞至低空。\n是可受身的击落，所以在空中命中时要注意。\n基本用于挣扎，但直接命中性能不差。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【横格闘】",
-      "target": "【横格斗】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "\n出し切りでやや浮かせる二段格闘。初段威力はNと同じ。\n\n",
-      "target": "\n完整打完后会略微浮空的两段格斗。第一段威力与普通格斗相同。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【後格闘】",
-      "target": "【后格斗】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "格闘カウンター。成立で三段格闘で迎撃。\n受け身可能ダウンなので注意。",
-      "target": "格斗反击。成功后会以三段格斗迎击。\n是可受身的击落，所以要注意。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【BD格闘】",
-      "target": "【冲刺格斗】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "出し切りで受け身不可ダウンで打ち上げる二段格闘。\n突進速度は控えめだが伸びはそれなり。",
-      "target": "完整打完后会以无法受身击落的方式将敌人打飞的两段格斗。\n突进速度一般，但延伸性尚可。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(补正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【覚醒技】",
-      "target": "【觉醒技】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "【後覚醒技】",
-      "target": "【后觉醒技】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率) F/S/E",
-      "target": "威力(补正率) F/S/E",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率) F/S/E",
-      "target": "威力(补正率) F/S/E",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発(元値)",
-      "target": "单发(原始值)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "3段目",
-      "target": "第3段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "4段目",
-      "target": "第4段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "5段目",
-      "target": "第5段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "特殊",
-      "target": "特殊",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "\n(>はステップ、≫はブーストダッシュ、→はそのままキャンセル キャンセル補正で威力が変動する物は()で併記)\n\n",
-      "target": "\n(>是垫步，≫是冲刺，→是直接取消。因取消补正而威力变动者在()中并记)\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "射撃始動",
-      "target": "射击起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格始動",
-      "target": "N格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前格始動",
-      "target": "前格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横格始動",
-      "target": "横格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "後格始動",
-      "target": "后格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BD格始動",
-      "target": "BD格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒中限定",
-      "target": "觉醒中限定",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "F覚醒限定",
-      "target": "F觉醒限定",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "EXバースト考察",
-      "target": "EX觉醒分析",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "\n「超兵1号、ソーマ・ピーリス少尉だ！！」\n",
-      "target": "\n“超兵1号，索玛·皮里斯少尉是也！！”\n",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "覚醒タイプ",
-      "target": "觉醒类型",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": ":\t射撃寄り汎用1\n\n",
-      "target": ":\t射击向万能机1\n\n",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "Fバースト",
-      "target": "F觉醒",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "格闘攻撃補正:+%　防御補正:-20% : ブースト軽減:-15%\n非推奨。\n本機は近接キャラだが格闘でダメージを取る機体ではない。格闘系のアシストのダメージは増やせるが限度がある。",
-      "target": "格斗攻击修正:+% 防御修正:-20% : Boost消耗减轻:-15%\n不推荐。\n本机虽然是近战型角色，但并非依靠格斗输出伤害的机体。虽然可以增加格斗系援护的伤害，但有其限度。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "Sバースト",
-      "target": "S觉醒",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "射撃攻撃補正:+8% ブースト軽減:-10%\n推奨。\n「近距離で物量戦を仕掛ける」というコンセプトに高速リロードや各種キャンセルルートが増設されることで、3000だろうと逃がさない高精度の攻めが出来る。\n各種アシストをメインでキャンセルして降りられるようになり、単純なメイン連打も強力。CSとメインを組み合わせた連携ループも強い。\n一方で格闘後派生と合わせる場合は、意図せず格闘CSをチャージしてしまわぬようゲージ管理に注意。",
-      "target": "射击攻击修正:+8% Boost消耗减轻:-10%\n推荐。\n“在近距离发起物量战”的理念下，增加了高速装填和各种取消路线，即使是3000成本也能进行高精度的追击，使其无法逃脱。\n各种援护可以通过主射取消下降，单纯的主射连打也十分强力。CS和主射组合的连携循环也很强。\n另一方面，与格斗后派生配合时，请注意能量槽管理，以免无意中蓄力格斗CS。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "Eバースト",
-      "target": "E觉醒",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "防御補正:-35%\n非推奨。\n自衛用に覚醒を潰すくらいなら攻めの覚醒を選んだほうがいい。",
-      "target": "防御修正:-35%\n不推荐。\n如果只是为了自卫而浪费觉醒，不如选择进攻型的觉醒。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "セットプレイ",
-      "target": "预设战术",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "対面対策",
-      "target": "对位对策",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "僚機考察",
-      "target": "队友分析",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "適した僚機",
-      "target": "适合的队友",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "得意の隣接起き攻めまで持ち込みたいので、独力でも相手にラインを下げさせられる2500or2000コスト前衛機体。\n加えてタイマンの強さも求めたいところ。",
-      "target": "由于希望能够打出擅长的邻接起身追击，因此需要能即使是单人也能让对手退防的2500或2000成本的前卫机体。\n此外，也希望其拥有单挑能力。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "適さない僚機",
-      "target": "不适合的队友",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "タイマンをせず距離を取った射撃戦で完結させたい機体。\n遠距離での存在感が希薄なティエレンが放置され、相方が負担に耐えられない。",
-      "target": "希望通过不单挑、拉开距离进行射击战来完结战斗的机体。\n远距离存在感稀薄的铁人会被放任不管，队友无法承受负担。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "コストパターンごとの戦術考察",
-      "target": "不同成本组合的战术分析",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "かなり事故気味。\n機動力の差が大きすぎて、放置もダブロも嫌う本機の弱味を突かれやすい。\n疑似タイのワンチャンは確実に取りこぼさないようにしたい。",
-      "target": "容易出现意外。\n机动力差距过大，容易被利用本机不喜欢被放任不管和被双锁的弱点。\n务必把握住假单挑中的机会。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "推奨。\n相方のライン上げに便乗して接近し、貼り付いてそのまま倒しきりたい。\n中盤以降の放置が致命的に痛い。死に攻めは必須だが限界は浅いので相方の奮起に期待する他ない。",
-      "target": "推荐。\n应借势队友推进向前，贴近对手并直接击倒。\n中盘以后被放任不管是致命的弱点。虽然必须进行搏命进攻，但极限较低，只能期待队友的奋起。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "こちらも推奨。\n2500と比べてチームの盤面戦力が落ちる分、覚醒やオバリミを揃えやすい点がメリット。\nこちらも積極的に相方をサポートしてコスパの良さを発揮したい。",
-      "target": "同样推荐。\n与2500相比，团队的场面战力有所下降，但优点是更容易积累觉醒和Over Limit（超限）。\n本机也应积极支援队友，发挥其高性价比的优势。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "大事故。調整以前に戦線が成り立たない。\n覚醒暴れはもちろん、中佐展開中もしっかり通さないとダメージ不足で負ける。",
-      "target": "大事故。在调整之前战线就无法成立。\n觉醒爆发自不必说，中佐展开中如果不能有效命中，也会因为伤害不足而败北。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "外部リンク&参考資料集",
-      "target": "外部链接与参考资料集",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "したらば掲示板 - ティエレンタオツー Part.1",
-      "target": "したらば论坛 - 铁人陶2型 Part.1",
-      "method": "gemini",
-      "node_type": "a"
     }
   ]
 }
