@@ -89,8 +89,21 @@
   <RouterLink
     class="report-issue"
     :to="{ path: '/support', query: { from: route.fullPath } }"
-    title="支持本站 / 反馈问题"
-  ><span class="ri-fold">支持 · 反馈</span><span class="ri-expand">♥ 支持 · 反馈</span></RouterLink>
+    aria-label="支持本站 / 反馈问题"
+  >
+    <span class="ri-tab">
+      <svg class="ri-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <span class="ri-vert">支持·反馈</span>
+    </span>
+    <span class="ri-card" aria-hidden="true">
+      <span class="ri-badge"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></span>
+      <span class="ri-text">
+        <b>觉得有用？支持一下</b>
+        <small>B站充电 · 私信反馈问题</small>
+      </span>
+      <span class="ri-go">›</span>
+    </span>
+  </RouterLink>
 
   <button v-show="showTop" class="back-to-top" @click="scrollToTop" aria-label="返回顶部">↑</button>
 </template>
@@ -544,55 +557,77 @@ watch(machine, (m) => {
 }
 .back-to-top:hover { opacity: 1; background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* 支持·反馈：贴右缘竖排窄标签（不遮表格内容）。
-   外层热区盒子恒定不变（宽32高自适应竖字），悬停时子面板向左展开，
-   避免展开改变尺寸导致 hover 抖动。 */
+/* 支持·反馈：贴右缘小标签（红心 + 竖排字），悬停/聚焦时向左滑出信息卡。
+   外层热区盒子尺寸恒定，卡片绝对定位，避免 hover 抖动。 */
 .report-issue {
   position: fixed;
-  right: 0;
-  bottom: 132px;
+  right: 28px; /* 与返回顶部按钮同轴 */
+  bottom: 92px;
   display: block;
-  border: 1px solid var(--border-bright);
-  border-right: none;
-  border-radius: 12px 0 0 12px;
-  background: var(--bg-secondary);
-  color: var(--text-muted);
-  font-size: 12.5px;
-  font-weight: 600;
+  width: 40px;
   text-decoration: none;
-  line-height: 1;
-  opacity: 0.85;
-  transition: opacity .15s, background .15s, color .15s, border-color .15s;
   z-index: 100;
 }
-/* 默认：竖排窄条（占据热区） */
-.report-issue .ri-fold {
-  display: block;
-  writing-mode: vertical-rl;
-  letter-spacing: 3px;
-  padding: 13px 9px;
+.ri-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  transition: opacity .18s;
 }
-/* 展开面板：绝对定位向左伸出，不改变外层盒子 */
-.report-issue .ri-expand {
-  display: none;
+.ri-heart { width: 14px; height: 14px; fill: var(--accent); }
+.ri-vert { writing-mode: vertical-rl; letter-spacing: 2px; }
+.ri-card {
   position: absolute;
-  right: 0;
+  right: -28px; /* 展开后贴齐视口右缘 */
   top: 50%;
-  transform: translateY(-50%);
-  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 248px;
+  padding: 12px 14px;
+  border: 1px solid var(--border-bright);
+  border-right: none;
   border-radius: 14px 0 0 14px;
-  background: var(--accent);
-  color: #fff;
-  white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(232, 51, 42, 0.35);
+  background: var(--bg-secondary);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(12px, -50%);
+  transition: opacity .18s, transform .18s, visibility .18s;
 }
-.report-issue:hover .ri-expand { display: block; }
-/* 悬停：竖条整体隐形（保留热区防抖动），视觉上只剩展开的胶囊 */
-.report-issue:hover .ri-fold { visibility: hidden; }
-.report-issue:hover {
+.ri-badge {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: grid;
+  place-items: center;
+}
+.ri-badge svg { width: 17px; height: 17px; fill: #fff; }
+.ri-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.ri-text b { font-size: 13.5px; color: var(--text-primary, #fff); }
+.ri-text small { font-size: 11.5px; color: var(--text-muted); }
+.ri-go { font-size: 20px; color: var(--accent); }
+.report-issue:hover .ri-card,
+.report-issue:focus-visible .ri-card {
   opacity: 1;
-  background: transparent;
-  border-color: transparent;
+  visibility: visible;
+  transform: translate(0, -50%);
+}
+.report-issue:hover .ri-tab,
+.report-issue:focus-visible .ri-tab { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .ri-card, .ri-tab { transition: none; }
 }
 
 @media (max-width: 600px) {
