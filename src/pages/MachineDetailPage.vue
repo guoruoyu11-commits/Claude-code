@@ -88,9 +88,9 @@
 
   <RouterLink
     class="report-issue"
-    :to="{ path: '/feedback', query: { from: route.fullPath } }"
-    title="本页有误？反馈问题"
-  >本页有误？</RouterLink>
+    :to="{ path: '/support', query: { from: route.fullPath } }"
+    title="支持本站 / 反馈问题"
+  >♥ 支持 · 反馈</RouterLink>
 
   <button v-show="showTop" class="back-to-top" @click="scrollToTop" aria-label="返回顶部">↑</button>
 </template>
@@ -544,26 +544,26 @@ watch(machine, (m) => {
 }
 .back-to-top:hover { opacity: 1; background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* 本页有误？浮动反馈入口：常驻右下角，位于返回顶部按钮上方 */
+/* 支持·反馈浮动入口：常驻右下角（返回顶部按钮上方），B站粉色调醒目胶囊 */
 .report-issue {
   position: fixed;
   bottom: 84px;
   right: 28px;
-  padding: 7px 12px;
-  border-radius: 14px;
-  border: 1px dashed var(--border-bright);
-  background: var(--bg-secondary);
-  color: var(--text-muted);
-  font-size: 11px;
+  padding: 9px 16px;
+  border-radius: 18px;
+  border: none;
+  background: linear-gradient(135deg, #fb7299, #e35e8b);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
   text-decoration: none;
-  opacity: 0.75;
-  transition: opacity .15s, color .15s, border-color .15s;
+  box-shadow: 0 4px 14px rgba(251, 114, 153, 0.35);
+  transition: filter .15s, transform .15s;
   z-index: 100;
 }
 .report-issue:hover {
-  opacity: 1;
-  color: var(--accent);
-  border-color: var(--accent);
+  filter: brightness(1.08);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 600px) {
