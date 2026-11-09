@@ -76,3 +76,14 @@ button { font-family: inherit; cursor: pointer; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #3a5572; }
+
+/* ── 雪碧图定位（src/utils/sprite.js 提供变量）──────────────────
+   background-size 把整张雪碧图放大到 cols×rows 倍容器尺寸，
+   每格正好等于容器；background-position 百分比 = col/(cols-1)，
+   使第 col 格恰好对齐容器（cols ≥ 2）。 */
+.sprite-cell {
+  background-repeat: no-repeat;
+  background-size: calc(var(--cols) * 100%) calc(var(--rows) * 100%);
+  background-position: calc(var(--col) * 100% / (var(--cols) - 1))
+                       calc(var(--row) * 100% / (var(--rows) - 1));
+}

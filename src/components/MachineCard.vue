@@ -5,14 +5,8 @@
     :to="`/machine/${machine.id}`"
   >
     <div class="machine-thumb" :class="`thumb-${machine.cost}`">
-      <img
-        v-if="machine.img && !imgFailed"
-        :src="machine.img"
-        :alt="machine.name"
-        class="thumb-img"
-        @error="imgFailed = true"
-      />
-      <span v-if="!machine.img || imgFailed" class="thumb-icon">{{ machine.short }}</span>
+      <div v-if="spriteStyle" class="thumb-img sprite-cell" :style="spriteStyle"></div>
+      <span v-if="!spriteStyle" class="thumb-icon">{{ machine.short }}</span>
       <span class="cost-badge" :class="`badge-${machine.cost}`">{{ machine.cost }}</span>
     </div>
     <div class="machine-name" :title="machine.name">{{ machine.name }}</div>
@@ -20,15 +14,16 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
+import { machineSpriteStyle } from '../utils/sprite.js'
 
-defineProps({
+const props = defineProps({
   machine: { type: Object, required: true },
   tierCls: { type: String, default: '' },
 })
 
-const imgFailed = ref(false)
+const spriteStyle = computed(() => machineSpriteStyle(props.machine))
 </script>
 
 <style scoped>
@@ -92,9 +87,6 @@ const imgFailed = ref(false)
 }
 
 .thumb-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   position: absolute;
   inset: 0;
   z-index: 0;

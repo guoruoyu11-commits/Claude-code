@@ -28,6 +28,14 @@ py scripts/translate_scheduler.py --force        # Overwrite all existing transl
 
 py scripts/download_assets.py                    # Download machine + cost images → public/images/
 py scripts/localize_wiki_images.py               # Replace atwiki image URLs in JSON with local /images/machines/{num}.png
+
+python3 scripts/make_sprite.py                   # 生成雪碧图 + manifest（新增机体图后必须重跑，否则新机体首页显示文字降级）
+```
+
+**雪碧图（降低 CDN 请求数）**：首页缩略图不逐个请求 `/images/machines/{num}.png`，而是按 cost 合并成
+`public/images/sprites/machines-{cost}.webp`（4 张）+ `cost-icons.webp`（筛选按钮）。坐标数据在
+`src/data/sprite_manifest.js`（脚本生成，勿手改）。组件侧统一走 `src/utils/sprite.js` 生成定位样式，
+配合 `global.css` 里的全局 `.sprite-cell` 类。原始散图仍保留，供详情页等场景使用。
 ```
 
 Python dependencies: `pip install beautifulsoup4 playwright google-genai` then `py -m playwright install chromium`

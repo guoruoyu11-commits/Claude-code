@@ -60,7 +60,7 @@
                   class="spotlight-card"
                   :to="`/machine/${machine.id}`"
                 >
-                  <img :src="machine.img" :alt="machine.name" />
+                  <div class="spotlight-img sprite-cell" :style="machineSpriteStyle(machine)"></div>
                   <span>{{ machine.name }}</span>
                 </RouterLink>
               </div>
@@ -94,6 +94,7 @@
 import { ref, computed, watch } from 'vue'
 import { RouterLink } from 'vue-router'
 import { MACHINES } from '../data/machines.js'
+import { machineSpriteStyle } from '../utils/sprite.js'
 import CostFilter from '../components/CostFilter.vue'
 import TierTable from '../components/TierTable.vue'
 
@@ -342,12 +343,9 @@ h1 {
   background: var(--bg-primary);
 }
 
-.spotlight-card img {
-  width: 100%;
-  height: 100%;
-  min-height: 86px;
-  object-fit: cover;
-  display: block;
+.spotlight-card .spotlight-img {
+  position: absolute;
+  inset: 0;
   opacity: .86;
   transition: transform .18s, opacity .18s;
 }
@@ -365,7 +363,7 @@ h1 {
   text-shadow: 0 1px 6px rgba(0,0,0,.85);
 }
 
-.spotlight-card:hover img {
+.spotlight-card:hover .spotlight-img {
   transform: scale(1.05);
   opacity: 1;
 }

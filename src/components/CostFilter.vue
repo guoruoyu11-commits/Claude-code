@@ -5,13 +5,13 @@
       :key="cost"
       class="cost-tab"
       :class="{ active: modelValue === String(cost) }"
+      :aria-label="`${cost} COST`"
       @click="emit('update:modelValue', String(cost))"
     >
-      <img
-        :src="imgUrl(cost, modelValue === String(cost))"
-        :alt="`${cost}コスト`"
-        class="cost-img"
-      />
+      <div
+        class="cost-img sprite-cell"
+        :style="costSpriteStyle(`${cost}${modelValue === String(cost) ? '' : '_off'}`)"
+      ></div>
     </button>
   </div>
 </template>
@@ -19,6 +19,7 @@
 <script setup>
 import { computed } from 'vue'
 import { MACHINES } from '../data/machines.js'
+import { costSpriteStyle } from '../utils/sprite.js'
 
 defineProps({
   modelValue: { type: String, default: '3000' },
@@ -28,10 +29,6 @@ const emit = defineEmits(['update:modelValue'])
 const availableCosts = computed(() =>
   [...new Set(MACHINES.map(m => m.cost))].sort((a, b) => b - a)
 )
-
-function imgUrl(cost, active) {
-  return active ? `/images/cost/cost${cost}.png` : `/images/cost/cost${cost}_off.png`
-}
 </script>
 
 <style scoped>
@@ -56,7 +53,7 @@ function imgUrl(cost, active) {
 .cost-img {
   display: block;
   width: min(240px, calc((100vw - 72px) / 2));
-  height: auto;
+  aspect-ratio: 640 / 160;
 }
 
 @media (max-width: 600px) {
