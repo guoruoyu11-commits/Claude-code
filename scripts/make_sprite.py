@@ -11,14 +11,9 @@
   src/data/sprite_manifest.js   （MACHINE_SPRITES / COST_SPRITE）
 
 用法：
-  python3 scripts/make_sprite.py                 # WebP, quality 80, 机体 2x 放大
+  python3 scripts/make_sprite.py                 # WebP, quality 90
   python3 scripts/make_sprite.py --format png
-  python3 scripts/make_sprite.py --quality 90
-  python3 scripts/make_sprite.py --scale 1       # 不放大（原图拼图）
-
-说明：源图仅 228x98，Retina 屏渲染到 ~330+ 物理像素时浏览器直接上采样会发糊。
-默认先用 LANCZOS 放大 2 倍再拼图（@2x 资产思路），Retina 渲染变成高质量缩小采样。
-CSS 用百分比定位（.sprite-cell），雪碧图像素尺寸变化不影响前端。
+  python3 scripts/make_sprite.py --quality 85
 """
 
 import argparse
@@ -38,13 +33,6 @@ MANIFEST_JS = ROOT / "src" / "data" / "sprite_manifest.js"
 
 MACHINE_COLS = 8   # 机体雪碧图每行列数
 COST_COLS = 2      # cost 图标雪碧图每行列数
-
-
-def upscale(img, scale):
-    """LANCZOS 高质量放大（scale=1 时原样返回）。"""
-    if scale == 1:
-        return img
-    return img.resize((img.width * scale, img.height * scale), Image.LANCZOS)
 
 
 def parse_machine_costs():
@@ -81,10 +69,7 @@ def pack_sheet(images, cols, out_path, fmt, quality):
 def main():
     ap = argparse.ArgumentParser(description="生成机体/cost 雪碧图与 manifest")
     ap.add_argument("--format", choices=["webp", "png"], default="webp")
-    ap.add_argument("--quality", type=int, default=80,
-                    help="2x 源图显示时会缩小采样, 伪影被稀释, 80 已无可见劣化且比 90 省 35% 体积")
-    ap.add_argument("--scale", type=int, default=2, choices=[1, 2],
-                    help="机体图放大倍数（Retina 渲染更清晰），cost 图标恒为 1")
+    ap.add_argument("--quality", type=int, default=90)
     args = ap.parse_args()
     ext = args.format
 
@@ -98,7 +83,7 @@ def main():
         if cost is None:
             print(f"[warn] {f.name} 未在 machines.js 中引用，跳过")
             continue
-        by_cost.setdefault(cost, []).append((f.stem, upscale(Image.open(f), args.scale)))
+        by_cost.setdefault(cost, []).append((f.stem, Image.open(f)))
 
     machine_sprites = {}
     for cost in sorted(by_cost, reverse=True):
