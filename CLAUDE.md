@@ -36,6 +36,8 @@ python3 scripts/make_sprite.py                   # 生成雪碧图 + manifest（
 `public/images/sprites/machines-{cost}.webp`（4 张）+ `cost-icons.webp`（筛选按钮）。坐标数据在
 `src/data/sprite_manifest.js`（脚本生成，勿手改）。组件侧统一走 `src/utils/sprite.js` 生成定位样式，
 配合 `global.css` 里的全局 `.sprite-cell` 类。原始散图仍保留，供详情页等场景使用。
+源图仅 228x98，Retina 屏浏览器直接上采样会发糊，脚本默认先 LANCZOS 放大 2 倍再拼图（@2x 资产思路，
+CSS 百分比定位对像素尺寸无感）；`--scale 1` 可关闭。
 ```
 
 Python dependencies: `pip install beautifulsoup4 playwright google-genai` then `py -m playwright install chromium`
