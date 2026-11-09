@@ -2,9 +2,9 @@
   "status": "ok",
   "id": "m24803",
   "name": "N-极限高达 残酷型",
-  "translated_at": "2026-04-25T13:03:35.312049+00:00",
+  "translated_at": "2026-11-09T02:55:18.515140+00:00",
   "source_id": "m24803",
-  "model": "gemini-2.5-flash",
+  "model": "manual-glm",
   "content_nodes": [
     {
       "t": "h2",
@@ -13,7 +13,7 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/96.html",
-            "title": "プレイヤーレベル (8h)"
+            "title": "プレイヤーレベル (4d)"
           },
           "v": "玩家等级"
         }
@@ -28,7 +28,7 @@
     },
     {
       "t": "div",
-      "v": "无论对战/CPU战，胜利则大幅增加，失败也会略微增加。\n6~8场？增加1级 → +2,000GP\nGP的主要收入来源。"
+      "v": "对战/CPU战不论赢了大幅增、输了也增一点。\n最初1级要6~8战、PLv500左右1级要30战左右。\n每级增2,000GP、是GP的主要收入源。"
     },
     {
       "t": "br"
@@ -73,7 +73,7 @@
                         "colspan": "2",
                         "style": ""
                       },
-                      "v": "奖励"
+                      "v": "报酬"
                     }
                   ]
                 }
@@ -136,7 +136,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总游戏天数（灰色框）"
+                      "v": "综合游玩天数(黑色框)"
                     }
                   ]
                 },
@@ -194,7 +194,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "排位赛每日胜率（灰色框）"
+                      "v": "阶级比赛日间胜率(黑色框)"
                     }
                   ]
                 },
@@ -252,7 +252,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总胜利数（灰色框）"
+                      "v": "综合胜利数(黑色框)"
                     }
                   ]
                 },
@@ -310,7 +310,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总造成伤害数（灰色框）"
+                      "v": "综合给予伤害数(黑色框)"
                     }
                   ]
                 },
@@ -449,7 +449,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总击破敌人数量（灰色框）"
+                      "v": "综合敌击破数(黑色框)"
                     }
                   ]
                 },
@@ -478,7 +478,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总对战数（灰色框）"
+                      "v": "综合对战数(黑色框)"
                     }
                   ]
                 },
@@ -507,7 +507,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总EX爆发伤害数（灰色框）"
+                      "v": "综合EX Burst伤害数(黑色框)"
                     }
                   ]
                 },
@@ -536,7 +536,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总排位赛10连胜达成数（灰色框）"
+                      "v": "综合阶级比赛10连胜达成数(黑色框)"
                     }
                   ]
                 },
@@ -565,7 +565,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总无伤战斗数（灰色框）"
+                      "v": "综合无伤战斗数(黑色框)"
                     }
                   ]
                 },
@@ -594,7 +594,7 @@
                       "a": {
                         "style": "background-color:#DDD;"
                       },
-                      "v": "总胜率(%)（灰色框）"
+                      "v": "综合胜率(%)(黑色框)"
                     }
                   ]
                 },
@@ -1647,7 +1647,7 @@
                       "a": {
                         "style": ""
                       },
-                      "v": "玩家等级奖励 Lv.300"
+                      "v": "玩家等级奖励 Lv.500"
                     }
                   ]
                 },
@@ -1835,13 +1835,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#EEE;"
+                      },
+                      "v": "综合无伤战斗数(银色框)"
                     }
                   ]
                 },
@@ -1862,13 +1864,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "GP"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "120,000GP"
                     }
                   ]
                 },
@@ -1889,13 +1893,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#EEE;"
+                      },
+                      "v": "综合胜率(%)(银色框)"
                     }
                   ]
                 },
@@ -1916,13 +1922,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "特效"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "玩家等级奖励 Lv.590"
                     }
                   ]
                 },
@@ -1944,13 +1952,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合游玩天数(金色框)"
                     }
                   ]
                 },
@@ -1970,7 +1980,7 @@
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
+                        "style": "background-color:#FCC;"
                       },
                       "v": "欲罢不能！"
                     }
@@ -1993,13 +2003,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "印章通讯"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "下次也保持这个节奏"
                     }
                   ]
                 },
@@ -2020,13 +2032,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "GP"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "120,000GP"
                     }
                   ]
                 },
@@ -2047,13 +2061,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "阶级比赛日间胜率(金色框)"
                     }
                   ]
                 },
@@ -2074,13 +2090,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合胜利数(金色框)"
                     }
                   ]
                 },
@@ -2101,13 +2119,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "称号"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#DDD;"
+                      },
+                      "v": "发光的本事"
                     }
                   ]
                 },
@@ -2128,13 +2148,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "GP"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "120,000GP"
                     }
                   ]
                 },
@@ -2155,13 +2177,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合给予伤害数(金色框)"
                     }
                   ]
                 },
@@ -2182,13 +2206,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "追踪器"
                     },
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
-                      }
+                        "style": "background-color:#FCF;"
+                      },
+                      "v": "称号(虹色框)"
                     }
                   ]
                 },
@@ -2209,13 +2235,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "GP"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "120,000GP"
                     }
                   ]
                 },
@@ -2237,13 +2265,15 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "背景"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "玩家等级奖励 Lv.700"
                     }
                   ]
                 },
@@ -2263,7 +2293,7 @@
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
+                        "style": "background-color:#DCE;"
                       },
                       "v": "无敌"
                     }
@@ -2273,6 +2303,263 @@
                   "t": "tr",
                   "a": {
                     "class": "atwiki_tr_odd atwiki_tr_79"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "710"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "追踪器"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合敌击破数(金色框)"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_80"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "720"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "追踪器"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合对战数(金色框)"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_81"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "730"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "GP"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "120,000GP"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_82"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "740"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "追踪器"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合EX Burst伤害数(金色框)"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_83"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "750"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "追踪器"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合阶级比赛10连胜达成数(金色框)"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_84"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "760"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "追踪器"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "综合无伤战斗数(金色框)"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_85"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "770"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "GP"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "120,000GP"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_86"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "780"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_87"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCD;"
+                      },
+                      "v": "790"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_88"
                   },
                   "c": [
                     {
@@ -2300,7 +2587,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_80"
+                    "class": "atwiki_tr_odd atwiki_tr_89"
                   },
                   "c": [
                     {
@@ -2313,7 +2600,7 @@
                     {
                       "t": "td",
                       "a": {
-                        "style": ""
+                        "style": "background-color:#DCE;"
                       },
                       "v": "生命散尽"
                     }
@@ -2322,7 +2609,250 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_81"
+                    "class": "atwiki_tr_even atwiki_tr_90"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "810"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_91"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "820"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_92"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "830"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_93"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "840"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_94"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "850"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_95"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "860"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_96"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "870"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_97"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "880"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_98"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FFC;"
+                      },
+                      "v": "890"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_99"
                   },
                   "c": [
                     {
@@ -2337,20 +2867,22 @@
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "背景"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
-                      }
+                      },
+                      "v": "玩家等级奖励 Lv.900"
                     }
                   ]
                 },
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_82"
+                    "class": "atwiki_tr_even atwiki_tr_100"
                   },
                   "c": [
                     {
@@ -2372,13 +2904,14 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_83"
+                    "class": "atwiki_tr_odd atwiki_tr_101"
                   },
                   "c": [
                     {
                       "t": "td",
                       "a": {
-                        "style": "vertical-align:MIDDLE;"
+                        "rowspan": "2",
+                        "style": "background-color:#FFC;vertical-align:MIDDLE;"
                       },
                       "v": "999"
                     },
@@ -2401,35 +2934,103 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_84"
+                    "class": "atwiki_tr_even atwiki_tr_102"
                   },
                   "c": [
                     {
                       "t": "td",
                       "a": {
-                        "style": "vertical-align:MIDDLE;"
+                        "style": ""
                       },
-                      "v": "???"
+                      "v": "特效"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": ""
                       },
-                      "v": "???"
-                    },
-                    {
-                      "t": "td",
-                      "a": {
-                        "style": ""
-                      }
+                      "v": "玩家等级奖励 Lv.999"
                     }
                   ]
                 },
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_85"
+                    "class": "atwiki_tr_odd atwiki_tr_103"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "rowspan": "3",
+                        "style": "background-color:#FCF;vertical-align:MIDDLE;"
+                      },
+                      "v": "∞"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "称号（成就）"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": "background-color:#FCF;"
+                      },
+                      "v": "最后的门"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_104"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "背景"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "玩家等级奖励 Lv.∞"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_odd atwiki_tr_105"
+                  },
+                  "c": [
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "特效"
+                    },
+                    {
+                      "t": "td",
+                      "a": {
+                        "style": ""
+                      },
+                      "v": "玩家等级奖励 Lv.∞"
+                    }
+                  ]
+                },
+                {
+                  "t": "tr",
+                  "a": {
+                    "class": "atwiki_tr_even atwiki_tr_106"
                   },
                   "c": [
                     {
@@ -2477,7 +3078,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_86"
+                    "class": "atwiki_tr_odd atwiki_tr_107"
                   },
                   "c": [
                     {
@@ -2509,7 +3110,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_87"
+                    "class": "atwiki_tr_even atwiki_tr_108"
                   },
                   "c": [
                     {
@@ -2541,7 +3142,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_88"
+                    "class": "atwiki_tr_odd atwiki_tr_109"
                   },
                   "c": [
                     {
@@ -2573,7 +3174,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_89"
+                    "class": "atwiki_tr_even atwiki_tr_110"
                   },
                   "c": [
                     {
@@ -2605,7 +3206,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_90"
+                    "class": "atwiki_tr_odd atwiki_tr_111"
                   },
                   "c": [
                     {
@@ -2653,7 +3254,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_91"
+                    "class": "atwiki_tr_even atwiki_tr_112"
                   },
                   "c": [
                     {
@@ -2685,7 +3286,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_92"
+                    "class": "atwiki_tr_odd atwiki_tr_113"
                   },
                   "c": [
                     {
@@ -2717,7 +3318,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_93"
+                    "class": "atwiki_tr_even atwiki_tr_114"
                   },
                   "c": [
                     {
@@ -2749,7 +3350,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_even atwiki_tr_94"
+                    "class": "atwiki_tr_odd atwiki_tr_115"
                   },
                   "c": [
                     {
@@ -2781,7 +3382,7 @@
                 {
                   "t": "tr",
                   "a": {
-                    "class": "atwiki_tr_odd atwiki_tr_95"
+                    "class": "atwiki_tr_even atwiki_tr_116"
                   },
                   "c": [
                     {
@@ -2847,13 +3448,6 @@
     {
       "t": "div",
       "v": "本作的新要素，装饰在玩家等级左侧的刀刃天线。\n无论对战/CPU战，胜利则上升，失败则下降。胜率3成左右即可维持？\n从失败会下降但不会降级这点来看，这可能是类似《高达EXVS2XB》的阶级，或《高达EXVS2OB》的执照分数要素。"
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "div",
-      "v": "星星数量蓝色及以下最多3个，青铜及以上最多5个\n尖角形状2个为A，3个为B，4个为C\n除了准尉、上级大尉、准将，相当于前作的阶级。"
     },
     {
       "t": "br"
@@ -2931,14 +3525,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/81/t/b1.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/81/m/b1.png"
                               }
                             },
                             {
@@ -2946,7 +3540,7 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/81/b1.png",
                                 "style": "aspect-ratio: 84/49;",
                                 "width": "84"
                               }
@@ -2958,7 +3552,7 @@
                         },
                         {
                           "t": "#",
-                          "v": "灰色？"
+                          "v": "灰色"
                         }
                       ]
                     },
@@ -2997,14 +3591,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/82/t/b2.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/82/m/b2.png"
                               }
                             },
                             {
@@ -3012,9 +3606,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/82/b2.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3063,14 +3657,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/83/t/b3.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/83/m/b3.png"
                               }
                             },
                             {
@@ -3078,9 +3672,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/83/b3.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3129,14 +3723,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/679/t/b4.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/679/m/b4.png"
                               }
                             },
                             {
@@ -3144,9 +3738,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/679/b4.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3195,14 +3789,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/680/t/b5.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/680/m/b5.png"
                               }
                             },
                             {
@@ -3210,9 +3804,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/680/b5.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3261,14 +3855,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/681/t/b6.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/681/m/b6.png"
                               }
                             },
                             {
@@ -3276,9 +3870,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/681/b6.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3327,14 +3921,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/909/t/b7.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/909/m/b7.png"
                               }
                             },
                             {
@@ -3342,9 +3936,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/909/b7.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3393,14 +3987,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/910/t/b8.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/910/m/b8.png"
                               }
                             },
                             {
@@ -3408,9 +4002,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/910/b8.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3459,14 +4053,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/911/t/b9.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/911/m/b9.png"
                               }
                             },
                             {
@@ -3474,9 +4068,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/911/b9.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3525,14 +4119,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1008/t/ba.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1008/m/ba.png"
                               }
                             },
                             {
@@ -3540,9 +4134,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/1008/ba.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3591,14 +4185,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1009/t/bb.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1009/m/bb.png"
                               }
                             },
                             {
@@ -3606,9 +4200,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/1009/bb.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3657,14 +4251,14 @@
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 320px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1010/t/bc.png"
                               }
                             },
                             {
                               "t": "source",
                               "a": {
                                 "media": "(max-width: 480px)",
-                                "srcset": "/images/machines/24803.png"
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1010/m/bc.png"
                               }
                             },
                             {
@@ -3672,9 +4266,9 @@
                               "a": {
                                 "class": "atwiki_plugin_ref",
                                 "height": "49",
-                                "src": "/images/machines/24803.png",
-                                "style": "aspect-ratio: 144/49;",
-                                "width": "144"
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/1010/bc.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
                               }
                             }
                           ]
@@ -3715,21 +4309,58 @@
                       "a": {
                         "style": ""
                       },
-                      "v": "？？？"
+                      "c": [
+                        {
+                          "t": "picture",
+                          "c": [
+                            {
+                              "t": "source",
+                              "a": {
+                                "media": "(max-width: 320px)",
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1217/t/bd.png"
+                              }
+                            },
+                            {
+                              "t": "source",
+                              "a": {
+                                "media": "(max-width: 480px)",
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1217/m/bd.png"
+                              }
+                            },
+                            {
+                              "t": "img",
+                              "a": {
+                                "class": "atwiki_plugin_ref",
+                                "height": "49",
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/1217/bd.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "t": "br"
+                        },
+                        {
+                          "t": "#",
+                          "v": "黑色"
+                        }
+                      ]
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "？？？"
+                      "v": "是天才吧！"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "前作的元帅？"
+                      "v": "过往作的元帅"
                     }
                   ]
                 },
@@ -3744,21 +4375,58 @@
                       "a": {
                         "style": ""
                       },
-                      "v": "？？？"
+                      "c": [
+                        {
+                          "t": "picture",
+                          "c": [
+                            {
+                              "t": "source",
+                              "a": {
+                                "media": "(max-width: 320px)",
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1218/t/be.png"
+                              }
+                            },
+                            {
+                              "t": "source",
+                              "a": {
+                                "media": "(max-width: 480px)",
+                                "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/96/1218/m/be.png"
+                              }
+                            },
+                            {
+                              "t": "img",
+                              "a": {
+                                "class": "atwiki_plugin_ref",
+                                "height": "49",
+                                "src": "//img.atwiki.jp/exvs2infiniteboost/attach/96/1218/be.png",
+                                "style": "aspect-ratio: 84/49;",
+                                "width": "84"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "t": "br"
+                        },
+                        {
+                          "t": "#",
+                          "v": "白金"
+                        }
+                      ]
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "？？？"
+                      "v": "立场不同的人"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "前作的大元帅？"
+                      "v": "过往作的大元帅"
                     }
                   ]
                 }
@@ -3767,938 +4435,286 @@
           ]
         }
       ]
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n到达黑色后、月末达成任一条件的话翌月变白金、持续达成则持续。\n\n"
+    },
+    {
+      "t": "ul",
+      "c": [
+        {
+          "t": "li",
+          "v": "该月对战数1000战以上且胜率50%以上"
+        },
+        {
+          "t": "li",
+          "v": "该月3关卡完成数100次以上"
+        }
+      ]
     }
   ],
   "translation_log": [
     {
-      "source": "無敵",
-      "target": "无敌",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "th"
-    },
-    {
-      "source": "プレイヤーレベル",
-      "target": "玩家等级",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "プレイヤーレベル",
-      "target": "玩家等级",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "対戦/CPU戦問わず勝ったら大幅増える、負けてもちょっと増える。\n6~8戦？で1レベル増加 → +2,000GP\nGPの主な収入源。",
-      "target": "无论对战/CPU战，胜利则大幅增加，失败也会略微增加。\n6~8场？增加1级 → +2,000GP\nGP的主要收入来源。",
-      "method": "gemini",
+      "source": "対戦/CPU戦問わず勝ったら大幅増える、負けてもちょっと増える。\n最初は1レベル6~8戦くらいかかるが、PLv500辺りになると1レベル30戦くらい掛かる。\n1レベルごとに2,000GP増えるのでGPの主な収入源。",
+      "target": "对战/CPU战不论赢了大幅增、输了也增一点。\n最初1级要6~8战、PLv500左右1级要30战左右。\n每级增2,000GP、是GP的主要收入源。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "報酬",
-      "target": "奖励",
-      "method": "gemini",
-      "node_type": "th"
-    },
-    {
-      "source": "スタンプ通信",
-      "target": "印章通讯",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ともに勝利を…",
-      "target": "共同迎接胜利…",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合プレイ日数（灰色枠）",
-      "target": "总游戏天数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "クラスマッチ日間勝率（灰色枠）",
-      "target": "排位赛每日胜率（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号",
-      "target": "称号",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "椅子に座って覚悟を決めて",
-      "target": "坐在椅子上，下定决心",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合勝利数（灰色枠）",
-      "target": "总胜利数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合与ダメージ数（灰色枠）",
-      "target": "总造成伤害数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（銅色枠）",
-      "target": "称号（铜色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "背景",
-      "target": "背景",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "プレイヤーレベル報酬 Lv.100",
-      "target": "玩家等级奖励 Lv.100",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "俺が保証しよう",
-      "target": "我来保证",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合敵撃破数（灰色枠）",
-      "target": "总击破敌人数量（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合対戦数（灰色枠）",
-      "target": "总对战数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合EXバーストダメージ数（灰色枠）",
-      "target": "总EX爆发伤害数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合クラスマッチ10連勝達成数（灰色枠）",
-      "target": "总排位赛10连胜达成数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合ノーダメージバトル数（灰色枠）",
-      "target": "总无伤战斗数（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合勝率(％)（灰色枠）",
-      "target": "总胜率(%)（灰色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "エフェクト",
-      "target": "特效",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "プレイヤーレベル報酬 Lv.190",
-      "target": "玩家等级奖励 Lv.190",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合プレイ日数（銅色枠）",
-      "target": "总游戏天数（铜色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "面白くなってきた",
-      "target": "变得有趣起来了",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "スタンプ通信",
-      "target": "印章通讯",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "一点突破だ！",
-      "target": "集中突破！",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "クラスマッチ日間勝率（銅色枠）",
-      "target": "排位赛每日胜率（铜色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合勝利数（銅色枠）",
-      "target": "总胜利数（铜色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号",
-      "target": "称号",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "高速の攻防",
-      "target": "高速攻防",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合与ダメージ数（銅色枠）",
-      "target": "总造成伤害数（铜色框）",
-      "method": "gemini",
+      "source": "総合プレイ日数（黒色枠）",
+      "target": "综合游玩天数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "クラスマッチ日間勝率（黒色枠）",
+      "target": "阶级比赛日间胜率(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "称号（銀色枠）",
-      "target": "称号（银色框）",
-      "method": "gemini",
+      "source": "総合勝利数（黒色枠）",
+      "target": "综合胜利数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "総合与ダメージ数（黒色枠）",
+      "target": "综合给予伤害数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合敵撃破数（銅色枠）",
-      "target": "总击破敌人数量（铜色框）",
-      "method": "gemini",
+      "source": "総合敵撃破数（黒色枠）",
+      "target": "综合敌击破数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "背景",
-      "target": "背景",
-      "method": "gemini",
+      "source": "総合対戦数（黒色枠）",
+      "target": "综合对战数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "プレイヤーレベル報酬 Lv.300",
-      "target": "玩家等级奖励 Lv.300",
-      "method": "gemini",
+      "source": "総合EXバーストダメージ数（黒色枠）",
+      "target": "综合EX Burst伤害数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
+      "source": "総合クラスマッチ10連勝達成数（黒色枠）",
+      "target": "综合阶级比赛10连胜达成数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "ガンダムという光",
-      "target": "名为高达的光芒",
-      "method": "gemini",
+      "source": "総合ノーダメージバトル数（黒色枠）",
+      "target": "综合无伤战斗数(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "総合勝率(％)（黒色枠）",
+      "target": "综合胜率(%)(黑色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合対戦数（銅色枠）",
-      "target": "总对战数（铜色框）",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.500",
+      "target": "玩家等级奖励 Lv.500",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "総合ノーダメージバトル数（銀色枠）",
+      "target": "综合无伤战斗数(银色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合EXバーストダメージ数（銅色枠）",
-      "target": "总EX爆发伤害数（铜色框）",
-      "method": "gemini",
+      "source": "総合勝率(％)（銀色枠）",
+      "target": "综合胜率(%)(银色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.590",
+      "target": "玩家等级奖励 Lv.590",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合クラスマッチ10連勝達成数（銅色枠）",
-      "target": "总排位赛10连胜达成数（铜色框）",
-      "method": "gemini",
+      "source": "総合プレイ日数（金色枠）",
+      "target": "综合游玩天数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "次もこの調子でいこう",
+      "target": "下次也保持这个节奏",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合ノーダメージバトル数（銅色枠）",
-      "target": "总无伤战斗数（铜色框）",
-      "method": "gemini",
+      "source": "クラスマッチ日間勝率（金色枠）",
+      "target": "阶级比赛日间胜率(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "総合勝利数（金色枠）",
+      "target": "综合胜利数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合勝率(％)（銅色枠）",
-      "target": "总胜率(%)（铜色框）",
-      "method": "gemini",
+      "source": "光る腕前",
+      "target": "发光的本事",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "エフェクト",
-      "target": "特效",
-      "method": "gemini",
+      "source": "総合与ダメージ数（金色枠）",
+      "target": "综合给予伤害数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "プレイヤーレベル報酬 Lv.390",
-      "target": "玩家等级奖励 Lv.390",
-      "method": "gemini",
+      "source": "称号（虹色枠）",
+      "target": "称号(虹色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.700",
+      "target": "玩家等级奖励 Lv.700",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合プレイ日数（銀色枠）",
-      "target": "总游戏天数（银色框）",
-      "method": "gemini",
+      "source": "総合敵撃破数（金色枠）",
+      "target": "综合敌击破数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
+      "source": "総合対戦数（金色枠）",
+      "target": "综合对战数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "完全なる平和",
-      "target": "完全的和平",
-      "method": "gemini",
+      "source": "総合EXバーストダメージ数（金色枠）",
+      "target": "综合EX Burst伤害数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "スタンプ通信",
-      "target": "印章通讯",
-      "method": "gemini",
+      "source": "総合クラスマッチ10連勝達成数（金色枠）",
+      "target": "综合阶级比赛10连胜达成数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "壁は越える！",
-      "target": "跨越壁垒！",
-      "method": "gemini",
+      "source": "総合ノーダメージバトル数（金色枠）",
+      "target": "综合无伤战斗数(金色框)",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.900",
+      "target": "玩家等级奖励 Lv.900",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "クラスマッチ日間勝率（銀色枠）",
-      "target": "排位赛每日胜率（银色框）",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.999",
+      "target": "玩家等级奖励 Lv.999",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "最後の扉",
+      "target": "最后的门",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合勝利数（銀色枠）",
-      "target": "总胜利数（银色框）",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.∞",
+      "target": "玩家等级奖励 Lv.∞",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "称号",
-      "target": "称号",
-      "method": "gemini",
+      "source": "プレイヤーレベル報酬 Lv.∞",
+      "target": "玩家等级奖励 Lv.∞",
+      "method": "manual",
       "node_type": "td"
-    },
-    {
-      "source": "勝利",
-      "target": "胜利",
-      "method": "gemini",
-      "node_type": "rb"
-    },
-    {
-      "source": "しょうり",
-      "target": "胜利",
-      "method": "gemini",
-      "node_type": "rt"
     },
     {
-      "source": "へのシナリオ",
-      "target": "的剧本",
-      "method": "gemini",
+      "source": "グレー",
+      "target": "灰色",
+      "method": "manual",
       "node_type": "#"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "ブラック",
+      "target": "黑色",
+      "method": "manual",
+      "node_type": "#"
+    },
+    {
+      "source": "天才だろう！",
+      "target": "是天才吧！",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "総合与ダメージ数（銀色枠）",
-      "target": "总造成伤害数（银色框）",
-      "method": "gemini",
+      "source": "過去作の元帥",
+      "target": "过往作的元帅",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
+      "source": "プラチナ",
+      "target": "白金",
+      "method": "manual",
+      "node_type": "#"
+    },
+    {
+      "source": "立場の違う人間",
+      "target": "立场不同的人",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "称号（金色枠）",
-      "target": "称号（金色框）",
-      "method": "gemini",
+      "source": "過去作の大元帥",
+      "target": "过往作的大元帅",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合敵撃破数（銀色枠）",
-      "target": "总击破敌人数量（银色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "背景",
-      "target": "背景",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "プレイヤーレベル報酬 Lv.300",
-      "target": "玩家等级奖励 Lv.300",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "そのゴールの先",
-      "target": "那个目标之后",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合対戦数（銀色枠）",
-      "target": "总对战数（银色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合EXバーストダメージ数（銀色枠）",
-      "target": "总EX爆发伤害数（银色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "トラッカー",
-      "target": "追踪器",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "総合クラスマッチ10連勝達成数（銀色枠）",
-      "target": "总排位赛10连胜达成数（银色框）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "やめられない！",
-      "target": "欲罢不能！",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "生命散って",
-      "target": "生命散尽",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "希望の灯",
-      "target": "希望之灯",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "称号（アワード）",
-      "target": "称号（成就）",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "刹那",
-      "target": "刹那",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "チケット",
-      "target": "票券",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "カスタム称号ガシャチケット",
-      "target": "自定义称号扭蛋券",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "その他",
-      "target": "其他",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "プレイヤーバッジ",
-      "target": "玩家徽章",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "今作の新要素、プレイヤーレベルの左に飾られているブレードアンテナ。\n対戦/CPU戦問わず勝ったら上がり、負けたら下がる。勝率3割くらいでキープ？\n負けたら下がるが降格はしない点からしてクロブの階級、オバブのライセンススコアに近しい要素か。",
-      "target": "本作的新要素，装饰在玩家等级左侧的刀刃天线。\n无论对战/CPU战，胜利则上升，失败则下降。胜率3成左右即可维持？\n从失败会下降但不会降级这点来看，这可能是类似《高达EXVS2XB》的阶级，或《高达EXVS2OB》的执照分数要素。",
-      "method": "gemini",
+      "source": "\nブラック到達後、月末にどちらかの条件を達成していると翌月からプラチナに変化し、達成し続けることで継続する。\n\n",
+      "target": "\n到达黑色后、月末达成任一条件的话翌月变白金、持续达成则持续。\n\n",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "星の数はブルーまでが最大3つ、ブロンズ以降が最大5つ\n角の形は2本がA、3本がB、4本がC\n准尉、上級大尉、准将を除く、過去作の階級に相当する。",
-      "target": "星星数量蓝色及以下最多3个，青铜及以上最多5个\n尖角形状2个为A，3个为B，4个为C\n除了准尉、上级大尉、准将，相当于前作的阶级。",
-      "method": "gemini",
-      "node_type": "div"
+      "source": "その月の対戦数が1000戦以上かつ勝率50%以上",
+      "target": "该月对战数1000战以上且胜率50%以上",
+      "method": "manual",
+      "node_type": "li"
     },
     {
-      "source": "★1到達獲得称号",
-      "target": "达到★1获得的称号",
-      "method": "gemini",
-      "node_type": "th"
-    },
-    {
-      "source": "グレー？",
-      "target": "灰色？",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "過去作の民間人～新兵",
-      "target": "前作的平民～新兵",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ブルーグレー",
-      "target": "蓝灰色",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "オムツ持参",
-      "target": "请自备尿布",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の二等兵～上等兵",
-      "target": "前作的二等兵～上等兵",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ブルー",
-      "target": "蓝色",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "俺だって動かせる！",
-      "target": "我也能操作！",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の伍長～曹長",
-      "target": "前作的伍长～曹长",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ブロンズA",
-      "target": "青铜A",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "戦う理由",
-      "target": "战斗的理由",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の少尉1～5",
-      "target": "前作的少尉1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ブロンズB",
-      "target": "青铜B",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "成さねばならないこと",
-      "target": "必须完成的事",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の中尉1～5",
-      "target": "前作的中尉1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ブロンズC",
-      "target": "青铜C",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "戦うしかないな",
-      "target": "只能战斗了",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の大尉1～5",
-      "target": "前作的大尉1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "シルバーA",
-      "target": "白银A",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "何度だって戦うよ",
-      "target": "无论多少次我都会战斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の少佐1～5",
-      "target": "前作的少佐1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "シルバーB",
-      "target": "白银B",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "賭けた！",
-      "target": "赌上了！",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の中佐1～5",
-      "target": "前作的中佐1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "シルバーC",
-      "target": "白银C",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "勝てばいい",
-      "target": "赢了就好",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の大佐1～5",
-      "target": "前作的大佐1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ゴールドA",
-      "target": "黄金A",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "申し分ない！",
-      "target": "无可挑剔！",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の少将1～5",
-      "target": "前作的少将1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ゴールドB",
-      "target": "黄金B",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "やっと見つけた",
-      "target": "终于找到了",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の中将1～5",
-      "target": "前作的中将1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ゴールドC",
-      "target": "黄金C",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "全てをねじ伏せる力",
-      "target": "碾压一切的力量",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の大将1～5",
-      "target": "前作的大将1～5",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の元帥？",
-      "target": "前作的元帅？",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "過去作の大元帥？",
-      "target": "前作的大元帅？",
-      "method": "gemini",
-      "node_type": "td"
+      "source": "その月の3ステージクリア数が100回以上",
+      "target": "该月3关卡完成数100次以上",
+      "method": "manual",
+      "node_type": "li"
     }
   ]
 }
