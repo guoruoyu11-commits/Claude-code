@@ -587,13 +587,12 @@ watch(machine, (m) => {
   box-shadow: 0 4px 16px rgba(232, 51, 42, 0.35);
 }
 .report-issue:hover .ri-expand { display: block; }
-/* 悬停时藏起竖排文字（保留占位维持热区），只剩净红条+左伸胶囊 */
+/* 悬停：竖条整体隐形（保留热区防抖动），视觉上只剩展开的胶囊 */
 .report-issue:hover .ri-fold { visibility: hidden; }
 .report-issue:hover {
   opacity: 1;
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
+  background: transparent;
+  border-color: transparent;
 }
 
 @media (max-width: 600px) {
