@@ -265,7 +265,7 @@ export default defineComponent({
       let skip = false
       return nodes
         .filter(n => {
-          if ((n.t === 'h2' || n.t === 'h3') && typeof n.v === 'string') {
+          if ((n.t === 'h2' || n.t === 'h3' || n.t === 'h4') && typeof n.v === 'string') {
             skip = REF_SECTION_RE.test(n.v)
           }
           return !skip
@@ -322,12 +322,23 @@ export default defineComponent({
 
 .wiki-content h1,
 .wiki-content h2,
-.wiki-content h3 {
+.wiki-content h3,
+.wiki-content h4,
+.wiki-content h5 {
   color: var(--text-primary);
   margin: 1.2em 0 0.5em;
   font-weight: 700;
   border-bottom: 1px solid var(--border);
   padding-bottom: 4px;
+  font-size: 1em;
+}
+
+.wiki-content h2 {
+  font-size: 1.25em;
+}
+
+.wiki-content h3 {
+  font-size: 1.1em;
 }
 
 .wiki-content table {
