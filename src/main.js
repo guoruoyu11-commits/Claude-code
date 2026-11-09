@@ -1,4 +1,5 @@
 import { ViteSSG } from 'vite-ssg'
+import { inject } from '@vercel/analytics'
 import App from './App.vue'
 import { routes } from './router/index.js'
 import { MACHINES } from './data/machines.js'
@@ -9,6 +10,9 @@ import './styles/global.css'
 export const createApp = ViteSSG(
   App,
   { routes, scrollBehavior: () => ({ top: 0 }) },
+  ({ isClient }) => {
+    if (isClient) inject()
+  },
 )
 
 export function includedRoutes(paths) {

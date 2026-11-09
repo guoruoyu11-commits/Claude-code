@@ -77,8 +77,8 @@
           <h2>{{ selectedCost }} COST 评级表</h2>
         </div>
         <p class="update-meta">
-          最后更新 <b>2026 年 4 月 22 日</b>
-          <span>Ver.2.40</span>
+          最后更新 <b>2026 年 11 月 5 日</b>
+          <span>榜单同步自 exvsdb.com</span>
         </p>
       </div>
 
