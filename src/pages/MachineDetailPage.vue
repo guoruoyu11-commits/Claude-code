@@ -86,6 +86,12 @@
     </template>
   </main>
 
+  <RouterLink
+    class="report-issue"
+    :to="{ path: '/feedback', query: { from: route.fullPath } }"
+    title="本页有误？反馈问题"
+  >本页有误？</RouterLink>
+
   <button v-show="showTop" class="back-to-top" @click="scrollToTop" aria-label="返回顶部">↑</button>
 </template>
 
@@ -537,6 +543,28 @@ watch(machine, (m) => {
   z-index: 100;
 }
 .back-to-top:hover { opacity: 1; background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* 本页有误？浮动反馈入口：常驻右下角，位于返回顶部按钮上方 */
+.report-issue {
+  position: fixed;
+  bottom: 84px;
+  right: 28px;
+  padding: 7px 12px;
+  border-radius: 14px;
+  border: 1px dashed var(--border-bright);
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 11px;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity .15s, color .15s, border-color .15s;
+  z-index: 100;
+}
+.report-issue:hover {
+  opacity: 1;
+  color: var(--accent);
+  border-color: var(--accent);
+}
 
 @media (max-width: 600px) {
   .detail-page { padding: 16px 14px 60px; }
