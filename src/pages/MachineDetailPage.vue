@@ -90,7 +90,7 @@
     class="report-issue"
     :to="{ path: '/support', query: { from: route.fullPath } }"
     title="支持本站 / 反馈问题"
-  >♥ 支持 · 反馈</RouterLink>
+  ><span class="ri-fold">支持 · 反馈</span><span class="ri-expand">♥ 支持 · 反馈</span></RouterLink>
 
   <button v-show="showTop" class="back-to-top" @click="scrollToTop" aria-label="返回顶部">↑</button>
 </template>
@@ -544,23 +544,49 @@ watch(machine, (m) => {
 }
 .back-to-top:hover { opacity: 1; background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* 支持·反馈浮动入口：低调底色（比背景稍深），悬停时转站点红 */
+/* 支持·反馈：贴右缘竖排窄标签（不遮表格内容）。
+   外层热区盒子恒定不变（宽32高自适应竖字），悬停时子面板向左展开，
+   避免展开改变尺寸导致 hover 抖动。 */
 .report-issue {
   position: fixed;
-  bottom: 84px;
-  right: 28px;
-  padding: 8px 15px;
-  border-radius: 16px;
+  right: 0;
+  bottom: 132px;
+  display: block;
   border: 1px solid var(--border-bright);
+  border-right: none;
+  border-radius: 12px 0 0 12px;
   background: var(--bg-secondary);
   color: var(--text-muted);
   font-size: 12.5px;
   font-weight: 600;
   text-decoration: none;
+  line-height: 1;
   opacity: 0.85;
   transition: opacity .15s, background .15s, color .15s, border-color .15s;
   z-index: 100;
 }
+/* 默认：竖排窄条（占据热区） */
+.report-issue .ri-fold {
+  display: block;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+  padding: 13px 9px;
+}
+/* 展开面板：绝对定位向左伸出，不改变外层盒子 */
+.report-issue .ri-expand {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 18px;
+  border-radius: 14px 0 0 14px;
+  background: var(--accent);
+  color: #fff;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(232, 51, 42, 0.35);
+}
+.report-issue:hover .ri-expand { display: block; }
 .report-issue:hover {
   opacity: 1;
   background: var(--accent);
