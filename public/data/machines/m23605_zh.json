@@ -2,9 +2,9 @@
   "status": "ok",
   "id": "m23605",
   "name": "高达AGE-2",
-  "translated_at": "2026-04-25T13:09:24.594313+00:00",
+  "translated_at": "2026-11-09T04:54:29.661202+00:00",
   "source_id": "m23605",
-  "model": "gemini-2.5-flash",
+  "model": "manual-glm",
   "content_nodes": [
     {
       "t": "h2",
@@ -13,9 +13,9 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/429.html",
-            "title": "ガンダムAGE-2 (174d)"
+            "title": "ガンダムAGE-2 (21d)"
           },
-          "v": "高达AGE-2"
+          "v": "敢达AGE-2"
         }
       ]
     },
@@ -67,14 +67,14 @@
                                   "t": "source",
                                   "a": {
                                     "media": "(max-width: 320px)",
-                                    "srcset": "/images/machines/23605.png"
+                                    "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/429/529/t/ms.png"
                                   }
                                 },
                                 {
                                   "t": "source",
                                   "a": {
                                     "media": "(max-width: 480px)",
-                                    "srcset": "/images/machines/23605.png"
+                                    "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/429/529/m/ms.png"
                                   }
                                 },
                                 {
@@ -82,7 +82,7 @@
                                   "a": {
                                     "class": "atwiki_plugin_image",
                                     "height": "104",
-                                    "src": "/images/machines/23605.png",
+                                    "src": "//img.atwiki.jp/exvs2infiniteboost/attach/429/529/ms.png",
                                     "style": "aspect-ratio: 228/104;",
                                     "width": "228"
                                   }
@@ -204,7 +204,7 @@
                         "class": "table_style_1_column_1",
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "形态切换"
+                      "v": "形态移行"
                     },
                     {
                       "t": "td",
@@ -342,14 +342,14 @@
                         "class": "table_style_1_column_1",
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "易用性"
+                      "v": "操作难度"
                     },
                     {
                       "t": "td",
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "普通形态"
+                      "v": "普通"
                     }
                   ]
                 },
@@ -372,7 +372,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "高达AGE-2-命运的彼方"
+                      "v": "高达AGE-2-前往命运的彼方"
                     }
                   ]
                 }
@@ -443,7 +443,7 @@
                       "a": {
                         "href": "#id_bf07a260"
                       },
-                      "v": "对策分析"
+                      "v": "对战策略"
                     }
                   ]
                 },
@@ -489,7 +489,7 @@
     },
     {
       "t": "div",
-      "v": "由阿瑟姆篇的主人公、弗利特之子阿瑟姆·明日野驾驶，是第二世代机体，也是第二台高达AGE。\nAGE-2以AGE-1的累积数据为基础，根据阿瑟姆自身的驾驶员特性开发，拥有适合多目标作战的双枪形态，以及变形机构飞禽形态。\n此外，可以通过机体皮肤切换为白色涂装的特务队式样。"
+      "v": "阿瑟姆篇主人公、弗利特子阿瑟姆·阿斯诺搭乘、第2世代机第二高达AGE。\n以AGE-1蓄積数据为元、AGE2活阿瑟姆自身驾驶员特性提案、有对复数战向双管形态、及变型机构strider形态。"
     },
     {
       "t": "br"
@@ -520,7 +520,7 @@
     },
     {
       "t": "div",
-      "v": "前作由于共通调整的影响，这台机体略显劣势，但本作则迎来了顺风环境，以DB的高火力派生为首，以及新系统“Over Limit”（以下简称“极限突破”）带来的强攻，使得这台偏向低COST格斗的机体大有可为。\n由于DB的N特殊格斗旋转斩拥有从超级装甲到极限突破护盾都能击溃的能力，因此在极限突破的攻防中被一部分玩家视为极其强大的机体。\n唯一的削弱要素也仅是两种形态的横格总伤害微乎其微地减少了1点，甚至可以说不算削弱。"
+      "v": "前作共通调整影响偏不遇机体、但本作以DB高火力派生为首加固、可指望新系统Over Limit(以下简称OL)硬推的低费格斗偏这机体、成顺风环境。\n然后、有从SA到OL屏障都能潰的DB N特格回旋斩存在、在OL攻防中部分地区被注目为非常强机体。\n唯一下方要素也仅両形态横格威力推移变最终段寄、连段火力僅微落程度。"
     },
     {
       "t": "br"
@@ -550,14 +550,14 @@
     },
     {
       "t": "div",
-      "v": "通常时:\n败北时:"
+      "v": "普通胜利时:阿瑟姆篇OP开头架H德兹步枪pose。\nDB胜利时:通常・DB各2本计4本光束军刀展开。\n败北时:成被西德大破姿。特务队color则更近TV版。"
     },
     {
       "t": "br"
     },
     {
       "t": "collapse",
-      "label": "▼与前作相比的变更点",
+      "label": "▼前作以来的变更点",
       "open": true,
       "c": [
         {
@@ -565,7 +565,7 @@
           "c": [
             {
               "t": "#",
-              "v": "\n前作数据请查阅"
+              "v": "\n前作的数据请看"
             },
             {
               "t": "a",
@@ -573,7 +573,7 @@
                 "href": "//w.atwiki.jp/exvs2ob/pages/325.html",
                 "target": "_blank"
               },
-              "v": "此处"
+              "v": "这里"
             },
             {
               "t": "br"
@@ -610,7 +610,7 @@
             },
             {
               "t": "li",
-              "v": "格斗前派生:删除"
+              "v": "格斗前派生：删除"
             },
             {
               "t": "li",
@@ -656,7 +656,131 @@
       "v": "EX爆发分析"
     },
     {
+      "t": "div",
+      "c": [
+        {
+          "t": "#",
+          "v": "\n「别小看超级驾驶员啊啊啊！」\n\n\n"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "a",
+          "a": {
+            "href": "//w.atwiki.jp/exvs2infiniteboost/pages/33.html",
+            "title": "覚醒性能一覧 (41d)"
+          },
+          "v": "觉醒类型"
+        },
+        {
+          "t": "#",
+          "v": ":射击偏泛用1\n因AGE组唯一非X Rounder、觉醒type非X Rounder。"
+        }
+      ]
+    },
+    {
       "t": "br"
+    },
+    {
+      "t": "ul",
+      "c": [
+        {
+          "t": "li",
+          "c": [
+            {
+              "t": "span",
+              "a": {
+                "style": "font-weight: bold;"
+              },
+              "c": [
+                {
+                  "t": "span",
+                  "a": {
+                    "style": "color:red;"
+                  },
+                  "v": "F爆发"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "div",
+      "v": "格斗攻击补正:+4%　防御补正:-20% 推进轻减:-15%\n推荐觉醒1。\n机动力与格斗火力升、本机(尤其DB时)火力更上。\n叠OL屏障则N特格成3025费用超限机连屏障一瞬间溶化凶武装。\n切不完情况、倒地拾取起接进攻继续or觉醒技、连3020后坠都蒸发。\n但对手反击要小心。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "ul",
+      "c": [
+        {
+          "t": "li",
+          "c": [
+            {
+              "t": "span",
+              "a": {
+                "style": "font-weight: bold;"
+              },
+              "c": [
+                {
+                  "t": "span",
+                  "a": {
+                    "style": "color:blue;"
+                  },
+                  "v": "S爆发"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "div",
+      "v": "射击攻击补正:+8% 推进轻减:-10%\n推荐觉醒2。\n普通・DB哪个都相性好。\nDB活特格高速装填、奢侈转主力特格点活用吧。"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "ul",
+      "c": [
+        {
+          "t": "li",
+          "c": [
+            {
+              "t": "span",
+              "a": {
+                "style": "font-weight: bold;"
+              },
+              "c": [
+                {
+                  "t": "span",
+                  "a": {
+                    "style": "color:green;"
+                  },
+                  "v": "E爆发"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "t": "div",
+      "v": "防御补正:-20%\n现时点不推荐吧。\n本作E觉醒、不受觉醒恩惠也取十分return机体或安定化体力低下时限换装、或无先坠适性机体防事故手堅胜觉醒气质、上级者向。\n机体性能上、不得不背risk行近距战易成空气、组30时、怎么也想后坠、或攻时risk hedge…说得好听、太过后向故不推荐。\n"
+    },
+    {
+      "t": "br"
+    },
+    {
+      "t": "div",
+      "v": "\n本机F・S觉醒十分恩惠有、先坠也能觉醒挽回十分可能、耐久调整被崩情况、索性切替先坠、F或S觉醒暴走、易成好结果。\n\n\n"
     },
     {
       "t": "h2",
@@ -673,7 +797,7 @@
       "a": {
         "id": "id_bf07a260"
       },
-      "v": "对策分析"
+      "v": "对战策略"
     },
     {
       "t": "br"
@@ -726,400 +850,76 @@
   ],
   "sub_pages": [
     {
-      "name": "普通形态",
+      "name": "普通",
       "file": "m23605_p477",
       "url": "https://w.atwiki.jp/exvs2infiniteboost/pages/477.html"
     },
     {
-      "name": "双枪形态",
+      "name": "双枪型",
       "file": "m23605_p478",
       "url": "https://w.atwiki.jp/exvs2infiniteboost/pages/478.html"
     }
   ],
   "translation_log": [
     {
-      "source": "作品枠",
-      "target": "作品系列",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "パイロット",
-      "target": "驾驶员",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "コスト",
-      "target": "费用",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "耐久値",
-      "target": "耐久值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "戦術",
-      "target": "战术",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "戦術",
-      "target": "战术",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "ガンダムAGE-2",
-      "target": "高达AGE-2",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "総合解説",
-      "target": "综合解说",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "ノーマル",
-      "target": "普通形态",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "ダブルバレット",
-      "target": "双枪形态",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "機動戦士ガンダムAGE",
-      "target": "机动战士高达AGE",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アセム・アスノ",
-      "target": "阿瑟姆·明日野",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "形態移行",
-      "target": "形态切换",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "AGE-2ノーマル\nAGE-2ダブルバレット",
-      "target": "AGE-2普通形态\nAGE-2双枪形态",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "移動タイプ",
-      "target": "移动类型",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "通常BD",
-      "target": "普通BD",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BD回数",
-      "target": "BD次数",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "赤ロック距離",
-      "target": "红锁距离",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ノーマル：C\nダブルバレット：B",
-      "target": "普通形态：C\n双枪形态：B",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "変形コマンド",
-      "target": "变形指令",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "あり",
-      "target": "有",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "盾コマンド",
-      "target": "盾牌指令",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "あり",
-      "target": "有",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "扱いやすさ",
-      "target": "易用性",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ノーマル",
-      "target": "普通形态",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "デフォルトBGM",
-      "target": "默认BGM",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ガンダムAGE-2-運命の先へ",
-      "target": "高达AGE-2-命运的彼方",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "▼目次",
-      "target": "▼目录",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "EXバースト考察",
-      "target": "EX爆发分析",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "対面対策",
-      "target": "对策分析",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "僚機考察",
-      "target": "僚机分析",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "外部リンク&参考資料集",
-      "target": "外部链接&参考资料集",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "アセム編の主人公でフリットの息子アセム・アスノが搭乗する、第2世代機となる第二のガンダムAGE。\nAGE-1の蓄積データを元にしており、AGE2はアセム自身のパイロット特性を活かして提示され対複数戦向けのダブルバレット形態、および変形機構となるストライダー形態を持つ。\nまた機体スキンで、白カラーの特務隊仕様に変更ことができる。",
-      "target": "由阿瑟姆篇的主人公、弗利特之子阿瑟姆·明日野驾驶，是第二世代机体，也是第二台高达AGE。\nAGE-2以AGE-1的累积数据为基础，根据阿瑟姆自身的驾驶员特性开发，拥有适合多目标作战的双枪形态，以及变形机构飞禽形态。\n此外，可以通过机体皮肤切换为白色涂装的特务队式样。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\n本シリーズでは原作通り変形と換装を併せ持つ数少ない機体。\n\n",
-      "target": "\n在本系列中，是少数拥有原作中变形与换装两种能力的机体。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "降りテクや機動力は及第点だが弾が弱く変形突撃による闇討ちが求められるノーマル",
-      "target": "普通形态虽然下降技巧和机动性合格，但弹药较弱，需要通过变形突击进行偷袭。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "足回りは悪いが遠近問わず圧のある武装を持つダブルバレット（以下DB）",
-      "target": "双枪形态（以下简称DB）虽然机动性较差，但拥有无论远近都能造成压力的武装。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "を使い分けて戦う可変換装機。\n過去作から共通して、どちらか一方の形態に拘り過ぎると必ずボロが出る設計になっており、\n両MS形態はもちろん各変形も効果的に使いまわすことが求められる文字通りの換装機となっている。\nノーマルの射撃力不足・DBの弾数制特格の存在から鑑みて、アセムらしい両前衛運用が得意な機体。",
-      "target": "是一款需要在战斗中灵活切换形态的换装机体。\n与系列前作相同，如果过度拘泥于其中一种形态，必然会暴露弱点。\n因此，需要有效地运用两种MS形态以及各自的变形形态，是一款名副其实的换装机体。\n考虑到普通形态射击火力不足以及DB形态具有弹数限制的特殊格斗，这是一架擅长双前卫作战，符合阿瑟姆风格的机体。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "前作は共通調整の影響でやや不遇よりな機体であったが、今作はDBの高火力派生を筆頭としたテコ入れや新システムのオーバーリミット（以下オバリミ）によるゴリ押しを見込める低コ格闘機よりのこの機体には追い風の環境となっている。\nそしてSAからオバリミのバリアまで何でも潰せるDBのN特格の回転斬りの存在から、オバリミの攻防に於いてめっぽう強い機体として一部で注目されている。\n唯一の下方要素も両形態の横格の合計ダメージが僅かたったの1下がっただけであり、もはや下方の内には入らない。",
-      "target": "前作由于共通调整的影响，这台机体略显劣势，但本作则迎来了顺风环境，以DB的高火力派生为首，以及新系统“Over Limit”（以下简称“极限突破”）带来的强攻，使得这台偏向低COST格斗的机体大有可为。\n由于DB的N特殊格斗旋转斩拥有从超级装甲到极限突破护盾都能击溃的能力，因此在极限突破的攻防中被一部分玩家视为极其强大的机体。\n唯一的削弱要素也仅是两种形态的横格总伤害微乎其微地减少了1点，甚至可以说不算削弱。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\nただ、バリアを使わずに格闘距離まで接近しようにもDB形態の足回りでは難しく、かといってノーマルで無理に突撃しても返り討ち…と従来の難点そのものは改善されておらず、フルスペックで戦うには機体性能の熟知が求められる職人寄りの性格はそのままである。\n\n",
+      "source": "ただ、バリアを使わずに格闘距離まで接近しようにもDB形態の足回りでは難しく、かといってノーマルで無理に突撃しても返り討ち…\nと従来の難点そのものは改善されておらず、フルスペックで戦うには機体性能の熟知が求められる職人寄りの性格はそのままである。",
       "target": "\n然而，即使不使用护盾，想要在DB形态下接近格斗距离也很困难；而用普通形态强行突击又会遭到反击……传统的缺点本身并未得到改善，想要发挥其全部性能进行战斗，仍需要对机体性能有深入的了解，其偏向“匠人型”的特点依旧如此。\n\n",
-      "method": "gemini",
+      "method": "norm",
       "node_type": "div"
     },
     {
-      "source": "\n多数の形態を的確に使いこなす巧みな立ち回りで、スーパーパイロットへの道を突き進もう。\n\n",
-      "target": "\n通过巧妙的走位，精准运用多种形态，向超级驾驶员之路迈进吧。\n\n",
-      "method": "gemini",
+      "source": "アセム編の主人公でフリットの息子アセム・アスノが搭乗する、第2世代機となる第二のガンダムAGE。\nAGE-1の蓄積データを元にしており、AGE2はアセム自身のパイロット特性を活かして提示され対複数戦向けのダブルバレット形態、および変形機構となるストライダー形態を持つ。",
+      "target": "阿瑟姆篇主人公、弗利特子阿瑟姆·阿斯诺搭乘、第2世代机第二高达AGE。\n以AGE-1蓄積数据为元、AGE2活阿瑟姆自身驾驶员特性提案、有对复数战向双管形态、及变型机构strider形态。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "リザルトポーズ",
-      "target": "结算姿势",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "通常時:\n敗北時:",
-      "target": "通常时:\n败北时:",
-      "method": "gemini",
+      "source": "前作は共通調整の影響でやや不遇よりな機体であったが、今作はDBの高火力派生を筆頭としたテコ入れや新システムのオーバーリミット（以下オバリミ）によるゴリ押しを見込める低コ格闘機よりのこの機体には追い風の環境となっている。\nそしてSAからオバリミのバリアまで何でも潰せるDBのN特格の回転斬りの存在から、オバリミの攻防に於いてめっぽう強い機体として一部で注目されている。\n唯一の下方要素も両形態の横格の威力推移が最終段寄り変更されコンボ火力が若干落ちた程度。",
+      "target": "前作共通调整影响偏不遇机体、但本作以DB高火力派生为首加固、可指望新系统Over Limit(以下简称OL)硬推的低费格斗偏这机体、成顺风环境。\n然后、有从SA到OL屏障都能潰的DB N特格回旋斩存在、在OL攻防中部分地区被注目为非常强机体。\n唯一下方要素也仅両形态横格威力推移变最终段寄、连段火力僅微落程度。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "▼前作からの変更点",
-      "target": "▼与前作相比的变更点",
-      "method": "gemini",
-      "node_type": "collapse"
+      "source": "ノーマル勝利時:アセム編OP冒頭の Hドッズライフルを構えるポーズ。\nDB勝利時:通常・DBそれぞれ二本の計四本のビームサーベルを展開する。\n敗北時:シドに大破させられた姿となる。特務隊カラーだとよりTV版に近くなる。",
+      "target": "普通胜利时:阿瑟姆篇OP开头架H德兹步枪pose。\nDB胜利时:通常・DB各2本计4本光束军刀展开。\n败北时:成被西德大破姿。特务队color则更近TV版。",
+      "method": "manual",
+      "node_type": "div"
     },
     {
-      "source": "\n前作のデータは",
-      "target": "\n前作数据请查阅",
-      "method": "gemini",
+      "source": "\n「スーパーパイロットを舐めるなァァァ！」\n",
+      "target": "\n「别小看超级驾驶员啊啊啊！」\n\n\n",
+      "method": "manual",
       "node_type": "#"
     },
     {
-      "source": "こちら",
-      "target": "此处",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "\n【共通】\n\n",
-      "target": "\n【共通】\n\n",
-      "method": "gemini",
+      "source": ":射撃寄り汎用1\nAGE組唯一の非Xラウンダーの為、覚醒タイプがXラウンダーではない。",
+      "target": ":射击偏泛用1\n因AGE组唯一非X Rounder、觉醒type非X Rounder。",
+      "method": "manual",
       "node_type": "#"
     },
     {
-      "source": "前特殊射撃:威力上昇(70→80)",
-      "target": "前特殊射击:威力提升(70→80)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "\n【ノーマル】\n\n",
-      "target": "\n【普通形态】\n\n",
-      "method": "gemini",
+      "source": "格闘攻撃補正:+4%　防御補正:-20% ブースト軽減:-15%\n推奨覚醒1。\n機動力と格闘の火力が上がり本機の(特にDB時)火力が更に高まる。\nオバリミバリアと合わせるとN特格が3025のコスオバ機体をバリアごと一瞬で溶かす凶武装と化す。\n倒しきれなかった場合にもダウン拾いから攻め継続or覚醒技に繋げれば3020の後落ちすら蒸発させる。\n但し相手のカウンターにはご用心。",
+      "target": "格斗攻击补正:+4%　防御补正:-20% 推进轻减:-15%\n推荐觉醒1。\n机动力与格斗火力升、本机(尤其DB时)火力更上。\n叠OL屏障则N特格成3025费用超限机连屏障一瞬间溶化凶武装。\n切不完情况、倒地拾取起接进攻继续or觉醒技、连3020后坠都蒸发。\n但对手反击要小心。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "レバー入れサブ射撃:新規モーション。袈裟斬り→斬り抜け。",
-      "target": "摇杆输入副射击:新动作。袈裟斩→斩击穿透。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘後派生:新規派生。二刀振り下ろし→右袈裟2段→横薙ぎ→X字逆袈裟→突き。",
-      "target": "格斗后派生:新派生。双刀下劈→右袈裟两段→横扫→X字逆袈裟→突刺。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘前派生:削除",
-      "target": "格斗前派生:删除",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘特格派生:削除",
-      "target": "格斗特殊格斗派生:删除",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "横格闘:ダメージ推移変更(累計:171→170)",
-      "target": "横格斗:伤害变化(累计:171→170)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "\n【ダブルバレット】\n\n",
-      "target": "\n【双枪形态】\n\n",
-      "method": "gemini",
+      "source": "射撃攻撃補正:+8% ブースト軽減:-10%\n推奨覚醒2。\nノーマル・DBどちらでも相性が良い。\nDBは特格の高速リロードにより主力の特格を贅沢に回していける点を活かしたい。",
+      "target": "射击攻击补正:+8% 推进轻减:-10%\n推荐觉醒2。\n普通・DB哪个都相性好。\nDB活特格高速装填、奢侈转主力特格点活用吧。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "変形サブ射撃:新規武装。ノーマル形態通常時の特格にミサイルが追加された強化版。",
-      "target": "变形副射击:新武装。是普通形态通常时特殊格斗的基础上追加了导弹的强化版。",
-      "method": "gemini",
-      "node_type": "li"
+      "source": "防御補正:-20%\n現時点では非推奨か。\n今作のE覚醒は覚醒による恩恵を受けずとも十分なリターンを取れる機体や体力低下による時限換装を安定化させたり、先落ち適正が無い機体が事故を防ぎ手堅く勝利する為の覚醒という気質があり、上級者向け。\n機体性能的にどうしてもリスクを取って近距離戦を行わなければ空気なりやすいので30と組んだ時、どうしても後落ちしたい、または攻める際へのリスクヘッジ⋯と言えば聞こえはいいが余りにも後ろ向き過ぎる為、非推奨。",
+      "target": "防御补正:-20%\n现时点不推荐吧。\n本作E觉醒、不受觉醒恩惠也取十分return机体或安定化体力低下时限换装、或无先坠适性机体防事故手堅胜觉醒气质、上级者向。\n机体性能上、不得不背risk行近距战易成空气、组30时、怎么也想后坠、或攻时risk hedge…说得好听、太过后向故不推荐。\n",
+      "method": "manual",
+      "node_type": "div"
     },
     {
-      "source": "N・横格闘後派生:新規武装。新規モーション(キャンセル不可の高火力派生)。",
-      "target": "N・横格斗后派生:新武装。新动作(不可取消的高火力派生)。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "横格闘:ダメージ推移変更(累計:233→232)",
-      "target": "横格斗:伤害变化(累计:233→232)",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "EXバースト考察",
-      "target": "EX爆发分析",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "対面対策",
-      "target": "对策分析",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "僚機考察",
-      "target": "僚机分析",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "外部リンク&参考資料集",
-      "target": "外部链接&参考资料集",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "したらば掲示板 - ガンダムAGE-2 Part.1",
-      "target": "Shitaraba论坛 - 高达AGE-2 Part.1",
-      "method": "gemini",
-      "node_type": "a"
+      "source": "\n本機はF・S覚醒に十分な恩恵があり先落ちでも覚醒による巻き返しは十分に可能なので、耐久調整が崩された場合はいっそ先落ちに切替えて、ForS覚醒で暴れた方がいい結果になりやすい。\n\n",
+      "target": "\n本机F・S觉醒十分恩惠有、先坠也能觉醒挽回十分可能、耐久调整被崩情况、索性切替先坠、F或S觉醒暴走、易成好结果。\n\n\n",
+      "method": "manual",
+      "node_type": "div"
     }
   ]
 }
