@@ -335,7 +335,7 @@ h1 {
 }
 
 .spotlight-card {
-  min-height: 86px;
+  aspect-ratio: 228 / 98; /* 机体图原生比例——固定高度会把背景图横向拉变形 */
   position: relative;
   overflow: hidden;
   border-radius: 6px;
