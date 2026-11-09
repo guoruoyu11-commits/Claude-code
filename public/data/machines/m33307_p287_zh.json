@@ -2,9 +2,9 @@
   "status": "ok",
   "id": "m33307_p287",
   "name": "ヴァーチェ",
-  "translated_at": "2026-04-25T15:09:33.102294+00:00",
+  "translated_at": "2026-11-09T03:16:46.357425+00:00",
   "source_id": "m33307_p287",
-  "model": "gemini-2.5-flash",
+  "model": "manual-glm",
   "content_nodes": [
     {
       "t": "hr"
@@ -216,7 +216,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:SKYBLUE;"
                   },
-                  "v": "射击蓄力"
+                  "v": "蓄力射击"
                 },
                 {
                   "t": "td",
@@ -245,7 +245,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;"
                   },
-                  "v": "可弯曲射击"
+                  "v": "支持弯曲射击的粗光束"
                 }
               ]
             },
@@ -268,7 +268,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "呼叫高达能天使"
+                  "v": "能天使高达 呼出"
                 },
                 {
                   "t": "td",
@@ -312,7 +312,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "呼叫高达能天使"
+                  "v": "能天使高达 呼出"
                 },
                 {
                   "t": "td",
@@ -436,7 +436,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:YELLOW;"
                   },
-                  "v": "格斗蓄力"
+                  "v": "蓄力格斗"
                 },
                 {
                   "t": "td",
@@ -632,7 +632,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "全弹发射"
+                  "v": "齐射"
                 },
                 {
                   "t": "td",
@@ -653,7 +653,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;"
                   },
-                  "v": "可弯曲的3向照射光束"
+                  "v": "支持弯曲射击的3向粗光束。附霸体"
                 }
               ]
             }
@@ -901,7 +901,7 @@
                               "a": {
                                 "href": "#id_a0e3af46"
                               },
-                              "v": "【觉醒技】全弹发射"
+                              "v": "【觉醒技】齐射"
                             }
                           ]
                         }
@@ -929,7 +929,7 @@
                       "a": {
                         "href": "#id_9a051108"
                       },
-                      "v": "外部链接与参考资料集"
+                      "v": "外部链接&参考资料集"
                     }
                   ]
                 }
@@ -958,7 +958,7 @@
     },
     {
       "t": "div",
-      "v": "以超强的特殊射击照射光束和无敌护盾作为杀手锏的炮击形态。\n机动性笨重，加上回转性能差、没有下降技巧、几乎所有武装都会停下脚步等，在对峙状态下，自卫能力可以说在所有机体中最弱。\n然而，它拥有足以弥补这些不足的超高性能照射光束（特殊射击）和按下按钮瞬间展开并能完全无敌3秒的GN力场（特殊格斗），是一种专注于一项特技的形态。\n自参战以来，其照射光束的存在感堪比3000成本机体，烧毁毫无对策的低级玩家的能力依然健在。"
+      "v": "以超能特射粗光束与无敌屏障为王牌的炮击形态、有可移动射击的N格加农、严密说不是炮击机而属射击特化机。\n迟钝机动加上回旋恶劣・无落地技巧・几乎全部武装停步等、互瞪状态自卫力弱到可称全机体全形态最弱。\n但以充分补上的超性能粗光束(特射)、按按钮瞬间展开3秒完全无敌的GN力场(特格)战斗的一技特化形态。\n参战以来粗光束存在感是3000费用级、无对策低级者…"
     },
     {
       "t": "br"
@@ -977,25 +977,6 @@
     {
       "t": "div",
       "v": "\n像作品后半段的提耶利亚那样，重视与队友的协作，以完成任务为目标吧。\n\n"
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "ul",
-      "c": [
-        {
-          "t": "li",
-          "v": "结算姿势"
-        }
-      ]
-    },
-    {
-      "t": "div",
-      "v": "通常时：向前射击，然后右手用GN火箭炮挥开的姿势。\n败北时：再现剧中纳德雷漂浮在空中（的最终场景）。"
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -1137,7 +1118,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -1204,14 +1185,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:SKYBLUE;"
                   },
-                  "v": "第一段"
+                  "v": "第1段"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "常驻？秒"
+                  "v": "持续？秒"
                 },
                 {
                   "t": "td",
@@ -1379,7 +1360,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -1446,7 +1427,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "？秒"
+                  "v": "?秒"
                 },
                 {
                   "t": "td",
@@ -1460,14 +1441,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "210(%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(-%)*"
+                  "v": "14(-%)*20"
                 },
                 {
                   "t": "td",
@@ -1506,7 +1487,7 @@
     },
     {
       "t": "div",
-      "v": "不停止脚步，从肩部GN加农炮发射1发光束。这是德天使唯一能在移动中射击的武装。根据摇杆输入方向或离敌人较近的肩部发射。"
+      "v": "不停步从肩GN加农射光束1发。\n德天使唯一可动射击。从方向输入方向肩或离敌近的肩射。\n威力65・装填常时4秒、与一般光束步枪比较逊色、但炮击系机体持可移动射击射击武器这点就极优秀、德天使形态最重要存在。\n进攻自卫保持红锁全面使用、始终在意弹数吧。"
     },
     {
       "t": "br"
@@ -1542,7 +1523,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -1571,7 +1552,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "常驻？秒"
+                  "v": "持续？秒"
                 },
                 {
                   "t": "td",
@@ -1585,7 +1566,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "65(-%)"
+                  "v": "65(-30%)"
                 },
                 {
                   "t": "td",
@@ -1597,7 +1578,8 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  },
+                  "v": "踉跄"
                 }
               ]
             }
@@ -1624,7 +1606,10 @@
     },
     {
       "t": "div",
-      "v": "性能非常低下，鉴于段数需要分配给N格斗连击或主格斗派生，所以不使用也无妨。作为一种单发强制击倒，对抗霸体格斗时仍有其用武之地。"
+      "v": "非常低性能、想分弹给N格斗速射或主射格斗派生、封印也行。\n姑且单发强制倒地、对霸体格斗有出场。　"
+    },
+    {
+      "t": "br"
     },
     {
       "t": "table",
@@ -1660,7 +1645,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -1779,25 +1764,22 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_af30039a"
       },
-      "v": "【后副射击】呼叫能天使高达【突击】"
+      "v": "【后副射击】呼叫高达能天使【突击】"
     },
     {
       "t": "div",
-      "v": "“刹那，S-32阵型。” 停止脚步在原地呼叫能天使。"
+      "v": "「刹那、编队S-32。」\n能动天使麻痹→挑上2连斩穿。可操作机的BD格斗。 "
     },
     {
       "t": "br"
     },
     {
       "t": "div",
-      "v": "与N副射击一样性能低下，突击速度慢，诱导也弱到走路都能躲开。耐久力也是辅助机特有的低耐久，一发BR就能被击毁。"
+      "v": "\n性能偏低、但是德天使形态宝贵格斗属性武装、成射击屏障回答。\n\n"
     },
     {
       "t": "br"
@@ -1853,7 +1835,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -1921,7 +1903,7 @@
                     "rowspan": "2",
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "辅助机消失？秒"
+                  "v": "援护消失?秒"
                 },
                 {
                   "t": "td",
@@ -1934,7 +1916,8 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  },
+                  "v": "穿斩"
                 },
                 {
                   "t": "td",
@@ -1942,7 +1925,7 @@
                     "rowspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
                   },
-                  "v": "辅助机"
+                  "v": "援护"
                 },
                 {
                   "t": "td",
@@ -1956,14 +1939,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "45(80%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "45(-20%)"
                 },
                 {
                   "t": "td",
@@ -1982,7 +1965,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "眩晕"
+                  "v": "麻痹"
                 }
               ]
             },
@@ -2003,7 +1986,8 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  },
+                  "v": "穿斩"
                 },
                 {
                   "t": "td",
@@ -2017,14 +2001,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "93(65%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "60(-15%)"
                 },
                 {
                   "t": "td",
@@ -2059,7 +2043,7 @@
       "a": {
         "id": "id_6bc71f21"
       },
-      "v": "【觉醒中后副射击】呼叫能天使高达【Trans-AM突击】"
+      "v": "【觉醒中后副射击】呼叫高达能天使【Trans-AM突击】"
     },
     {
       "t": "div",
@@ -2070,7 +2054,10 @@
     },
     {
       "t": "div",
-      "v": "虽然不如其他强力辅助机，但诱导和弹速会比普通状态略微增强。耐久度也与普通辅助机不同，不会被一发BR击毁。"
+      "v": "诱导弹速比普通好、拘束力高连弹跳倒地都取。\n耐久也与普通援护不同BR1发不坏。\n追击命中放置强力、但德天使形态难做是瓶颈。"
+    },
+    {
+      "t": "br"
     },
     {
       "t": "table",
@@ -2108,7 +2095,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -2181,20 +2168,21 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "rowspan": "2",
-                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
                   },
-                  "v": "辅助机"
+                  "v": "袈裟斩"
                 },
                 {
                   "t": "td",
                   "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                    "rowspan": "6",
+                    "style": "vertical-align:MIDDLE;text-align:center;background-color:VIOLET;"
+                  },
+                  "v": "援护"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:left;background-color:LIGHTGREEN;"
                   },
                   "v": "格斗"
                 },
@@ -2203,33 +2191,34 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "40(80%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  "v": "40(-20%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "踉跄"
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
                 }
               ]
             },
@@ -2250,12 +2239,13 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  },
+                  "v": "横扫"
                 },
                 {
                   "t": "td",
                   "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
+                    "style": "vertical-align:MIDDLE;text-align:left;background-color:LIGHTGREEN;"
                   },
                   "v": "格斗"
                 },
@@ -2264,14 +2254,267 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "64(%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "30(-%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_5"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第3段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "穿斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:left;background-color:LIGHTGREEN;"
+                  },
+                  "v": "格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "87(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(-%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_6"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第4段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "穿斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:left;background-color:LIGHTGREEN;"
+                  },
+                  "v": "格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "108(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(-%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "麻痹"
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_odd atwiki_tr_7"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第5段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "穿斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:left;background-color:LIGHTGREEN;"
+                  },
+                  "v": "格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "128(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(-%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "0"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                }
+              ]
+            },
+            {
+              "t": "tr",
+              "a": {
+                "class": "atwiki_tr_even atwiki_tr_8"
+              },
+              "c": [
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;background-color:LIGHTCORAL;"
+                  },
+                  "v": "第6段"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "踩踏"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:left;background-color:LIGHTGREEN;"
+                  },
+                  "v": "格斗"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "182(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "(-%)"
                 },
                 {
                   "t": "td",
@@ -2283,23 +2526,21 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  },
+                  "v": "7↑"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "倒地"
+                  "v": "弹跳"
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -2336,9 +2577,9 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/301.html",
-            "title": "ガンダム・キマリスヴィダール (33d)"
+            "title": "ガンダム・キマリスヴィダール (10d)"
           },
-          "v": "高达锡蒙利维达尔"
+          "v": "敢达·锡蒙利维达尔"
         },
         {
           "t": "#",
@@ -2407,7 +2648,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -2474,7 +2715,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "？秒"
+                  "v": "常时11秒"
                 },
                 {
                   "t": "td",
@@ -2488,14 +2729,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
+                  "v": "252(%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(-%)*"
+                  "v": "23(-%)*20"
                 },
                 {
                   "t": "td",
@@ -2521,9 +2762,6 @@
           ]
         }
       ]
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -2564,9 +2802,6 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
       "t": "table",
       "c": [
         {
@@ -2583,7 +2818,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:KHAKI;text-align:center;"
                   },
-                  "v": "持续时间"
+                  "v": "持续"
                 },
                 {
                   "t": "td",
@@ -2626,21 +2861,21 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "？秒"
+                  "v": "3秒"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "？秒"
+                  "v": "0秒"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "？秒"
+                  "v": "20秒"
                 },
                 {
                   "t": "td",
@@ -2665,17 +2900,11 @@
       "t": "br"
     },
     {
-      "t": "br"
-    },
-    {
-      "t": "br"
-    },
-    {
       "t": "h3",
       "a": {
         "id": "id_07c05fb4"
       },
-      "v": "【格斗CS】装甲解除"
+      "v": "【格斗蓄力】装甲脱离"
     },
     {
       "t": "div",
@@ -2730,7 +2959,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -2759,14 +2988,14 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "？秒"
+                  "v": "?秒"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:YELLOW;"
                   },
-                  "v": "转换"
+                  "v": "换装"
                 },
                 {
                   "t": "td",
@@ -2818,6 +3047,13 @@
       "v": "【后格斗】GN光束军刀"
     },
     {
+      "t": "div",
+      "v": "逆袈裟斩起斩上的2段格斗、德天使形态唯一格斗武装。\n性能整体差、突进・判定・威力哪个都糟加上打完可受身、作为攻击武装无表扬点。\n但德天使形态唯一可彩虹Step、也成苦手射击屏障格斗的对抗策、性能比例有用场面有。"
+    },
+    {
+      "t": "br"
+    },
+    {
       "t": "table",
       "c": [
         {
@@ -2851,7 +3087,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率)"
+                  "v": "威力(补正率)"
                 },
                 {
                   "t": "td",
@@ -2924,6 +3160,33 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "逆袈裟斩"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "55(80%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "55(-20%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
                   }
                 },
                 {
@@ -2931,32 +3194,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "(-%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  "v": "踉跄"
                 }
               ]
             },
@@ -2977,6 +3215,33 @@
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "上挑"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "127(65%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "90(-15%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  }
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
                   }
                 },
                 {
@@ -2984,44 +3249,13 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "(%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "(-%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  "v": "倒地"
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "t": "br"
-    },
-    {
-      "t": "br"
     },
     {
       "t": "br"
@@ -3042,7 +3276,7 @@
     },
     {
       "t": "div",
-      "v": "“齐射！” 双持GN火箭炮，并从双肩的GN加农炮发射照射光束炮，是一种可弯曲射击的光束炮。带霸体。"
+      "v": "「一齐射击！」\n双持GN火箭炮、两肩GN加农也放照射粗光束的支持弯曲射击粗光束。有霸体。"
     },
     {
       "t": "br"
@@ -3095,7 +3329,7 @@
                     "colspan": "2",
                     "style": "vertical-align:MIDDLE;background-color:GOLD;text-align:center;"
                   },
-                  "v": "威力(修正率) F/S/E"
+                  "v": "威力(补正率) S/F,E"
                 },
                 {
                   "t": "td",
@@ -3162,27 +3396,28 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:VIOLET;"
                   },
-                  "v": "1段"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  "v": "第1段"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "//(%)"
+                  "v": "火箭筒"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "//(-%)"
+                  "v": "/268(%)"
+                },
+                {
+                  "t": "td",
+                  "a": {
+                    "style": "vertical-align:MIDDLE;text-align:center;"
+                  },
+                  "v": "/25(-%)*19"
                 },
                 {
                   "t": "td",
@@ -3215,186 +3450,28 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:VIOLET;"
                   },
-                  "v": "2段"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  "v": "第2段"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "//(%)"
+                  "v": "加农"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "//(-%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                }
-              ]
-            },
-            {
-              "t": "tr",
-              "a": {
-                "class": "atwiki_tr_odd atwiki_tr_5"
-              },
-              "c": [
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:VIOLET;"
-                  },
-                  "v": "3段"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
+                  "v": "/(%)"
                 },
                 {
                   "t": "td",
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;"
                   },
-                  "v": "//(%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "//(-%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                }
-              ]
-            },
-            {
-              "t": "tr",
-              "a": {
-                "class": "atwiki_tr_even atwiki_tr_6"
-              },
-              "c": [
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:VIOLET;"
-                  },
-                  "v": "4段"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "//(%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "//(-%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                }
-              ]
-            },
-            {
-              "t": "tr",
-              "a": {
-                "class": "atwiki_tr_odd atwiki_tr_7"
-              },
-              "c": [
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;background-color:VIOLET;"
-                  },
-                  "v": "5段"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  }
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "//(%)"
-                },
-                {
-                  "t": "td",
-                  "a": {
-                    "style": "vertical-align:MIDDLE;text-align:center;"
-                  },
-                  "v": "//(-%)"
+                  "v": "/(-%)"
                 },
                 {
                   "t": "td",
@@ -3432,7 +3509,7 @@
     },
     {
       "t": "div",
-      "v": "\n(>为垫步、≫为疾冲、→为直接取消 因取消修正而威力变动者以()并记)\n\n"
+      "v": "\n(>是垫步，≫是冲刺，→是直接取消，因取消补正而威力变动的招式会在括号中并记)\n\n"
     },
     {
       "t": "br"
@@ -3536,7 +3613,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
-                  "v": "N格起手"
+                  "v": "N格斗起手"
                 },
                 {
                   "t": "td",
@@ -3590,7 +3667,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
-                  "v": "前格起手"
+                  "v": "前格斗起手"
                 },
                 {
                   "t": "td",
@@ -3644,7 +3721,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;text-align:center;background-color:LIGHTGREEN;"
                   },
-                  "v": "横格起手"
+                  "v": "横格斗起手"
                 },
                 {
                   "t": "td",
@@ -3698,7 +3775,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;text-align:center;"
                   },
-                  "v": "后格起手"
+                  "v": "后格斗起手"
                 },
                 {
                   "t": "td",
@@ -3752,7 +3829,7 @@
                   "a": {
                     "style": "vertical-align:MIDDLE;background-color:LIGHTGREEN;text-align:center;"
                   },
-                  "v": "BD格起手"
+                  "v": "BD格斗起手"
                 },
                 {
                   "t": "td",
@@ -3925,1738 +4002,70 @@
   ],
   "translation_log": [
     {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
+      "source": "曲げ撃ち対応のゲロビ",
+      "target": "支持弯曲射击的粗光束",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
+      "source": "曲げ撃ち対応の3wayゲロビ。SA付き",
+      "target": "支持弯曲射击的3向粗光束。附霸体",
+      "method": "manual",
       "node_type": "td"
     },
     {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "メイン射撃",
-      "target": "主射击",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "N格闘",
-      "target": "N格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "特殊射撃",
-      "target": "特殊射击",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "特殊格闘",
-      "target": "特殊格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "入力",
-      "target": "输入",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "後格闘",
-      "target": "后格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数",
-      "target": "弾数",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "コンボ",
-      "target": "连段",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "よろけ",
-      "target": "踉跄",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン",
-      "target": "倒地",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "リロード",
-      "target": "装填",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "バリア",
-      "target": "屏障",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "属性",
-      "target": "属性",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "後格闘",
-      "target": "后格斗",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "覚醒技",
-      "target": "觉醒技",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ダウン値",
-      "target": "倒地值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "効果",
-      "target": "效果",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "コンボ",
-      "target": "连段",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "威力",
-      "target": "威力",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "備考",
-      "target": "备注",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "ガンダムヴァーチェ",
-      "target": "高达德天使",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "ヴァーチェ",
-      "target": "德天使",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "総合解説",
-      "target": "综合解说",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "ヴァーチェ",
-      "target": "德天使",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "ナドレ",
-      "target": "纳德雷",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "射撃",
-      "target": "射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "GNバズーカ",
-      "target": "GN火箭炮",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "足を止めて撃つダウン属性のビーム",
-      "target": "停止射击的倒地属性光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "メイン射撃\n格闘派生",
-      "target": "主射击\n格斗派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "GNキャノン",
-      "target": "GN加农炮",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数二発消費\nサブより誘導が強い",
-      "target": "消耗两发弹药\n诱导力比副射强",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数一発消費。ヴァーチェの武装で唯一移動射撃が可能",
-      "target": "消耗一发弹药。德天使武装中唯一可移动射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "Nサブ射撃",
-      "target": "N副射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "弾数二発消費。足を止めて撃つ\nメイン・メイン格闘派生より性能は低い",
-      "target": "消耗两发弹药。停止射击\n性能比主射击·主射击格斗派生低",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "射撃CS",
-      "target": "射击蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "GNバズーカ【照射】",
-      "target": "GN火箭炮【照射】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "曲げ撃ち可能",
-      "target": "可弯曲射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "後サブ射撃",
-      "target": "后副射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ガンダムエクシア 呼出",
-      "target": "呼叫高达能天使",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ナドレのレバー入れサブと同一の低性能アシスト",
-      "target": "与纳德雷的摇杆输入副射相同的低性能援护",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒中\n後サブ射撃",
-      "target": "觉醒中\n后副射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ガンダムエクシア 呼出",
-      "target": "呼叫高达能天使",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒時1回\nトランザム斬り",
-      "target": "觉醒时1次\nTrans-AM斩",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "GNバズーカ【バーストモード】",
-      "target": "GN火箭炮【爆发模式】",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "主力のゲロビ。誤射に注意",
-      "target": "主力照射光束。注意误伤",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "GNフィールド",
-      "target": "GN力场",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "自衛の要",
-      "target": "自卫核心",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘CS",
-      "target": "格斗蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アーマーパージ",
-      "target": "装甲脱离",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ナドレに一方通行換装\n破片に一応格闘判定あり",
-      "target": "单向换装为纳德雷\n碎片姑且有格斗判定",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "GNビームサーベル",
-      "target": "GN光束军刀",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "後N",
-      "target": "后N",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "唯一の格闘。性能は極めて低い",
-      "target": "唯一的格斗。性能极其低下",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "名称",
-      "target": "名称",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力\nS/F,E",
-      "target": "威力\nS/F,E",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "一斉射撃",
-      "target": "全弹发射",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "曲げられる3wayゲロビ",
-      "target": "可弯曲的3向照射光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "▼目次",
-      "target": "▼目录",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "キャンセルルート",
-      "target": "取消路线",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "サポートアクション",
-      "target": "支援动作",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "射撃武器",
-      "target": "射击武器",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【メイン射撃】GNバズーカ",
-      "target": "【主射击】GN火箭炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【メイン射撃格闘派生】GNキャノン",
-      "target": "【主射击格斗派生】GN加农炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【射撃CS】GNバズーカ【照射】",
-      "target": "【射击蓄力】GN火箭炮【照射】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【N格闘】GNキャノン",
-      "target": "【N格斗】GN加农炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【Nサブ射撃】GNキャノン",
-      "target": "【N副射击】GN加农炮",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【後サブ射撃】ガンダムエクシア 呼出【突撃】",
-      "target": "【后副射击】呼叫高达能天使【突击】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【覚醒中後サブ射撃】ガンダムエクシア 呼出【トランザム突撃】",
-      "target": "【觉醒中后副射击】呼叫高达能天使【Trans-AM突击】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【特殊射撃】GNバズーカ【バーストモード】",
-      "target": "【特殊射击】GN火箭炮【爆发模式】",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【特殊格闘】GNフィールド展開",
-      "target": "【特殊格斗】GN力场展开",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【格闘CS】アーマーパージ",
-      "target": "【格斗蓄力】装甲脱离",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【後格闘】GNビームサーベル",
-      "target": "【后格斗】GN光束军刀",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "【覚醒技】一斉射撃",
-      "target": "【觉醒技】全弹发射",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "外部リンク&参考資料集",
-      "target": "外部链接与参考资料集",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "「機動戦士ガンダムOO」1stシーズンのトレミーチーム4機のうちの1機体。\n重厚な雰囲気通りの砲撃形態であり、対艦戦闘もこなせる高火力のGNバズーカが特徴。",
-      "target": "《机动战士高达00》第一季托勒密小队四机体之一。\n正如其厚重氛围所展现的炮击形态，特点是能够进行对舰战斗的高火力GN火箭炮。",
-      "method": "gemini",
+      "source": "オーバーパワーな特射のゲロビと無敵バリアを切り札に持つ砲撃形態、移動撃ち出来るN格キャノンがあるので厳密には砲撃機ではなく射撃特化機に該当する。\n鈍重な機動力に加え旋回性能も劣悪・降りテクなし・ほぼすべての武装で足を止めるなど、見合っている状態では全機体最弱と言えるほどの自衛力しかない。\nしかしそれを補って余りあるほどの超性能ゲロビ(特射)と、ボタンを押した瞬間から展開されて3秒間だけ完全無敵になれるGNフィールド(特格)を駆使して戦う一芸特化形態。\n参戦以来ゲロビの存在感は3000コスト級であり、無対策な低級者を焼き払うパワーは健在である。",
+      "target": "以超能特射粗光束与无敌屏障为王牌的炮击形态、有可移动射击的N格加农、严密说不是炮击机而属射击特化机。\n迟钝机动加上回旋恶劣・无落地技巧・几乎全部武装停步等、互瞪状态自卫力弱到可称全机体全形态最弱。\n但以充分补上的超性能粗光束(特射)、按按钮瞬间展开3秒完全无敌的GN力场(特格)战斗的一技特化形态。\n参战以来粗光束存在感是3000费用级、无对策低级者…",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "オーバーパワーな特射のゲロビと無敵バリアを切り札に持つ砲撃形態。\n鈍重な機動力に加え旋回性能も劣悪・降りテクなし・ほぼすべての武装で足を止めるなど、見合っている状態では全機体最弱と言えるほどの自衛力しかない。\nしかしそれを補って余りあるほどの超性能ゲロビ(特射)と、ボタンを押した瞬間から展開されて3秒間だけ完全無敵になれるGNフィールド(特格)を駆使して戦う一芸特化形態。\n参戦以来ゲロビの存在感は3000コスト級であり、無対策な低級者を焼き払うパワーは健在である。",
-      "target": "以超强的特殊射击照射光束和无敌护盾作为杀手锏的炮击形态。\n机动性笨重，加上回转性能差、没有下降技巧、几乎所有武装都会停下脚步等，在对峙状态下，自卫能力可以说在所有机体中最弱。\n然而，它拥有足以弥补这些不足的超高性能照射光束（特殊射击）和按下按钮瞬间展开并能完全无敌3秒的GN力场（特殊格斗），是一种专注于一项特技的形态。\n自参战以来，其照射光束的存在感堪比3000成本机体，烧毁毫无对策的低级玩家的能力依然健在。",
-      "method": "gemini",
+      "source": "足を止めずに肩のGNキャノンからビームを1発撃つ。\nヴァーチェ唯一の動きながら撃てる武装。レバー入力方向の肩か敵に近い方の肩から撃つ。\n威力は65・リロードも常時4秒と一般的なビームライフルと比べると見劣りするものの、砲撃系の機体が移動撃ち可能な射撃武器を持てると言う点だけで極めて優秀な武装でありヴァーチェ形態で最も重要な存在。\n攻めや自衛に赤ロック保存とあらゆる面で使用するため、常に弾数には気を配っておきたい。",
+      "target": "不停步从肩GN加农射光束1发。\n德天使唯一可动射击。从方向输入方向肩或离敌近的肩射。\n威力65・装填常时4秒、与一般光束步枪比较逊色、但炮击系机体持可移动射击射击武器这点就极优秀、德天使形态最重要存在。\n进攻自卫保持红锁全面使用、始终在意弹数吧。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "注意しなければいけない点として、格闘CSのナドレ換装は決して弱体化ではないという点。\nゲロビが当たれば試合が大きく動くとは言え、良くも悪くもゲロビ以外は鈍重な低コでしかないので、劣勢時や無視されている時に試合をひっくり返そうと無理にヴァーチェのまま立ち回っていては味方にただただ負担がかかるだけになってしまう。\n今作はオーバーリミットの存在により短時間にゲームが大きく動いてしまうため、受けの展開ならともかく攻めの展開ではヴァーチェでは付いていけない場面が増えた。",
-      "target": "需要注意的是，格斗蓄力的纳德雷换装绝非弱化。\n虽然照射光束命中能够大幅改变战局，但好坏参半的是，除了照射光束外，它只是一个笨重的低成本机体，因此在劣势或被无视时，如果强行保持德天使形态试图扭转战局，只会给队友带来负担。\n本作由于超限的存在，游戏在短时间内会发生巨大变化，因此，在防御型局面尚可，但在进攻型局面中，德天使无法跟上的情况增多了。",
-      "method": "gemini",
+      "source": "非常に低性能で、N格闘ズンダやメイン格闘派生に弾数を割きたいので封印しても構わない。\n一応単発強制ダウンなのでスパアマ格闘に対しては出番はある。　",
+      "target": "非常低性能、想分弹给N格斗速射或主射格斗派生、封印也行。\n姑且单发强制倒地、对霸体格斗有出场。　",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "\n特に本作のナドレは性能・取り回し共にかなり良好で爆発力もあるため、1st前半のティエリアのような融通の利かない立ち回りは封印して、ナドレになるべきタイミングを見極める事こそが真のガンダムマイスターになる鍵だろう。\n\n",
-      "target": "\n特别是本作的纳德雷在性能和操控性上都相当优秀且具有爆发力，因此，放弃像第一季前半段提耶利亚那样不灵活的打法，学会判断何时切换为纳德雷才是成为真正的高达大师的关键。\n\n",
-      "method": "gemini",
+      "source": "「刹那、フォーメーションS-32だ。」\nエクシアがスタン→打ち上げの2連斬り抜け。プレイアブルのBD格闘。 ",
+      "target": "「刹那、编队S-32。」\n能动天使麻痹→挑上2连斩穿。可操作机的BD格斗。 ",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "\n作品後半のティエリアのように味方との連携を重視し、ミッションの完遂を目指そう。\n\n",
-      "target": "\n像作品后半段的提耶利亚那样，重视与队友的协作，以完成任务为目标吧。\n\n",
-      "method": "gemini",
+      "source": "\n性能は低めだがヴァーチェ形態での貴重な格闘属性武装で射撃バリアへの回答になる。\n\n",
+      "target": "\n性能偏低、但是德天使形态宝贵格斗属性武装、成射击屏障回答。\n\n",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "リザルトポーズ",
-      "target": "结算姿势",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "通常時:正面へ射撃を行い、そのまま右手でGNバズーカで振り払うポージング。\n敗北時:ナドレで宙を漂う劇中ラストの再現。",
-      "target": "通常时：向前射击，然后右手用GN火箭炮挥开的姿势。\n败北时：再现剧中纳德雷漂浮在空中（的最终场景）。",
-      "method": "gemini",
+      "source": "誘導弾速が普通より良くなり、拘束力が高くバウンドダウンまで取ってくれる。\n耐久も普通のアシストとは異なりBR1発では壊れない。\n追撃で当てて放置が強力だが、ヴァーチェ形態では難しいののがネック。",
+      "target": "诱导弹速比普通好、拘束力高连弹跳倒地都取。\n耐久也与普通援护不同BR1发不坏。\n追击命中放置强力、但德天使形态难做是瓶颈。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "キャンセルルート",
-      "target": "取消路线",
-      "method": "gemini",
-      "node_type": "h2"
+      "source": "常時11秒",
+      "target": "常时11秒",
+      "method": "manual",
+      "node_type": "td"
     },
     {
-      "source": "N格闘→各サブ、特射、特格",
-      "target": "N格斗→各副射、特射、特格",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "サポートアクション",
-      "target": "支援动作",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "射撃",
-      "target": "射击",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "射撃武器",
-      "target": "射击武器",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "【メイン射撃】GNバズーカ",
-      "target": "【主射击】GN火箭炮",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "単発ダウンの弾を打ち出す。\n誘導弾速に優れ、後続の格闘派生がかなり優秀",
-      "target": "射出单发倒地弹。\n诱导和弹速优秀，后续的格斗派生非常出色",
-      "method": "gemini",
+      "source": "逆袈裟斬りからの斬り上げを行う2段格闘でヴァーチェ形態唯一の格闘武装。\n性能は全体的に悪く、伸び・判定・威力のどれも酷い上に出し切っても受け身可能と攻撃武装として褒められる点がない。\nしかしヴァーチェ形態で唯一虹ステが可能であり、苦手とする射撃バリア格闘への対抗策にもなるなど性能の割に使える場面がある。",
+      "target": "逆袈裟斩起斩上的2段格斗、德天使形态唯一格斗武装。\n性能整体差、突进・判定・威力哪个都糟加上打完可受身、作为攻击武装无表扬点。\n但德天使形态唯一可彩虹Step、也成苦手射击屏障格斗的对抗策、性能比例有用场面有。",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "【メイン射撃格闘派生】GNキャノン",
-      "target": "【主射击格斗派生】GN加农炮",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "サブの弾数を2発消費して撃つダウン属性の弾。\nNサブのモーションと見た目は同じだが、性能は全くの別物。",
-      "target": "消耗副射2发弹药射出的倒地属性弹。\n与N副射的动作和外观相同，但性能完全不同。",
-      "method": "gemini",
+      "source": "「一斉射撃！」\nGNバズーカを2丁持ちし、両肩のGNキャノンからも照射ゲロビを放つ曲げ撃ち対応のゲロビ。スパアマ有り。",
+      "target": "「一齐射击！」\n双持GN火箭炮、两肩GN加农也放照射粗光束的支持弯曲射击粗光束。有霸体。",
+      "method": "manual",
       "node_type": "div"
-    },
-    {
-      "source": "ズンダをせずともメイン>格闘派生でダウンをとれるようになる優秀な武装。\nその他にも、弾速が速く誘導がかなり優秀で特に上下に関しては変形メイン顔負けの急降下や急上昇を見せ、メインは外れたがこちらが当たった…なんてことは日常茶飯事レベル。\nこれを撃つためにメインを押すこともしばしば。",
-      "target": "无需连击也能通过主射>格斗派生造成倒地的优秀武装。\n此外，弹速快且诱导力非常出色，尤其在垂直方向上，能展现出不逊于变形主射的急降或急升，主射未命中但此招命中的情况司空见惯。\n经常会为了发射此招而按下主射。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\nしかしメインと合わせて長時間足を止めることになるので、優秀な性能にすがって連発しているとブーストが切れたり緑ロックで狙撃を当てられたりすることには注意したい。\n\n",
-      "target": "\n然而，与主射一同会长时间停止脚步，因此需要注意，如果依赖其优秀性能连续发射，可能会耗尽推进器或被绿锁狙击命中。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\nサブのリロードが遅いので射撃戦で垂れ流していきたいところだが、脳死で垂れ流しているとサブの武装欄が真っ赤なままで、撃ちたいときに撃てない！なんてことがないようにもしたい。\n\n",
-      "target": "\n副射的装填速度慢，虽然在射击战中想持续使用，但如果无脑乱用，可能会导致副射的武装栏一直保持红色，想用时却无法使用！因此也要避免这种情况发生。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "メイン",
-      "target": "主射击",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第一段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "常時?秒",
-      "target": "常驻？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ビーム",
-      "target": "光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗格闘派生",
-      "target": "┗格斗派生",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格闘と共通",
-      "target": "与N格斗共通",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ビーム",
-      "target": "光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【射撃CS】GNバズーカ【照射】",
-      "target": "【射击蓄力】GN火箭炮【照射】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "\n射撃特化機体特有の足を止める曲げ撃ち可なゲロビ。\n\n",
-      "target": "\n射击特化机体特有的，会停止脚步的可弯曲照射光束。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "特射同様発生は遅くビームも細いがあって困ることはないありがたい武装、特にサブや特射の弾数が枯渇することが多いので要所で狙っていきたい。\nメイン格闘派生を温存したい時や長距離でのカット、とりあえずの垂れ流しで使える武装。",
-      "target": "和特射一样发生慢，光束也细，但仍是一个不会让人困扰的实用武装，特别是副射和特射弹药常枯竭时，需要适时使用。\n在想保留主射格斗派生时、进行长距离截击时，或作为临时的射击手段都能使用。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "照射ビーム",
-      "target": "照射光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【N格闘】GNキャノン",
-      "target": "【N格斗】GN加农炮",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "足を止めずに肩のGNキャノンからビームを1発撃つ。\nヴァーチェ唯一の動きながら撃てる武装。レバー入力方向の肩か敵に近い方の肩から撃つ。",
-      "target": "不停止脚步，从肩部GN加农炮发射1发光束。这是德天使唯一能在移动中射击的武装。根据摇杆输入方向或离敌人较近的肩部发射。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "常時?秒",
-      "target": "常驻？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ビーム",
-      "target": "光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【Nサブ射撃】GNキャノン",
-      "target": "【N副射击】GN加农炮",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "\n格闘派生と同じモーションで打ち出す単発ダウン武装\n\n",
-      "target": "以与格斗派生相同的动作发射的单发击倒武装",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "非常に低性能で、N格闘ズンダやメイン格闘派生に段数を割いて行きたいので封印しても構わない。\n一応単発強制ダウンなのでスパアマ格闘に対しては出番はある。　",
-      "target": "性能非常低下，鉴于段数需要分配给N格斗连击或主格斗派生，所以不使用也无妨。作为一种单发强制击倒，对抗霸体格斗时仍有其用武之地。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格闘と共通",
-      "target": "与N格斗共通",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ビーム",
-      "target": "光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【後サブ射撃】ガンダムエクシア 呼出【突撃】",
-      "target": "【后副射击】呼叫能天使高达【突击】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "「刹那、フォーメーションS-32だ。」\nその場で足を止めてエクシアを呼び出す",
-      "target": "“刹那，S-32阵型。” 停止脚步在原地呼叫能天使。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "こちらもNサブ同様にかなり低性能で、突撃速度が遅く誘導も歩いても避けられるほどに弱い。\n耐久もアシスト特有のBR1発で爆散する低耐久。",
-      "target": "与N副射击一样性能低下，突击速度慢，诱导也弱到走路都能躲开。耐久力也是辅助机特有的低耐久，一发BR就能被击毁。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\n覚醒中には下記のアシストになる\n\n",
-      "target": "觉醒中会变为以下辅助机",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト消滅?秒",
-      "target": "辅助机消失？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "辅助机",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "スタン",
-      "target": "眩晕",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【覚醒中後サブ射撃】ガンダムエクシア 呼出【トランザム突撃】",
-      "target": "【觉醒中后副射击】呼叫能天使高达【Trans-AM突击】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "「刹那！」\n覚醒中は一度のみこの武装になる。",
-      "target": "“刹那！” 觉醒中仅有一次会变为此武装。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "他の強アシストほど優れているわけではないが、誘導弾速が普通よりちょっと強い程度に改善される。\n耐久も普通のアシストとは異なりBR1発では壊れない。",
-      "target": "虽然不如其他强力辅助机，但诱导和弹速会比普通状态略微增强。耐久度也与普通辅助机不同，不会被一发BR击毁。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "アシスト",
-      "target": "辅助机",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【特殊射撃】GNバズーカ【バーストモード】",
-      "target": "【特殊射击】GN火箭炮【爆发模式】",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "「ヴァーチェ、目標を破壊する。」\nその場で足を止めて極太ゲロビを照射。視点変更ありだがレバー後入力でカット可能。",
-      "target": "“德天使，摧毁目标。” 在原地停止脚步照射极粗的光束炮。视角会发生变化，但可以通过向后摇杆输入来中断。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "ヴァーチェの主力武装。\nダメージに優れリロード時間もそれなりのゲロビ。\n発生はかなり遅いが、その分強烈では済まない凶悪な銃口補正と劇中さながらの太さを誇る、FAZZのハイパーメガカノン(格闘CS)級の性能。",
-      "target": "德天使的主力武装。伤害优秀，装填时间也适中的光束炮。虽然发生非常慢，但其凶恶的枪口补正和剧中一般的粗细程度，使其拥有与FAZZ的超巨型米加加农炮（格斗CS）同级别的性能。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\n上記の凶悪な銃口補正は元になったガンダムバーサス時代から健在で、",
-      "target": "上述凶恶的枪口补正从其作为原型的《高达Versus》时代起就一直存在，",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "ガンダム・キマリスヴィダール",
-      "target": "高达锡蒙利维达尔",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "の特射回り込みに対して爆速回転して食いついたり、真上だろうが真下だろうが、誘導を切らなければほぼ確実に射線上に敵機を収めることができる。\n太さもその凶悪さに拍車をかけており、上記で説明した凶悪な銃口補正を切るためにステップを踏んでBD回避しようとしてもそれを食ってしまうほどの太さも強みの一つ。",
-      "target": "面对高达锡蒙利维达尔的特殊射击绕后时，能以极快的速度回转追踪，无论敌人是在正上方还是正下方，只要不切断诱导，几乎都能确保敌人处于射线上。其粗度也加剧了其凶恶程度，即使为了规避上述凶恶的枪口补正而进行垫步BD回避，也可能被其判定击中，这也是其强项之一。",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "\n強力ではあるが弱点は3つある。\n\n",
-      "target": "虽然强大但有3个弱点。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "1.悪い意味で凶悪なブースト効率。最大まで照射するだけで6割弱ブーストを持っていかれる。BDキャンセル後の着地硬直フレームの増加やオバヒのリスクは常に付きまとう意識を忘れないようにしたい。",
-      "target": "1. 恶劣的推进效率。仅仅是照射到最大程度就会消耗掉近6成的推进槽。BD取消后的落地硬直帧数增加和过热的风险始终伴随，这一点要时刻注意。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "2.盾に弱い。上記のブースト効率の悪さと相まって、盾をされるとブーストを使った立ち回りや読み合いはかなり不利になる。当たらないと思ったり相手の盾が見えたりした場合は即座にBDキャンセルして仕切り直しを図りたい。",
-      "target": "2. 惧怕盾牌。结合上述糟糕的推进效率，一旦被防御，使用推进的走位和博弈会非常不利。如果判断打不中或者看到对方举盾，应立即BD取消，重新调整态势。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "3.ゲロビの太さ故の視認性の悪化。このためBRや狙撃ビームが飛んでいることに気づかないことも多々ある。カットが気になるなら後述する特殊格闘と合わせよう。",
-      "target": "3. 光束炮的粗度导致视野恶化。因此常常会没有注意到光束步枪或狙击光束的飞来。如果担心被截击，可以配合后述的特殊格斗使用。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "照射ビーム",
-      "target": "照射光束",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【特殊格闘】GNフィールド展開",
-      "target": "【特殊格斗】GN力场展开",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "「奥の手を使う！」\n短い展開モーションを挟んで自機の周りにGNフィールドを展開する。\n一時期のセブンソードよろしくボタンを押した瞬間にガード判定が発生するため、発生は見た目より遥かに早い。",
-      "target": "“我要用绝招了！” 经过短暂的展开动作后，在机体周围展开GN力场。如同某个时期的七剑，按下按钮的瞬间就会产生防御判定，因此发生速度远比看起来要快。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\nクールタイム無しの20秒リロード、耐久値無しの3秒間完全無敵と非常に高性能なバリアでヴァーチェ唯一と言ってもいいレベルの自衛択。\n\n",
-      "target": "没有冷却时间，20秒装填，无耐久值，持续3秒的完全无敌，是一种性能非常高的护盾，可以说是德天使唯一的自卫选择。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\n弱点は攻撃を受けるとヒットストップが発生する点。これによりゲロビやヒット数の多い格闘に当たってしまうとヒットストップの硬直で動けずにただただバリアの解除時間を稼がれてしまい、最悪ガードモーションすら取ることができずに解除時を狩られてしまうので、そこはしっかりと頭に入れておきたい。\n\n",
-      "target": "弱点是受到攻击时会产生命中停顿。因此，如果被光束炮或多段格斗击中，会因命中停顿的硬直而无法动弹，只是白白延长护盾解除的时间，最坏的情况下甚至无法摆出防御动作，在解除时被抓住破绽，这一点务必牢记。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "\nヴァーチェとしてはほぼないシチュエーションだが、こちらの格闘をガードされた場合も強制解除されてしまうので要注意。\n\n",
-      "target": "虽然对于德天使来说这种情况几乎不存在，但如果己方格斗被防御，护盾也会被强制解除，这一点需要注意。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "持続",
-      "target": "持续时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "クールタイム",
-      "target": "冷却时间",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【格闘CS】アーマーパージ",
-      "target": "【格斗CS】装甲解除",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "「ナドレ！」\nガンダムナドレへの一方通行換装。",
-      "target": "“力天使！” 单向转换为力天使高达。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "ヴァーチェが無視されてるシチュエーションや、対面が両前衛ペアなどヴァーチェでは対処できない構成で出てきた時が主な換装タイミング。\n概要の通り、間違っても弱体化ではない点は頭に入れておく事。それぞれ全く別の長所短所を持つため、必要に応じて換装しよう。\nこちらも概要の繰り返しになるが、ヴァーチェのゲロビやバリアに固執して脱がないプレイングは相方に負担を強いるだけなので絶対にNG。",
-      "target": "德天使被无视的情况，或是面对双前卫组合等德天使难以应对的配置时，是主要的转换时机。如概述所述，务必牢记这不是弱化。它们各自拥有完全不同的优缺点，因此请根据需要进行转换。同样，再次强调概述内容，如果执着于德天使的光束炮和护盾而不转换，只会给队友带来负担，这是绝对不行的。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "なおパージした装甲にはダメージ判定がある。\n正面だと当たりにくいが、後ろ側には妙に広い。",
-      "target": "此外，解除的装甲具有伤害判定。正面不易命中，但在后方判定范围却异常广。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "チャージ",
-      "target": "蓄力",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "?秒",
-      "target": "？秒",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "換装",
-      "target": "转换",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "格闘",
-      "target": "格斗",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "【後格闘】GNビームサーベル",
-      "target": "【后格斗】GN光束军刀",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率)",
-      "target": "威力(修正率)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "第1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "┗2段目",
-      "target": "┗第2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "【覚醒技】一斉射撃",
-      "target": "【觉醒技】齐射",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "「一斉射撃！」\nGNバズーカを2丁持ちし、両肩のGNキャノンからも照射ゲロビを放つ曲げウチゲロビ。SA有り",
-      "target": "“齐射！” 双持GN火箭炮，并从双肩的GN加农炮发射照射光束炮，是一种可弯曲射击的光束炮。带霸体。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "ペーネロペーのレバ特射をさらに太くして曲げれるようにした極太の3WAYゲロビを構えて放つ。\n特射ほどではないがこちらも銃口補正は強力、弾速も申し分ない。",
-      "target": "架起并发射极粗的3WAY光束炮，其粗度和可弯曲性比佩涅罗佩的摇杆特殊射击更甚。虽然不如特殊射击，但其枪口补正同样强力，弹速也无可挑剔。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "覚醒しても捌ききれずナドレになるのは早い、そんなどうしょうもない時や、ガン無視されてしまってかなり距離が離れてしまった時に引っ掛け目的で流しゲロビとして撃つのもアリ。\nSAも申し訳程度についてるので1発BRを撃たれたくらいではゲロビを止められないので、本当に奥の手中の奥の手と言った具合。",
-      "target": "在觉醒也无法应对而过早变为力天使、陷入绝境时，或者被完全无视导致距离拉得很远时，也可以将其作为流弹光束炮发射以图一击。附带的霸体效果也聊胜于无，不会因为被射一发BR就中断光束炮，可以说是绝招中的绝招。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "動作",
-      "target": "动作",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "威力(補正率) F/S/E",
-      "target": "威力(修正率) F/S/E",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発",
-      "target": "单发",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "累計",
-      "target": "累计",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "単発(元値)",
-      "target": "单发(原值)",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "1段目",
-      "target": "1段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "2段目",
-      "target": "2段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "3段目",
-      "target": "3段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "4段目",
-      "target": "4段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "5段目",
-      "target": "5段",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "\n(>はステップ、≫はブーストダッシュ、→はそのままキャンセル キャンセル補正で威力が変動する物は()で併記)\n\n",
-      "target": "\n(>为垫步、≫为疾冲、→为直接取消 因取消修正而威力变动者以()并记)\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "射撃始動",
-      "target": "射击起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "N格始動",
-      "target": "N格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "前格始動",
-      "target": "前格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "横格始動",
-      "target": "横格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "後格始動",
-      "target": "后格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BD格始動",
-      "target": "BD格起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒中射撃始動",
-      "target": "觉醒中射击起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "覚醒中格闘始動",
-      "target": "觉醒中格斗起手",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "外部リンク&参考資料集",
-      "target": "外部链接&参考资料集",
-      "method": "gemini",
-      "node_type": "h2"
     }
   ]
 }
