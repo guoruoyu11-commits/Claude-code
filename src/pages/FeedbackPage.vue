@@ -21,12 +21,7 @@
         <h2>B 站私信 <span class="tag">推荐</span></h2>
         <p>
           跳转站长 B 站主页，点击「发消息」即可私信。<br />
-          <template v-if="biliUid">
-            <span class="uid">UID: {{ biliUid }}</span>
-          </template>
-          <template v-else>
-            <span class="uid pending">UID 配置中，暂时请通过下方邮箱反馈</span>
-          </template>
+          <span v-if="biliUid" class="uid">UID: {{ biliUid }}</span>
         </p>
       </div>
       <a
@@ -72,7 +67,7 @@ import { computed, ref } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
 // ── 站长 B 站 UID（配置处：填入数字 UID 即生效，卡片与按钮自动启用）──
-const BILI_UID = ''
+const BILI_UID = '599995'
 
 const route = useRoute()
 const biliUid = BILI_UID && !Number.isNaN(Number(BILI_UID)) ? BILI_UID : ''
@@ -187,7 +182,6 @@ section h2 {
   vertical-align: 2px;
 }
 .uid { color: var(--text); font-family: monospace; }
-.uid.pending { color: var(--text-muted); }
 .bili-btn {
   display: inline-block;
   padding: 10px 18px;
