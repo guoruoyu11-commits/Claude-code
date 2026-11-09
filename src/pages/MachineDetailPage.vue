@@ -544,26 +544,28 @@ watch(machine, (m) => {
 }
 .back-to-top:hover { opacity: 1; background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* 支持·反馈浮动入口：常驻右下角（返回顶部按钮上方），B站粉色调醒目胶囊 */
+/* 支持·反馈浮动入口：低调底色（比背景稍深），悬停时转站点红 */
 .report-issue {
   position: fixed;
   bottom: 84px;
   right: 28px;
-  padding: 9px 16px;
-  border-radius: 18px;
-  border: none;
-  background: linear-gradient(135deg, #fb7299, #e35e8b);
-  color: #fff;
+  padding: 8px 15px;
+  border-radius: 16px;
+  border: 1px solid var(--border-bright);
+  background: var(--bg-secondary);
+  color: var(--text-muted);
   font-size: 12.5px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(251, 114, 153, 0.35);
-  transition: filter .15s, transform .15s;
+  opacity: 0.85;
+  transition: opacity .15s, background .15s, color .15s, border-color .15s;
   z-index: 100;
 }
 .report-issue:hover {
-  filter: brightness(1.08);
-  transform: translateY(-1px);
+  opacity: 1;
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
 }
 
 @media (max-width: 600px) {
