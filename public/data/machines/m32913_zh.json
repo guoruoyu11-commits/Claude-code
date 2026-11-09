@@ -2,9 +2,9 @@
   "status": "ok",
   "id": "m32913",
   "name": "盖亚高达",
-  "translated_at": "2026-04-25T15:11:23.799494+00:00",
+  "translated_at": "2026-11-09T04:42:38.015469+00:00",
   "source_id": "m32913",
-  "model": "gemini-2.5-flash",
+  "model": "manual-glm",
   "content_nodes": [
     {
       "t": "h2",
@@ -13,7 +13,7 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/412.html",
-            "title": "ガイアガンダム (134d)"
+            "title": "ガイアガンダム (115d)"
           },
           "v": "盖亚高达"
         }
@@ -67,14 +67,14 @@
                                   "t": "source",
                                   "a": {
                                     "media": "(max-width: 320px)",
-                                    "srcset": "/images/machines/32913.png"
+                                    "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/412/485/t/ms.png"
                                   }
                                 },
                                 {
                                   "t": "source",
                                   "a": {
                                     "media": "(max-width: 480px)",
-                                    "srcset": "/images/machines/32913.png"
+                                    "srcset": "https://img.atwiki.jp/exvs2infiniteboost/attach/412/485/m/ms.png"
                                   }
                                 },
                                 {
@@ -82,7 +82,7 @@
                                   "a": {
                                     "class": "atwiki_plugin_image",
                                     "height": "104",
-                                    "src": "/images/machines/32913.png",
+                                    "src": "//img.atwiki.jp/exvs2infiniteboost/attach/412/485/ms.png",
                                     "style": "aspect-ratio: 228/104;",
                                     "width": "228"
                                   }
@@ -119,7 +119,7 @@
                       "a": {
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "机动战士高达\nSEED DESTINY"
+                      "v": "机动战士高达SEED DESTINY"
                     }
                   ]
                 },
@@ -204,7 +204,7 @@
                         "class": "table_style_1_column_1",
                         "style": "vertical-align:MIDDLE;"
                       },
-                      "v": "形态切换"
+                      "v": "形态移行"
                     },
                     {
                       "t": "td",
@@ -419,7 +419,7 @@
                       "a": {
                         "href": "#id_33c8a07c"
                       },
-                      "v": "EX爆发探讨"
+                      "v": "EX爆发分析"
                     }
                   ]
                 },
@@ -443,7 +443,7 @@
                       "a": {
                         "href": "#id_5b447b5d"
                       },
-                      "v": "套路玩法"
+                      "v": "固定连招"
                     }
                   ]
                 },
@@ -455,7 +455,7 @@
                       "a": {
                         "href": "#id_bf07a260"
                       },
-                      "v": "对位策略"
+                      "v": "对战策略"
                     }
                   ]
                 },
@@ -467,7 +467,7 @@
                       "a": {
                         "href": "#id_ff69b207"
                       },
-                      "v": "僚机搭配探讨"
+                      "v": "僚机分析"
                     },
                     {
                       "t": "ul",
@@ -504,7 +504,7 @@
                               "a": {
                                 "href": "#id_fc8ca213"
                               },
-                              "v": "不同Cost模式下的战术探讨"
+                              "v": "各费用模式下的战术分析"
                             }
                           ]
                         }
@@ -586,6 +586,10 @@
       "t": "br"
     },
     {
+      "t": "div",
+      "v": "\n※炽天使N觉醒技以MA形态从后当、则第2段仅加农不中、结果伤害上升的bug存在。\n\n\n"
+    },
+    {
       "t": "br"
     },
     {
@@ -599,14 +603,14 @@
     },
     {
       "t": "div",
-      "v": "通常时:\n战败时:"
+      "v": "通常时:\n败北时:"
     },
     {
       "t": "br"
     },
     {
       "t": "collapse",
-      "label": "▼与前作的变更点",
+      "label": "▼前作以来的变更点",
       "open": true,
       "c": [
         {
@@ -668,7 +672,7 @@
         },
         {
           "t": "div",
-          "v": "\n【MS形态时】\n\n"
+          "v": "\n【MS时】\n\n"
         },
         {
           "t": "ul",
@@ -706,7 +710,7 @@
       "a": {
         "id": "id_33c8a07c"
       },
-      "v": "EX爆发探讨"
+      "v": "EX爆发分析"
     },
     {
       "t": "div",
@@ -722,7 +726,7 @@
           "t": "a",
           "a": {
             "href": "//w.atwiki.jp/exvs2infiniteboost/pages/33.html",
-            "title": "覚醒性能一覧 (27d)"
+            "title": "覚醒性能一覧 (46d)"
           },
           "v": "觉醒类型"
         },
@@ -838,7 +842,7 @@
     },
     {
       "t": "div",
-      "v": "\n防御修正：-%\n\n"
+      "v": "防御补正:-%\n半觉能觉醒脱离。偷袭失手时或被殴时事故防止有用、但完全无火力补正、在缠Over Limit搅局强的本作是后向选项。"
     },
     {
       "t": "br"
@@ -858,7 +862,7 @@
       "a": {
         "id": "id_5b447b5d"
       },
-      "v": "套路玩法"
+      "v": "固定连招"
     },
     {
       "t": "br"
@@ -868,7 +872,7 @@
       "a": {
         "id": "id_bf07a260"
       },
-      "v": "对位策略"
+      "v": "对战策略"
     },
     {
       "t": "br"
@@ -878,7 +882,7 @@
       "a": {
         "id": "id_ff69b207"
       },
-      "v": "僚机搭配探讨"
+      "v": "僚机分析"
     },
     {
       "t": "br"
@@ -914,7 +918,7 @@
       "a": {
         "id": "id_fc8ca213"
       },
-      "v": "不同Cost模式下的战术探讨"
+      "v": "各费用模式下的战术分析"
     },
     {
       "t": "ul",
@@ -1143,478 +1147,16 @@
   ],
   "translation_log": [
     {
-      "source": "作品枠",
-      "target": "作品系列",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "パイロット",
-      "target": "驾驶员",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "コスト",
-      "target": "费用",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "耐久値",
-      "target": "耐久值",
-      "method": "dict",
-      "node_type": "td"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "戦術",
-      "target": "战术",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "外部リンク",
-      "target": "外部链接",
-      "method": "dict",
-      "node_type": "a"
-    },
-    {
-      "source": "概要",
-      "target": "概要",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "戦術",
-      "target": "战术",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "外部リンク",
-      "target": "外部链接",
-      "method": "dict",
-      "node_type": "h2"
-    },
-    {
-      "source": "ガイアガンダム",
-      "target": "盖亚高达",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "総合解説",
-      "target": "综合解说",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "MS形態",
-      "target": "MS形态",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "MA形態",
-      "target": "MA形态",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "機動戦士ガンダム\nSEED DESTINY",
-      "target": "机动战士高达\nSEED DESTINY",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ステラ・ルーシェ",
-      "target": "史黛拉·路西耶",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "形態移行",
-      "target": "形态切换",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "MS形態 / MA形態",
-      "target": "MS形态 / MA形态",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "移動タイプ",
-      "target": "移动类型",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "MS形態：通常BD\nMA形態：地走",
-      "target": "MS形态：通常BD\nMA形态：地面行走",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "BD回数",
-      "target": "BD次数",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "赤ロック距離",
-      "target": "红锁距离",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "MS形態：B\nMA形態：C",
-      "target": "MS形态：B\nMA形态：C",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "変形コマンド",
-      "target": "变形指令",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "なし",
-      "target": "无",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "盾コマンド",
-      "target": "盾牌指令",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "あり",
-      "target": "有",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "扱いやすさ",
-      "target": "操作难度",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "ノーマル",
-      "target": "普通",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "デフォルトBGM",
-      "target": "默认BGM",
-      "method": "gemini",
-      "node_type": "td"
-    },
-    {
-      "source": "▼目次",
-      "target": "▼目录",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "EXバースト考察",
-      "target": "EX爆发探讨",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "セットプレイ",
-      "target": "套路玩法",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "対面対策",
-      "target": "对位策略",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "僚機考察",
-      "target": "僚机搭配探讨",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "適した僚機",
-      "target": "适合的僚机",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "適さない僚機",
-      "target": "不适合的僚机",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "コストパターンごとの戦術考察",
-      "target": "不同Cost模式下的战术探讨",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "参考資料集",
-      "target": "参考资料集",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "編集に関する議論",
-      "target": "编辑相关讨论",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "ザフト軍「セカンドステージシリーズ」の1機で、ラゴゥの系譜にある四足形態への変形機構を持つ可変MS。\n地球連合軍「ファントムペイン」のステラ・ルーシェがアーモリーワンで奪取し、物語前半において敵対戦力として使われた。",
-      "target": "扎夫特军“第二阶段系列”的机体之一，是拉戈的系谱，拥有可变形为四足形态的可变MS。\n被地球联合军“幻痛”的史黛拉·路西耶在阿莫里一号夺取，在故事前半段作为敌对战力使用。",
-      "method": "gemini",
+      "source": "\n※セラヴィーのN覚醒技をMA形態で後ろから当てると、2段目のキャノンのみが当たらず、結果的にダメージが上がるバグが存在する。\n\n",
+      "target": "\n※炽天使N觉醒技以MA形态从后当、则第2段仅加农不中、结果伤害上升的bug存在。\n\n\n",
+      "method": "manual",
       "node_type": "div"
     },
     {
-      "source": "オーソドックスな万能機のMS形態と、地走かつ格闘寄りの性能を持つMA形態を切り替えながら戦う機体。\n換装の動作自体が大きく素早く移動するため、何度も換装しながら相手を翻弄するような戦い方が得意で、コスト相応に調整されたリボガンといった感じの機体。\n低コストながらアグレッシブに動いて撹乱しつつ、隙を見て格闘を狙うことも求められる玄人向きの調整。",
-      "target": "该机体通过切换常规万能机的MS形态和地面行走且偏格斗性能的MA形态进行战斗。\n由于切换形态动作幅度大且移动迅速，擅长通过反复切换形态来玩弄对手，感觉是与Cost相符的调整版再生高达。\n虽然是低Cost机体，但需要积极行动进行扰乱，并抓住机会进行格斗攻击，是面向高手的调整。",
-      "method": "gemini",
+      "source": "防御補正:-%\n半覚で覚醒抜けができる。闇討ちをミスった時や殴られた時の事故防止には役に立つが火力補正が全くないこと、オバリミを絡めた荒らしがつよい本作では後ろ向きな選択肢。",
+      "target": "防御补正:-%\n半觉能觉醒脱离。偷袭失手时或被殴时事故防止有用、但完全无火力补正、在缠Over Limit搅局强的本作是后向选项。",
+      "method": "manual",
       "node_type": "div"
-    },
-    {
-      "source": "\n換装を駆使しつつ冷静に立ち回り、自分の「死」を脅かす敵機体をなぎ倒そう。\n\n",
-      "target": "\n灵活运用形态切换，冷静应对，击倒威胁自己“死亡”的敌机。\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "リザルトポーズ",
-      "target": "结算姿势",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "通常時:\n敗北時:",
-      "target": "通常时:\n战败时:",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "▼前作からの変更点",
-      "target": "▼与前作的变更点",
-      "method": "gemini",
-      "node_type": "collapse"
-    },
-    {
-      "source": "\n前作のデータは",
-      "target": "\n前作的数据请看",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "こちら",
-      "target": "这里",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "\n【共通】\n\n",
-      "target": "\n【共通】\n\n",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "N射撃CS:新規武装。その場で宙返りして前作のMS時レバー入れ射撃CS。",
-      "target": "N射击CS：新增武装。在原地进行后空翻后发射前作MS形态下的方向键射击CS。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "前射撃CS:前作のMS時レバー入れ射撃CSが移行。",
-      "target": "前射击CS：前作MS形态下的方向键射击CS移至此处。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "後射撃CS:前作のMS時N射撃CSが移行。後方に飛び込んでから撃つように。",
-      "target": "后射击CS：前作MS形态下的N射击CS移至此处。变为向后跳跃后发射。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "Nサブ射撃:新規武装。前作のNサブ射撃と横特殊射撃を同時呼び出し。",
-      "target": "N副射击：新增武装。同时呼出前作的N副射击和横特殊射击。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "前サブ射撃:前作の前後サブ射撃が移行。",
-      "target": "前副射击：前作的前后副射击移至此处。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "後サブ射撃:前作のN特殊射撃が移行。",
-      "target": "后副射击：前作的N特殊射击移至此处。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "後特殊射撃:前作の格闘CSが移行。",
-      "target": "后特殊射击：前作的格斗CS移至此处。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "\n【MS時】\n\n",
-      "target": "\n【MS形态时】\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "N特殊射撃:新規武装。MSのまま突撃しつつビーム砲連射。格闘派生でクロブまでのBD格闘。",
-      "target": "N特殊射击：新增武装。保持MS形态突击并连射光束炮。格斗派生为至EXVS.2 XB之前的BD格斗。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "N格闘:初段の威力上昇(累計168→173)。",
-      "target": "N格斗：第一段威力提升（累计168→173）。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "\n【MA時】\n\n",
-      "target": "\n【MA形态时】\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "N特殊射撃:後派生が追加。各格闘へのキャンセルルート削除。",
-      "target": "N特殊射击：新增后派生。删除取消至各格斗的路线。",
-      "method": "gemini",
-      "node_type": "li"
-    },
-    {
-      "source": "EXバースト考察",
-      "target": "EX爆发探讨",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "\n「やっつけなきゃ……怖いもの……全部！！」\n",
-      "target": "\n“我必须打败……所有……可怕的东西！！”\n",
-      "method": "gemini",
-      "node_type": "#"
-    },
-    {
-      "source": "覚醒タイプ",
-      "target": "觉醒类型",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "Fバースト",
-      "target": "F爆发",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "格闘攻撃補正:+%　防御補正:-%\n推奨。MA形態での格闘ねじ込みが強力。\nMS時でもメインからの格闘キャンセルである程度差し込みに行けるようになるが基本はMAでの使用を心掛けたい。",
-      "target": "格斗攻击修正：+%　防御修正：-%\n推荐。MA形态下的格斗突进非常强力。\nMS形态下也能通过主射击取消格斗进行一定程度的突进，但基本还是建议在MA形态下使用。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "Sバースト",
-      "target": "S爆发",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "射撃攻撃補正:+%　\n弾数が少ないメインを連射出来るようになりアメキャンも開放される。\nが、MAだと足が止まる射撃しかないので落下できず、格闘差し込みが本分のガイアで射撃を強くしても…感が否めない。",
-      "target": "射击攻击修正：+%\n可以连射弹数较少的主射击，并解锁取消射击落地技巧。\n但是，在MA形态下只有会停顿的射击，无法进行落下，对于以格斗突进为主的盖亚来说，强化射击的效果不尽如人意。",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "Eバースト",
-      "target": "E爆发",
-      "method": "gemini",
-      "node_type": "span"
-    },
-    {
-      "source": "\n防御補正:-%\n\n",
-      "target": "\n防御修正：-%\n\n",
-      "method": "gemini",
-      "node_type": "div"
-    },
-    {
-      "source": "セットプレイ",
-      "target": "套路玩法",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "対面対策",
-      "target": "对位策略",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "僚機考察",
-      "target": "僚机搭配探讨",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "適した僚機",
-      "target": "适合的僚机",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "適さない僚機",
-      "target": "不适合的僚机",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "コストパターンごとの戦術考察",
-      "target": "不同Cost模式下的战术探讨",
-      "method": "gemini",
-      "node_type": "h3"
-    },
-    {
-      "source": "したらば掲示板 - ガイアガンダム Part.1",
-      "target": "Shitaraba论坛 - 盖亚高达 Part.1",
-      "method": "gemini",
-      "node_type": "a"
-    },
-    {
-      "source": "参考資料集",
-      "target": "参考资料集",
-      "method": "gemini",
-      "node_type": "h2"
-    },
-    {
-      "source": "編集に関する議論",
-      "target": "编辑相关讨论",
-      "method": "gemini",
-      "node_type": "h2"
     }
   ]
 }
